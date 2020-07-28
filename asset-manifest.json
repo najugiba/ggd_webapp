@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/ggd_webapp/static/css/main.ee3cac02.chunk.css",
+    "main.js": "/ggd_webapp/static/js/main.11012913.chunk.js",
+    "main.js.map": "/ggd_webapp/static/js/main.11012913.chunk.js.map",
+    "runtime-main.js": "/ggd_webapp/static/js/runtime-main.aa512825.js",
+    "runtime-main.js.map": "/ggd_webapp/static/js/runtime-main.aa512825.js.map",
+    "static/js/2.a702b0a7.chunk.js": "/ggd_webapp/static/js/2.a702b0a7.chunk.js",
+    "static/js/2.a702b0a7.chunk.js.map": "/ggd_webapp/static/js/2.a702b0a7.chunk.js.map",
+    "index.html": "/ggd_webapp/index.html",
+    "precache-manifest.d30b580270d9a0d21c9e491177cae16a.js": "/ggd_webapp/precache-manifest.d30b580270d9a0d21c9e491177cae16a.js",
+    "service-worker.js": "/ggd_webapp/service-worker.js",
+    "static/css/main.ee3cac02.chunk.css.map": "/ggd_webapp/static/css/main.ee3cac02.chunk.css.map",
+    "static/js/2.a702b0a7.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.a702b0a7.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.aa512825.js",
+    "static/js/2.a702b0a7.chunk.js",
+    "static/css/main.ee3cac02.chunk.css",
+    "static/js/main.11012913.chunk.js"
+  ]
+}
