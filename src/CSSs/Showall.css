@@ -1,0 +1,12 @@
+@media only screen and (max-width: 360px) {
+    .Showall_Container {
+        margin-top: 80px;
+        width: 80%;
+        border-style: groove;
+        text-align: center;
+    }
+    .dan_btn{
+        width: 25%;
+        height: 50px;
+    }
+  }

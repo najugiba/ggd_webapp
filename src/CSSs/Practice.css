@@ -1,0 +1,6 @@
+@media only screen and (max-width: 360px) {
+    .Practice_Container {
+        width: 80%;
+        border-style: groove;
+    }
+  }
