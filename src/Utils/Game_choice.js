@@ -1,7 +1,7 @@
 // 객관식 게임
 
 import React, { useState } from 'react';
-import '../CSSs/Game.css';
+import "../CSSs/Game_choice.css";
 
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -76,10 +76,15 @@ function Game_choice() {
                 </p>
 
                 {/* 객관식 답 누를 수 있는 버튼 */}
-                <button id={answers[0]} onClick={check}>{answers[0]}</button>
-                <button id={answers[1]} onClick={check}>{answers[1]}</button>
-                <button id={answers[2]} onClick={check}>{answers[2]}</button>
-                <button id={answers[3]} onClick={check}>{answers[3]}</button>
+                <div className="Choice_Box">
+                    <button className="Answer_Btn" id={answers[0]} onClick={check}>{answers[0]}</button>
+                    <button className="Answer_Btn" id={answers[1]} onClick={check}>{answers[1]}</button>
+                </div>
+                <div className="Choice_Box">
+                    <button className="Answer_Btn" id={answers[2]} onClick={check}>{answers[2]}</button>
+                    <button className="Answer_Btn" id={answers[3]} onClick={check}>{answers[3]}</button>
+                </div>
+                
 
 
                 <div>

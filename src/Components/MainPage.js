@@ -5,7 +5,7 @@ import EasyTest from './EasyTest';
 import HardTest from './HardTest';
 import Showall from './Showall';
 import Practice from './Practice';
-
+import "../CSSs/MainPage.css";
 /* 
 메인페이지의 구성
     1. 두개의 div태그를 갖는다. (input창과 등록하기 버튼을 가진 화면 + 종류를 선택할 수 있는 화면)
@@ -37,14 +37,16 @@ class MainPage extends React.Component {
 
         return(
             <div>
-                
                 <div className="register" style={{display:this.state.registerDP}}>
+                    <div className="Main_ImgBox">이미지</div>
                     <input 
+                        className="Main_InputBox"
                         type="text" 
                         value={this.state.registerInput} 
                         onChange={e=>{this.setState({registerInput:e.target.value})}}>
+
                     </input>
-                    <button onClick={CheckID}>
+                    <button className="Main_registerBtn" onClick={CheckID}>
                         등록하기
                     </button>
                 </div>

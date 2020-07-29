@@ -1,0 +1,16 @@
+@media only screen and (max-width: 360px) {
+    .Hompage_Container{
+        display: block;
+        width: 100%;
+    }
+    
+    .Homepage_ImgBox{
+        width: 150px;
+        height: 150px;
+    }
+
+    .Homepage_Btn{
+        width: 150px;
+        height: 35px;
+    }
+}
