@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/ggd_webapp/static/css/main.bdbab94e.chunk.css",
-    "main.js": "/ggd_webapp/static/js/main.8dbb1107.chunk.js",
-    "main.js.map": "/ggd_webapp/static/js/main.8dbb1107.chunk.js.map",
+    "main.css": "/ggd_webapp/static/css/main.765ac4cf.chunk.css",
+    "main.js": "/ggd_webapp/static/js/main.76ce831a.chunk.js",
+    "main.js.map": "/ggd_webapp/static/js/main.76ce831a.chunk.js.map",
     "runtime-main.js": "/ggd_webapp/static/js/runtime-main.aa512825.js",
     "runtime-main.js.map": "/ggd_webapp/static/js/runtime-main.aa512825.js.map",
-    "static/js/2.460962ec.chunk.js": "/ggd_webapp/static/js/2.460962ec.chunk.js",
-    "static/js/2.460962ec.chunk.js.map": "/ggd_webapp/static/js/2.460962ec.chunk.js.map",
+    "static/js/2.003346c4.chunk.js": "/ggd_webapp/static/js/2.003346c4.chunk.js",
+    "static/js/2.003346c4.chunk.js.map": "/ggd_webapp/static/js/2.003346c4.chunk.js.map",
     "index.html": "/ggd_webapp/index.html",
-    "precache-manifest.c0c99d4e094a36d162a4a4b86978697a.js": "/ggd_webapp/precache-manifest.c0c99d4e094a36d162a4a4b86978697a.js",
+    "precache-manifest.1cc18cc163d6a596e766aa92e6e468bf.js": "/ggd_webapp/precache-manifest.1cc18cc163d6a596e766aa92e6e468bf.js",
     "service-worker.js": "/ggd_webapp/service-worker.js",
-    "static/css/main.bdbab94e.chunk.css.map": "/ggd_webapp/static/css/main.bdbab94e.chunk.css.map",
-    "static/js/2.460962ec.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.460962ec.chunk.js.LICENSE.txt"
+    "static/css/main.765ac4cf.chunk.css.map": "/ggd_webapp/static/css/main.765ac4cf.chunk.css.map",
+    "static/js/2.003346c4.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.003346c4.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.aa512825.js",
-    "static/js/2.460962ec.chunk.js",
-    "static/css/main.bdbab94e.chunk.css",
-    "static/js/main.8dbb1107.chunk.js"
+    "static/js/2.003346c4.chunk.js",
+    "static/css/main.765ac4cf.chunk.css",
+    "static/js/main.76ce831a.chunk.js"
   ]
 }
