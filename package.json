@@ -1,6 +1,6 @@
 {
   "name": "ggd_webapp",
-  "homepage": "https://Pyosoo.github.io/ggd_webapp",
+  "homepage": "https://pyosoo.github.io/ggd_webapp",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

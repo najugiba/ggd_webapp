@@ -1,3 +1,5 @@
+// 객관식 게임
+
 import React, { useState } from 'react';
 import '../CSSs/Game.css';
 
