@@ -33,7 +33,7 @@ function Practice(){
             </div>
             
             <div style={{display:gameDP}}>
-                <Dan_game dan={dan} />
+                 <Dan_game dan={dan} />
             </div>
             
         
