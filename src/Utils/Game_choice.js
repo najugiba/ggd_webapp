@@ -1,15 +1,14 @@
 // 객관식 게임
 // 객관식은 N단 x 1~9까지 차례대로 나온다.
-
-
 import React, { useState } from 'react';
 import "../CSSs/Game_choice.css";
 
+/*  랜덤수 필요시 활성화 할 것
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return ranNum;
 }
-
+*/
 let randnum1, randnum2;
 randnum2 = 0;
 //randnum1 은 props로 받아온다.

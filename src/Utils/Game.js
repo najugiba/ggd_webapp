@@ -15,6 +15,10 @@ const makeRandom = () => {
     randnum2 = generateRandom(2,9);
 }
 
+var gr = [];
+var ty = [];
+var tm = []; //todaymonth 라는 경기 기록날짜의 월 을 담아놓을 배열
+var td = []; //todaydate 라는 경기 기록날짜의 일 을 담아놓을 배열
 
 function Game(){
     const [answer, setAnswer] = useState('');
@@ -57,9 +61,21 @@ function Game(){
                                 makeRandom();
                                 setAnswer('');
                             }
-                            if(Number(count) === 9){
+                            if(Number(count) === 9){        // 모든 시험이 끝났을때
                                 setGameDP('none');
                                 setResultDP('');
+                               // if(score != 0) setScore(score);
+                                gr.push(score);
+                                localStorage.setItem("Totalscore", JSON.stringify(gr));
+                                let today = new Date();
+                                let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
+                                let month = today.getMonth(); tm.push(month+1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                                let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
+
+                                console.log(localStorage.getItem("Totalscore"));
+                                console.log(localStorage.getItem("YearOfScore"));
+                                console.log(localStorage.getItem("MonthOfScore"));
+                                console.log(localStorage.getItem("DateOfScore"));
                             }
                         }
                     }

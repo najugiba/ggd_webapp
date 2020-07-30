@@ -1,11 +1,7 @@
 import React, { useState } from 'react';
-import Game from '../Utils/Game.js';
 import '../CSSs/Practice.css';
-import Dan_game from '../Utils/Dan_game';
-import Practice2 from './Practice2';
 import Game_choice from '../Utils/Game_choice';
 
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 
 
 // 문제연습은 객관식

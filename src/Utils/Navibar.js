@@ -11,7 +11,7 @@ import InboxIcon from '@material-ui/icons/MoveToInbox';
 import DraftsIcon from '@material-ui/icons/Drafts';
 import SendIcon from '@material-ui/icons/Send';
 import EasyTest from '../Components/EasyTest';
-import HardTest from '../Components/HardTest';
+import Checkscore from '../Components/Checkscore';
 import Showall from '../Components/Showall';
 import Practice from '../Components/Practice';
 import Homepage from '../Components/Homepage';
@@ -105,30 +105,29 @@ function Navibar(props) {
                     <ListItemIcon>
                         <DraftsIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link name="연습하기" className="linkitem" to="/practice" onClick={handleClose}><ListItemText primary="Practice"></ListItemText></Link>
+                    <Link name="연습 하기" className="linkitem" to="/practice" onClick={handleClose}><ListItemText primary="Practice"></ListItemText></Link>
                 </StyledMenuItem>
 
                 <StyledMenuItem>
                     <ListItemIcon>
                         <InboxIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link name="시험보기" className="linkitem" to="/easytest" onClick={handleClose}><ListItemText primary="EasyTest"></ListItemText></Link>
+                    <Link name="시험 보기" className="linkitem" to="/easytest" onClick={handleClose}><ListItemText primary="EasyTest"></ListItemText></Link>
                 </StyledMenuItem>
 
                 <StyledMenuItem>
                     <ListItemIcon>
                         <InboxIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link name="어려운시험" className="linkitem" to="/hardtest" onClick={handleClose}><ListItemText primary="HardTest"></ListItemText></Link>
+                    <Link name="성적 확인" className="linkitem" to="/checkscore" onClick={handleClose}><ListItemText primary={props.name + '의 점수확인'}></ListItemText></Link>
                 </StyledMenuItem>
             </StyledMenu>
             <div style={{textAlign:"center", width:'100%'}}>
-                <p className="hello_p">{currentPagename}</p>
                 <Route exact path="/" component={Homepage} />
                 <Route path='/showall' component={Showall} />
                 <Route path='/practice' component={Practice} />
                 <Route path='/easytest' component={EasyTest} />
-                <Route path='/hardtest' component={HardTest} />
+                <Route path='/checkscore' component={Checkscore} />
             </div>
 
         </Router>

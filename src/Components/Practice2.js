@@ -1,5 +1,4 @@
 import React from 'react';
-import Game from '../Utils/Game';
 
 
 function Practice2(){
