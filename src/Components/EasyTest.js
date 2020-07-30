@@ -1,10 +1,10 @@
 import React from 'react';
-import GameChoice from '../Utils/Game_choice';
+import Game from '../Utils/Game';
 
 function EasyTest(){
     return(
         <div>
-            <GameChoice />
+            <Game Min="2" Max="9" />
         </div>
     )
 }

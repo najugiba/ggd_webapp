@@ -10,13 +10,13 @@ let randnum1, randnum2;
 randnum1 = generateRandom(2,9);
 randnum2 = generateRandom(2,9);
 
-const makeRandom = (a,b) => {
-    randnum1 = generateRandom(a,b);
-    randnum2 = generateRandom(a,b);
+const makeRandom = () => {
+    randnum1 = generateRandom(2,9);
+    randnum2 = generateRandom(2,9);
 }
 
 
-function Game(props){
+function Game(){
     const [answer, setAnswer] = useState('');
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
@@ -49,12 +49,12 @@ function Game(props){
                                 alert("정답입니다");
                                 setCount(count + 1);
                                 setScore(score + 1);
-                                makeRandom(props.Min, props.Max);
+                                makeRandom();
                                 setAnswer('');
                             }else{
                                 alert(`오답입니다. 정답: ${randnum1*randnum2}`)
                                 setCount(count + 1);
-                                makeRandom(props.Min, props.Max);
+                                makeRandom();
                                 setAnswer('');
                             }
                             if(Number(count) === 9){

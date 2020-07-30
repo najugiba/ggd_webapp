@@ -1,6 +1,9 @@
 @media only screen and (max-width: 360px) {
+    .Game_choice_Container{
+        width: 100%;
+    }
     .gugudan_box{
-        width: 80%;
+        width: 100%;
     }
     
     .Choice_Box{

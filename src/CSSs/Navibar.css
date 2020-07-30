@@ -1,5 +1,5 @@
 .NavigationMenu {
-    position: fixed;
+    float: left;
     top: 0;
     left: 0;
 }

@@ -3,8 +3,13 @@ import Game from '../Utils/Game.js';
 import '../CSSs/Practice.css';
 import Dan_game from '../Utils/Dan_game';
 import Practice2 from './Practice2';
+import Game_choice from '../Utils/Game_choice';
 
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+
+
+// 문제연습은 객관식
+// 시험보기만 주관식
 
 
 function Practice() {
@@ -22,15 +27,15 @@ function Practice() {
 
     return (
         <div className="Practice_Container">
-            <p>연습하기</p>
-
             <div style={{ display: gameDP }}>
-                {dan}단 연습
-                <Dan_game dan={dan} />
+                <Game_choice dan={dan} />
             </div>
 
             <div style={{ display: btnDP }}>
-                <p>연습할 단을 선택해주세요.</p>
+                <div className="Practice_imgbox">
+                    Imgae
+                </div>
+                <p>연습하고자 하는 구구단을 선택하세요</p>
                 <div>
                     <button className="Practice_Btn" id="2" onClick={danChoice}>2단</button>
                     <button className="Practice_Btn" id="3" onClick={danChoice}>3단</button>
@@ -43,7 +48,7 @@ function Practice() {
                     <button className="Practice_Btn" id="8" onClick={danChoice}>8단</button>
                     <button className="Practice_Btn" id="9" onClick={danChoice}>9단</button>
                 </div>
-                <button className="Practice_Btn" id="all">모두</button>
+                <button className="Practice_Btn2" id="all">모두</button>
 
             </div>
 

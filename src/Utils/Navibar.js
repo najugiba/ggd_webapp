@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import '../CSSs/Navibar.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
 import { withStyles } from '@material-ui/core/styles';
@@ -51,27 +51,33 @@ const StyledMenuItem = withStyles((theme) => ({
 
 function Navibar(props) {
     const [anchorEl, setAnchorEl] = React.useState(null);
+    const [currentPagename, setCurrentPagename] = useState("어서오세요");
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
 
-    const handleClose = () => {
+    const handleClose = (e) => {
+        console.log(e.currentTarget.name);
+        setCurrentPagename(e.currentTarget.name); //페이지 이동시 해당 페이지의 이름을 가져와 맨위에 띄워주기 위함
         setAnchorEl(null);
     };
 
 
     return (
         <Router basename="/ggd_webapp">
-            <Button
-                aria-controls="customized-menu"
-                aria-haspopup="true"
-                variant="contained"
-                color="primary"
-                onClick={handleClick}
-            >
-                ▤
-            </Button>
+            <div style={{position:'fixed'}}>
+                <Button
+                    aria-controls="customized-menu"
+                    aria-haspopup="true"
+                    variant="contained"
+                    color="primary"
+                    onClick={handleClick}
+                >
+                    ▤
+                </Button>
+            </div>
+            
             <StyledMenu
                 id="customized-menu"
                 anchorEl={anchorEl}
@@ -83,7 +89,7 @@ function Navibar(props) {
                     <ListItemIcon>
                         <SendIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link className="linkitem" to="/" onClick={handleClose}><ListItemText primary="Home"></ListItemText></Link>
+                    <Link name="홈" className="linkitem" to="/" onClick={handleClose}><ListItemText primary="Home"></ListItemText></Link>
                    
                 </StyledMenuItem>
 
@@ -91,7 +97,7 @@ function Navibar(props) {
                     <ListItemIcon>
                         <SendIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link className="linkitem" to="/showall" onClick={handleClose}><ListItemText primary="ShowAll"></ListItemText></Link>
+                    <Link name="표 보기" className="linkitem" to="/showall" onClick={handleClose}><ListItemText primary="ShowAll"></ListItemText></Link>
                    
                 </StyledMenuItem>
 
@@ -99,25 +105,25 @@ function Navibar(props) {
                     <ListItemIcon>
                         <DraftsIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link className="linkitem" to="/practice" onClick={handleClose}><ListItemText primary="Practice"></ListItemText></Link>
+                    <Link name="연습하기" className="linkitem" to="/practice" onClick={handleClose}><ListItemText primary="Practice"></ListItemText></Link>
                 </StyledMenuItem>
 
                 <StyledMenuItem>
                     <ListItemIcon>
                         <InboxIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link className="linkitem" to="/easytest" onClick={handleClose}><ListItemText primary="EasyTest"></ListItemText></Link>
+                    <Link name="시험보기" className="linkitem" to="/easytest" onClick={handleClose}><ListItemText primary="EasyTest"></ListItemText></Link>
                 </StyledMenuItem>
 
                 <StyledMenuItem>
                     <ListItemIcon>
                         <InboxIcon fontSize="small" />
                     </ListItemIcon>
-                    <Link className="linkitem" to="/hardtest" onClick={handleClose}><ListItemText primary="HardTest"></ListItemText></Link>
+                    <Link name="어려운시험" className="linkitem" to="/hardtest" onClick={handleClose}><ListItemText primary="HardTest"></ListItemText></Link>
                 </StyledMenuItem>
             </StyledMenu>
-            <div style={{textAlign:"center", width:'80%'}}>
-                <p className="hello_p">{props.name}님 환영합니다.</p>
+            <div style={{textAlign:"center", width:'100%'}}>
+                <p className="hello_p">{currentPagename}</p>
                 <Route exact path="/" component={Homepage} />
                 <Route path='/showall' component={Showall} />
                 <Route path='/practice' component={Practice} />

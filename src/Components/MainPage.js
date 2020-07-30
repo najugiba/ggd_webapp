@@ -30,7 +30,7 @@ class MainPage extends React.Component {
            }else{
                this.setState({
                    registerDP : 'none',
-                   choiceDP : 'flex'
+                   choiceDP : 'grid'
                })
            }
        }
@@ -53,23 +53,6 @@ class MainPage extends React.Component {
                 
                 <div className="choice" style={{display:this.state.choiceDP}}>
                     <Navibar name={this.state.registerInput}/>
-                   {/* <p>{this.state.registerInput}님 어서오세요!</p>
-                    <div style={{marginTop: '5vh'}}>
-                        <Router>
-                            <Link style={{display:'block'}} to="/showall">모든 구구단 보기</Link>
-                            <Link style={{display:'block'}} to="/practice">연습하기</Link>
-                            <Link style={{display:'block'}} to="/easytest">쉬운 시험보기</Link>
-                            <Link style={{display:'block'}} to="/hardtest">어려운 시험보기</Link>
-
-                            <div>
-                                <Route path='/showall' component={Showall} />
-                                <Route path='/practice' component={Practice} />
-                                <Route path='/easytest' component={EasyTest} />
-                                <Route path='/hardtest' component={HardTest} />
-                            </div>
-                        </Router>
-                    </div>
-                     */}
                 </div>
                 
             </div>

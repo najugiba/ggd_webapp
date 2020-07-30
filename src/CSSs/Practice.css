@@ -1,6 +1,19 @@
 @media only screen and (max-width: 360px) {
     .Practice_Container {
-        width: 80%;
+        width: 100%;
         border-style: groove;
+    }
+    .Practice_imgbox{
+        width: 100%;
+        height: 200px;
+        border-style: groove;
+    }
+    .Practice_Btn{
+        width: 25%;
+        height: 30px;
+    }
+    .Practice_Btn2{
+        width: 100%;
+        height: 30px;
     }
   }

@@ -1,4 +1,6 @@
 // 객관식 게임
+// 객관식은 N단 x 1~9까지 차례대로 나온다.
+
 
 import React, { useState } from 'react';
 import "../CSSs/Game_choice.css";
@@ -9,14 +11,13 @@ let generateRandom = function (min, max) {
 }
 
 let randnum1, randnum2;
-randnum1 = generateRandom(2, 9);
-randnum2 = generateRandom(2, 9);
+randnum2 = 0;
+//randnum1 은 props로 받아온다.
 
 //객관식 답 배열
 let answers = [];
 const makeRandom = () => {
-    randnum1 = generateRandom(2, 9);
-    randnum2 = generateRandom(2, 9);
+    randnum2++;
 
     //객관식 답
     let answerA = (randnum1 - 1) * randnum2;
@@ -29,14 +30,14 @@ const makeRandom = () => {
     });
 }
 
-function Game_choice() {
+function Game_choice(props) {
     const [answer, setAnswer] = useState('');
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
     const [descDP, setDescDP] = useState('');
     const [gameDP, setGameDP] = useState('none');
     const [resultDP, setResultDP] = useState('none');
-
+    randnum1 = props.dan;
 
     const check = e => {
         if (Number(e.target.id) === randnum1 * randnum2) {
@@ -57,7 +58,7 @@ function Game_choice() {
     }
 
     return (
-        <div>
+        <div className="Game_choice_Container">
             <div className="desc_box" style={{ display: descDP }}>
                 <button onClick={e => {
                     setDescDP('none');
@@ -68,6 +69,7 @@ function Game_choice() {
             </div>
 
             <div className="gugudan_box" style={{ display: gameDP }}>
+                (문제 {count+1})
                 <p className="text" style={{ width: '100%' }}>{randnum1}</p>
                 <p className="text" style={{ width: '100%' }}>
                     <span className="text" style={{ width: '100%' }}>
