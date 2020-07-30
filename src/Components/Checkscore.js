@@ -30,7 +30,7 @@ function Checkscore(){
     const [arr, setArr] = useState(GetScore());
 
     const list = arr.map(data => (
-        <li key={data}>{data}</li>
+        <li style={{listStyle:'none'}} key={data}>{data}</li>
     ))
 
     return(

@@ -1,6 +1,7 @@
 import React, {useState} from 'react';
 import '../CSSs/Game.css';
 
+// ==========================랜덤 수 발생 함수======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random()*(max-min+1)) + min;
     return ranNum;
@@ -15,10 +16,36 @@ const makeRandom = () => {
     randnum2 = generateRandom(2,9);
 }
 
+
+
+// ==============점수와 날짜를 localstorage에 담아두기 위한 배열들===================
 var gr = [];
 var ty = [];
-var tm = []; //todaymonth 라는 경기 기록날짜의 월 을 담아놓을 배열
-var td = []; //todaydate 라는 경기 기록날짜의 일 을 담아놓을 배열
+var tm = []; 
+var td = []; 
+
+
+
+// ===================정답과 오답을 종료 후 보여 주기 위한 부분=======================
+let RightAnswer = [];
+let WrongAnswer = [];
+
+let RightAnswerList, WrongAnswerList;
+const mapingRightAnswer = () =>{
+    RightAnswerList = RightAnswer.map(data=>(
+        <li style={{listStyle:'none', color:'blue'}} key={data}>{data}</li>
+    ))
+}
+const mapingWrongAnswer = () =>{
+    WrongAnswerList = WrongAnswer.map(data=>(
+        <li style={{listStyle:'none', color:'red'}} key={data}>{data}</li>
+    ))
+}
+
+
+
+
+
 
 function Game(){
     const [answer, setAnswer] = useState('');
@@ -49,22 +76,21 @@ function Game(){
                     onChange={e=> setAnswer(e.target.value)}
                     onKeyPress={e=>{
                         if(e.key === 'Enter'){
-                            if(Number(answer) === (randnum1 * randnum2)){
-                                alert("정답입니다");
+                            if(Number(answer) === (randnum1 * randnum2)){   //정답일때
                                 setCount(count + 1);
                                 setScore(score + 1);
                                 makeRandom();
                                 setAnswer('');
-                            }else{
-                                alert(`오답입니다. 정답: ${randnum1*randnum2}`)
+                                RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1*randnum2}`);
+                            }else{                                          //오답일때
                                 setCount(count + 1);
                                 makeRandom();
                                 setAnswer('');
+                                WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
                             }
                             if(Number(count) === 9){        // 모든 시험이 끝났을때
                                 setGameDP('none');
                                 setResultDP('');
-                               // if(score != 0) setScore(score);
                                 gr.push(score);
                                 localStorage.setItem("Totalscore", JSON.stringify(gr));
                                 let today = new Date();
@@ -76,6 +102,9 @@ function Game(){
                                 console.log(localStorage.getItem("YearOfScore"));
                                 console.log(localStorage.getItem("MonthOfScore"));
                                 console.log(localStorage.getItem("DateOfScore"));
+
+                                mapingRightAnswer();
+                                mapingWrongAnswer();
                             }
                         }
                     }
@@ -88,8 +117,16 @@ function Game(){
                 
             </div>
 
+            {/* 시험 끝나면 display 될 곳 */}
             <div className="result_box" style={{display:resultDP}}>
                     <p>점수 : {score * 10}/100</p>
+                    
+                    <div>
+                        {RightAnswerList}
+                        {WrongAnswerList}
+                    </div>
+                    
+                    <br/>
                     <button onClick={ e=>{
                         setScore(0);
                         setCount(0);

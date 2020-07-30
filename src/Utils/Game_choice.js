@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import "../CSSs/Game_choice.css";
 
-/*  랜덤수 필요시 활성화 할 것
+/* =========================== 랜덤수 필요시 활성화 할 것======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return ranNum;
@@ -13,12 +13,11 @@ let randnum1, randnum2;
 randnum2 = 0;
 //randnum1 은 props로 받아온다.
 
-//객관식 답 배열
+//======================객관식 답 배열에서 랜덤으로 섞어서 만들기===============================
 let answers = [];
 const makeRandom = () => {
     randnum2++;
 
-    //객관식 답
     let answerA = (randnum1 - 1) * randnum2;
     let answerB = randnum1 * (randnum2 - 1);
     let answerC = randnum1 * randnum2;
@@ -28,6 +27,13 @@ const makeRandom = () => {
         return Math.random() - Math.random();
     });
 }
+
+// ==================== 게임끝날을때 결과 알려줄 팝업창 실행 함수 ===============================
+const EndOfGame = () =>{
+    alert("게임끝났엉");
+}
+
+
 
 function Game_choice(props) {
     const [answer, setAnswer] = useState('');
@@ -50,9 +56,10 @@ function Game_choice(props) {
             makeRandom();
             setAnswer('');
         }
-        if (count === 9) {
+        if (count === 9) {      // 게임 끝날때 동작해야 할 코드들
             setGameDP('none');
             setResultDP('');
+            EndOfGame();
         }
     }
 
@@ -68,7 +75,7 @@ function Game_choice(props) {
             </div>
 
             <div className="gugudan_box" style={{ display: gameDP }}>
-                (문제 {count+1})
+                <div>(문제 {count+1})</div>
                 <p className="text" style={{ width: '100%' }}>{randnum1}</p>
                 <p className="text" style={{ width: '100%' }}>
                     <span className="text" style={{ width: '100%' }}>
