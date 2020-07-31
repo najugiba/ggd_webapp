@@ -36,7 +36,7 @@ function Checkscore(){
     return(
         <div>
             <div className="Checkscore_graphBox">
-                이미지
+                성적 그래프...
             </div>
             <div className="Score_table">
                 {list}
