@@ -10,13 +10,12 @@ let generateRandom = function (min, max) {
 }
 */
 let randnum1, randnum2;
-randnum2 = 0;
+randnum2 = 1;
 //randnum1 은 props로 받아온다.
 
 //======================객관식 답 배열에서 랜덤으로 섞어서 만들기===============================
 let answers = [];
 const makeRandom = () => {
-    randnum2++;
 
     let answerA = (randnum1 - 1) * randnum2;
     let answerB = randnum1 * (randnum2 - 1);
@@ -31,6 +30,7 @@ const makeRandom = () => {
 // ==================== 게임끝날을때 결과 알려줄 팝업창 실행 함수 ===============================
 const EndOfGame = () =>{
     alert("게임끝났엉");
+    randnum2 = 1;
 }
 
 
@@ -45,22 +45,23 @@ function Game_choice(props) {
     randnum1 = props.dan;
 
     const check = e => {
-        if (Number(e.target.id) === randnum1 * randnum2) {
+        if (Number(e.target.id) === (randnum1 * randnum2)) {
             setCount(count + 1);
-            setScore(score + 1);
+            setScore(score + 1);  
             makeRandom();
             setAnswer('');
+            randnum2++;
         }
         else {
             setCount(count + 1);
             makeRandom();
             setAnswer('');
+            randnum2++;
         }
         if (count === 9) {      // 게임 끝날때 동작해야 할 코드들
             setGameDP('none');
             setResultDP('');
             EndOfGame();
-            randnum2 = 1;
         }
     }
 
@@ -96,7 +97,7 @@ function Game_choice(props) {
   
 
                 <div>
-                    문제 수 : {count}/10
+                    문제 수 : {count+1}/10
                 </div>
 
             </div>
@@ -109,6 +110,7 @@ function Game_choice(props) {
                     setAnswer('');
                     setGameDP('');
                     setResultDP('none');
+                    randnum2 = 1;
                 }}>다시하기</button>
             </div>
         </div>
