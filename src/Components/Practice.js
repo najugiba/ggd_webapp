@@ -32,13 +32,13 @@ function Practice() {
                     Imgae
                 </div>
                 <p>연습하고자 하는 구구단을 선택하세요</p>
-                <div>
+                <div className="Practice_Btn_Line">
                     <button className="Practice_Btn" id="2" onClick={danChoice}>2단</button>
                     <button className="Practice_Btn" id="3" onClick={danChoice}>3단</button>
                     <button className="Practice_Btn" id="4" onClick={danChoice}>4단</button>
                     <button className="Practice_Btn" id="5" onClick={danChoice}>5단</button>
                 </div>
-                <div>
+                <div className="Practice_Btn_Line">
                     <button className="Practice_Btn" id="6" onClick={danChoice}>6단</button>
                     <button className="Practice_Btn" id="7" onClick={danChoice}>7단</button>
                     <button className="Practice_Btn" id="8" onClick={danChoice}>8단</button>

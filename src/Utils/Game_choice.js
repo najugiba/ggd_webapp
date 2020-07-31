@@ -40,7 +40,7 @@ function Game_choice(props) {
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
     const [descDP, setDescDP] = useState('');
-    const [gameDP, setGameDP] = useState('none');
+    const [gameDP, setGameDP] = useState('');
     const [resultDP, setResultDP] = useState('none');
     randnum1 = props.dan;
 
@@ -64,16 +64,15 @@ function Game_choice(props) {
         }
     }
 
+    const onStart = () => {
+        setDescDP('none');
+        setGameDP('');
+        setResultDP('none');
+        makeRandom();
+    }
+    makeRandom();
     return (
         <div className="Game_choice_Container">
-            <div className="desc_box" style={{ display: descDP }}>
-                <button onClick={e => {
-                    setDescDP('none');
-                    setGameDP('');
-                    setResultDP('none');
-                    makeRandom();
-                }}>시작하기</button>
-            </div>
 
             <div className="gugudan_box" style={{ display: gameDP }}>
                 <div>(문제 {count+1})</div>
@@ -85,11 +84,11 @@ function Game_choice(props) {
                 </p>
 
                 {/* 객관식 답 누를 수 있는 버튼 */}
-                <div className="Choice_Box">
+                <div className="Choice_Line">
                     <button className="Answer_Btn" id={answers[0]} onClick={check}>{answers[0]}</button>
                     <button className="Answer_Btn" id={answers[1]} onClick={check}>{answers[1]}</button>
                 </div>
-                <div className="Choice_Box">
+                <div className="Choice_Line">
                     <button className="Answer_Btn" id={answers[2]} onClick={check}>{answers[2]}</button>
                     <button className="Answer_Btn" id={answers[3]} onClick={check}>{answers[3]}</button>
                 </div>

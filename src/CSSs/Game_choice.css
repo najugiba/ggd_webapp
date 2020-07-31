@@ -1,4 +1,4 @@
-@media only screen and (max-width: 360px) {
+@media (min-width: 320px) and (max-width: 420px) {
     .Game_choice_Container{
         width: 100%;
     }
@@ -6,14 +6,18 @@
         width: 100%;
     }
     
-    .Choice_Box{
-        width: 100%;
+    .Choice_Line{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .Answer_Btn{
         width: 40%;
+        height: 50px;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
+        border-radius: 10px 10px 10px 10px;
     }
   }
