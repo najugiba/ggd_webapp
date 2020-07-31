@@ -124,10 +124,10 @@ function Navibar(props) {
             </StyledMenu>
             <div style={{textAlign:"center", width:'100%'}}>
                 <Route exact path="/" component={Homepage} />
-                <Route path='/showall' component={Showall} />
-                <Route path='/practice' component={Practice} />
-                <Route path='/easytest' component={EasyTest} />
-                <Route path='/checkscore' component={Checkscore} />
+                <Route path="/showall" component={Showall} />
+                <Route path="/practice" component={Practice} />
+                <Route path="/easytest" component={EasyTest} />
+                <Route path="/checkscore" component={Checkscore} />
             </div>
 
         </Router>

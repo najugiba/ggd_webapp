@@ -105,6 +105,8 @@ function Game(){
 
                                 mapingRightAnswer();
                                 mapingWrongAnswer();
+                                RightAnswer = [];
+                                WrongAnswer = [];
                             }
                         }
                     }
@@ -120,13 +122,14 @@ function Game(){
             {/* 시험 끝나면 display 될 곳 */}
             <div className="result_box" style={{display:resultDP}}>
                     <p>점수 : {score * 10}/100</p>
-                    
+
                     <div>
                         {RightAnswerList}
+                    </div>
+                    <div>
                         {WrongAnswerList}
                     </div>
                     
-                    <br/>
                     <button onClick={ e=>{
                         setScore(0);
                         setCount(0);

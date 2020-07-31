@@ -1,6 +1,7 @@
 import React from 'react';
 import Navibar from '../Utils/Navibar';
 import "../CSSs/MainPage.css";
+import Navibar2 from '../Utils/Navibar2';
 /* 
 메인페이지의 구성
     1. 두개의 div태그를 갖는다. (input창과 등록하기 버튼을 가진 화면 + 종류를 선택할 수 있는 화면)
@@ -56,7 +57,8 @@ class MainPage extends React.Component {
                 </div>
                 
                 <div className="choice" style={{display:this.state.choiceDP}}>
-                    <Navibar name={this.state.registerInput}/>
+                   {/* <Navibar name={this.state.registerInput}/> */} 
+                   <Navibar2 name={this.state.registerInput} />
                 </div>
                 
             </div>

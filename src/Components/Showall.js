@@ -22,18 +22,18 @@ function Showall() {
         for (let j = 1; j <= 5; j++) {
             let result = n + " x " + j + " = " + n * j ;
             answer = [...answer, result];
-            result =  n + " x " + j + " = " + "□";
+            result =  n + " x " + j;
             unshow1 = [...unshow1, result];
         }
         for(let j=6; j<10; j++){
             let result = n + " x " + j + " = " + n * j ;
             answerB = [...answerB, result];
-            result =  n + " x " + j + " = " + "□" ;
+            result =  n + " x " + j;
             unshow2 = [...unshow2, result];
         }
         let index = 0;
         const menuList = answer.map((menu) => (
-            <li className="showall_listitem" key={index++}>{menu}</li>)
+            <li className="showall_listitem" key={index++}>{menu}</li>) // key 중복 바꿔야함 !!=========================================
         );
         const menuList2 = answerB.map((menu)=>(
             <li className="showall_listitem" key={index++}>{menu}</li>

@@ -60,6 +60,7 @@ function Game_choice(props) {
             setGameDP('none');
             setResultDP('');
             EndOfGame();
+            randnum2 = 1;
         }
     }
 
