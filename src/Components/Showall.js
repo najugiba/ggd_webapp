@@ -11,7 +11,7 @@ function Showall() {
     const [b, setB] = useState();
     const [uns1, setUns1] = useState();
     const [uns2, setUns2] = useState();
-    const [dp1, setDp1] = useState('flex');
+    const [dp1, setDp1] = useState('flex');  
     const [dp2, setDp2] = useState('none');
 
 

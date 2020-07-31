@@ -21,7 +21,7 @@ class MainPage extends React.Component {
             registerInput : '',
             registerDP : '',
             choiceDP : 'none'
-        }
+        }  
     }
    
     render(){

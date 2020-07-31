@@ -7,7 +7,7 @@ import Game_choice from '../Utils/Game_choice';
 // 문제연습은 객관식
 // 시험보기만 주관식
 
-
+  
 function Practice() {
 
     const [dan, setDan] = useState();

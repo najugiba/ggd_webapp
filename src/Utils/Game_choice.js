@@ -93,7 +93,7 @@ function Game_choice(props) {
                     <button className="Answer_Btn" id={answers[3]} onClick={check}>{answers[3]}</button>
                 </div>
                 
-
+  
 
                 <div>
                     문제 수 : {count}/10
