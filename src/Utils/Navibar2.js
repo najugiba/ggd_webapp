@@ -45,7 +45,7 @@ class Navibar2 extends React.Component {
                         <IconButton className={classes.menuButton} id="hamburgerMenu" color="inherit" onClick={this.handleDrawerToggle}>
                             <MenuIcon />  
                         </IconButton>
-                        <p className="Top_bar_text">{toptitle}</p>
+                        <p className="Top_bar_text" style={{display:'inline-block', marginLeft:'auto', marginRight:'auto'}}>{toptitle}</p>
                     </AppBar>
                     <Drawer open={this.state.toggle}>
                         <div className="Navibar_imgbox">이미지</div>

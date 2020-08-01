@@ -7,13 +7,19 @@
    .linkitem {
        width: 150px;
    }
-
+   .Top_bar{
+       text-align: center;
+       height: 50px;
+       background-color: rgba(107, 105, 105, 0.5);
+   }
    .MuiButtonBase-root{
-       display: inline-block;
-
+        display: inline-block;
    }
    #hamburgerMenu {
-       width: 50px;
+        width: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
    }
 
    .Top_bar_text{
