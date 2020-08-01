@@ -1,5 +1,38 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../CSSs/Showall.css";
+
+
+let arr1=[], arr2=[], arr3=[], arr4=[];
+// 맨처음 2단을 보여주기 위해 그냥 2단을 먼저 넣어놓는 부분=================================
+    for (let j = 1; j <= 5; j++) {
+        let result = 2 + " x " + j + " = " + 2 * j ;
+        arr1 = [...arr1, result];
+        result =  2 + " x " + j;
+        arr2 = [...arr2, result];
+    }
+    for(let j=6; j<10; j++){
+        let result = 2 + " x " + j + " = " + 2 * j ;
+        arr3 = [...arr3, result];
+        result =  2 + " x " + j;
+        arr4 = [...arr4, result];
+    }
+    let index = 0;
+    let temp1 = arr1.map((menu) => (
+        <li className="showall_listitem" key={index++}>{menu}</li>) // key 중복 바꿔야함 !!=========================================
+    );
+    let temp2 = arr3.map((menu)=>(
+        <li className="showall_listitem" key={index++}>{menu}</li>
+    ))
+    let temp3 = arr2.map((menu)=>(
+        <li className="showall_listitem" key={index++}>{menu}</li>
+    ))
+    let temp4 = arr4.map((menu)=>(
+        <li className="showall_listitem" key={index++}>{menu}</li>
+    ))
+
+
+
+
 
 function Showall() {
     //여기는 render 부분이라고 생각하면 된다.
@@ -7,12 +40,16 @@ function Showall() {
     let unshow2 =[];
     let answer = [];
     let answerB = [];
-    const [a, setA] = useState();
-    const [b, setB] = useState();
-    const [uns1, setUns1] = useState();
-    const [uns2, setUns2] = useState();
+    const [a, setA] = useState(temp1);
+    const [b, setB] = useState(temp2);
+    const [uns1, setUns1] = useState(temp3);
+    const [uns2, setUns2] = useState(temp4);
     const [dp1, setDp1] = useState('flex');  
     const [dp2, setDp2] = useState('none');
+
+
+    
+    
 
 
     function show(n) {
@@ -39,10 +76,10 @@ function Showall() {
             <li className="showall_listitem" key={index++}>{menu}</li>
         ))
         const unshowList1 = unshow1.map((menu)=>(
-            <li className="showall_listiem" key={index++}>{menu}</li>
+            <li className="showall_listitem" key={index++}>{menu}</li>
         ))
         const unshowList2 = unshow2.map((menu)=>(
-            <li className="showall_listiem" key={index++}>{menu}</li>
+            <li className="showall_listitem" key={index++}>{menu}</li>
         ))
         setA(menuList);
         setB(menuList2);
@@ -62,6 +99,11 @@ function Showall() {
         setDp2('flex')
     }
 
+    useEffect(()=>{
+        console.log("D");
+    })
+
+    //InitialGugudan();
     return (
         <div className="Showall_Container">
             <div className="showmodebtn_box">
@@ -72,7 +114,7 @@ function Showall() {
             <div>
                 {/* 구구단 표 보여줄 곳 */}
                 <div className="show_Box" style={{display:dp1}}>
-                    <ul className="Showall_list">
+                    <ul className="Showall_list">  
                         {a}
                     </ul>
                     <ul className="Showall_list">

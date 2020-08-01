@@ -25,12 +25,13 @@ import "../CSSs/Checkscore.css";
         console.log(result);
         return result;
     }
+    let ForKeyUnique = 0;
 function Checkscore(){
 
     const [arr, setArr] = useState(GetScore());
 
     const list = arr.map(data => (
-        <li style={{listStyle:'none'}} key={data}>{data}</li>
+        <li style={{listStyle:'none'}} key={ForKeyUnique++}>{data}</li>
     ))
 
     return(
