@@ -8,7 +8,7 @@ import Game_choice from '../Utils/Game_choice';
 // 시험보기만 주관식
 
   
-function Practice() {
+function Practice({history}) {
 
     const [dan, setDan] = useState();
     const [btnDP, setBtnDP] = useState('');
@@ -20,11 +20,10 @@ function Practice() {
         setGameDP('');
         setBtnDP('none');
     }
-
     return (
         <div className="Practice_Container">
             <div style={{ display: gameDP }}>
-                <Game_choice dan={dan} />
+                <Game_choice dan={dan}/>
             </div>
 
             <div style={{ display: btnDP }}>

@@ -22,8 +22,6 @@ const styles = {
 };
 
 class Navibar2 extends React.Component {
-    
-    
     constructor(props) {
         super(props);
         this.state = {
@@ -55,7 +53,7 @@ class Navibar2 extends React.Component {
                         <MenuItem id="구구단 표" onClick={this.handleDrawerToggle}><Link name="구구단표 보기" className="linkitem" to="/showall">구구단 표</Link></MenuItem>
                         <MenuItem id="연습 하기" onClick={this.handleDrawerToggle}><Link name="연습 하기" className="linkitem" to="/practice">연습 하기</Link></MenuItem>
                         <MenuItem id="시험 보기" onClick={this.handleDrawerToggle}><Link name="시험 보기" className="linkitem" to="/easytest">시험 보기</Link></MenuItem>
-                        <MenuItem id="성적 확인" onClick={this.handleDrawerToggle}><Link name="성적 확인" className="linkitem" to="/checkscore">성적 확인</Link></MenuItem>
+                        <MenuItem id="성적 확인" onClick={this.handleDrawerToggle}><Link name="성적 확인" className="linkitem" to="/checkscore">{this.props.name}의 성적 확인</Link></MenuItem>
 
                     </Drawer>
                 </div>
