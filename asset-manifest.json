@@ -1,22 +1,27 @@
 {
   "files": {
-    "main.css": "/ggd_webapp/static/css/main.6dfd320c.chunk.css",
-    "main.js": "/ggd_webapp/static/js/main.18397766.chunk.js",
-    "main.js.map": "/ggd_webapp/static/js/main.18397766.chunk.js.map",
+    "main.css": "/ggd_webapp/static/css/main.1856d11d.chunk.css",
+    "main.js": "/ggd_webapp/static/js/main.4476d15d.chunk.js",
+    "main.js.map": "/ggd_webapp/static/js/main.4476d15d.chunk.js.map",
     "runtime-main.js": "/ggd_webapp/static/js/runtime-main.aa512825.js",
     "runtime-main.js.map": "/ggd_webapp/static/js/runtime-main.aa512825.js.map",
-    "static/js/2.f8b7ca94.chunk.js": "/ggd_webapp/static/js/2.f8b7ca94.chunk.js",
-    "static/js/2.f8b7ca94.chunk.js.map": "/ggd_webapp/static/js/2.f8b7ca94.chunk.js.map",
+    "static/js/2.3c220325.chunk.js": "/ggd_webapp/static/js/2.3c220325.chunk.js",
+    "static/js/2.3c220325.chunk.js.map": "/ggd_webapp/static/js/2.3c220325.chunk.js.map",
     "index.html": "/ggd_webapp/index.html",
-    "precache-manifest.e49b731327981abdff5f9e6fffa596d5.js": "/ggd_webapp/precache-manifest.e49b731327981abdff5f9e6fffa596d5.js",
+    "precache-manifest.23a41ae0700a73e0fe89b49062b8fb19.js": "/ggd_webapp/precache-manifest.23a41ae0700a73e0fe89b49062b8fb19.js",
     "service-worker.js": "/ggd_webapp/service-worker.js",
-    "static/css/main.6dfd320c.chunk.css.map": "/ggd_webapp/static/css/main.6dfd320c.chunk.css.map",
-    "static/js/2.f8b7ca94.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.f8b7ca94.chunk.js.LICENSE.txt"
+    "static/css/main.1856d11d.chunk.css.map": "/ggd_webapp/static/css/main.1856d11d.chunk.css.map",
+    "static/js/2.3c220325.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.3c220325.chunk.js.LICENSE.txt",
+    "static/media/Navibar2.css": "/ggd_webapp/static/media/BMJUA_ttf.7dbe95a7.ttf",
+    "static/media/mice.png": "/ggd_webapp/static/media/mice.2e6d331c.png",
+    "static/media/monkey.png": "/ggd_webapp/static/media/monkey.de7d8b29.png",
+    "static/media/rabbit.png": "/ggd_webapp/static/media/rabbit.3d07b642.png",
+    "static/media/tiger.png": "/ggd_webapp/static/media/tiger.14ad9867.png"
   },
   "entrypoints": [
     "static/js/runtime-main.aa512825.js",
-    "static/js/2.f8b7ca94.chunk.js",
-    "static/css/main.6dfd320c.chunk.css",
-    "static/js/main.18397766.chunk.js"
+    "static/js/2.3c220325.chunk.js",
+    "static/css/main.1856d11d.chunk.css",
+    "static/js/main.4476d15d.chunk.js"
   ]
 }
