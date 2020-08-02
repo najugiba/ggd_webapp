@@ -1,27 +1,74 @@
+@font-face {
+    font-family: "BMJUA";
+    src: url("../Fonts/BMJUA_ttf.ttf");
+}
 @media (min-width: 320px) and (max-width: 420px) {
+    .navibar_body{
+        height: 570px;
+        font-family: BMJUA;
+    }
    .Navibar_imgbox {
-       width: 180px;
+       width: 100px;
        height: 100px;
-       border-style: solid;
+       margin-top: 103px;
+       margin-left: 60px;
+       margin-right: 60px;
+   }
+   .Navi_Xbtn{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 14px;
+    background-image: url('../Images/Xbtn.png');
+}
+   .Navi_Xbtn:hover {
+       width: 25px;
+       height: 25px;
+       margin-left: 20px;
+       margin-top: 14px;
+       background-image: url('../Images/Xbtn.png');
+       cursor: pointer;
+   }
+   .Navibar2_img{
+       width: 100px;
+       height: 100px;
+   }
+   .linkitem1 {
+       width: 100%;
+       text-align: center;
+       margin-top: 7px;
+       font-family: BMJUA;
    }
    .linkitem {
-       width: 150px;
+       width: 100%;
+       text-align: center;
+       font-family: BMJUA;
    }
+   .linkitem:hover{
+    width: 100%;
+    text-align: center;
+    font-family: BMJUA;
+    }
    .Top_bar{
        text-align: center;
        height: 50px;
        background-color: rgba(107, 105, 105, 0.5);
+       font-family: BMJUA;
    }
    .MuiButtonBase-root{
         display: inline-block;
    }
    #hamburgerMenu {
-        width: 50px;
+        width: 70px;
+        height: 50px;
         position: fixed;
         top: 0;
         left: 0;
    }
-
+   .hamburgerIcon{
+       width: 40px;
+       height: 35px;
+   }
    .Top_bar_text{
        text-align: center;
        width: 250px;

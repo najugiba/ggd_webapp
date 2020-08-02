@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "../CSSs/Homepage.css";
 import { useHistory } from "react-router-dom";
-
 let userName = localStorage.getItem("Nickname");
 
-function Homepage({history}){
+let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
+function Homepage(props){
+
+    let history = useHistory();
+    console.log(props);
+    console.log(`여기는 Homepage 이고 Navibar2로 부터 받은 이미지 index = ${props.idx}`);
+
+    let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
+
+
     return(
         <div className="Homepage_Container">
             <div className="Homepage_ImgBox">
-                이미지
+                <img className="Homepage_img" src={require(`../Images/${ImgArr[props.idx]}.png`)}></img>
             </div>
             <div className="Homepage_BtnBox">
                 <button className="Homepage_Btn" id="1" type="button" onClick={()=> history.push("/showall")}>구구단 표</button>

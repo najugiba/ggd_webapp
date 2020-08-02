@@ -8,7 +8,8 @@ import Game_choice from '../Utils/Game_choice';
 // 시험보기만 주관식
 
   
-function Practice({history}) {
+let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
+function Practice(props) {
 
     const [dan, setDan] = useState();
     const [btnDP, setBtnDP] = useState('');
@@ -28,16 +29,16 @@ function Practice({history}) {
 
             <div style={{ display: btnDP }}>
                 <div className="Practice_imgbox">
-                    Imgae
+                    <img className="Practice_img" src={require(`../Images/${ImgArr[props.idx]}.png`)}></img>
                 </div>
-                <p>연습하고자 하는 구구단을 선택하세요</p>
-                <div className="Practice_Btn_Line">
+                <p className="Practice_text">연습하고자 하는 구구단을 선택하세요</p>
+                <div className="Practice_Btn_Line" style={{paddingLeft:'20px', paddingRight:'5px'}}>
                     <button className="Practice_Btn" id="2" onClick={danChoice}>2단</button>
                     <button className="Practice_Btn" id="3" onClick={danChoice}>3단</button>
                     <button className="Practice_Btn" id="4" onClick={danChoice}>4단</button>
                     <button className="Practice_Btn" id="5" onClick={danChoice}>5단</button>
                 </div>
-                <div className="Practice_Btn_Line">
+                <div className="Practice_Btn_Line" style={{paddingLeft:'20px', paddingRight:'5px'}}>
                     <button className="Practice_Btn" id="6" onClick={danChoice}>6단</button>
                     <button className="Practice_Btn" id="7" onClick={danChoice}>7단</button>
                     <button className="Practice_Btn" id="8" onClick={danChoice}>8단</button>

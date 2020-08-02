@@ -4,7 +4,6 @@
     }
     .Showall_Container {
         width: 100%;
-        border-style: groove;
         text-align: center;
     }
 
@@ -13,34 +12,67 @@
         height: 45px;
         padding-left: auto;
         padding-right: auto;
-        margin-top: 10px;
+        margin-top: 22px;
         margin-bottom: 10px;
     }
     .showmode_btn{
-        width: 40%;
-        height: 45px;
+        width: 130px;
+        height: 50px;
         margin-left: 10px;
         margin-right: 10px;
-        border-radius: 10px 10px 10px 10px; 
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
     }
-
+    .showmode_btn:hover{
+        width: 130px;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        background: #FFCC00;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-weight: bold;
+    }
     .dan_btn{
-        width: 20%;
-        height: 55px;
-        margin-left: 3px;
-        margin-right: 3px;
+        width: 59px;
+        height: 54px;
+        margin-right: 15px;
         margin-top: 5px;
-        border-radius: 10px 10px 10px 10px; 
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+    }
+    .dan_btn:hover{
+        width: 59px;
+        height: 54px;
+        margin-right: 15px;
+        margin-top: 5px;
+        background: #88D7F6;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        font-weight: bold;
     }
     .show_Box{
         display: flex;
-        width: 85%;
+        width: 280px;
         height: 280px;
-        border-style: solid;
         text-align: center;
         font-size: 25px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 17px;
+        background: #FFFEFE;
+        border: 1.5px dashed #E1E1E1;
+        border-radius: 5px;
     }
     
     .Showall_list{
