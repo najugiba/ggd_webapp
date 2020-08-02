@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "BMJUA";
+    src: url("../Fonts/BMJUA_ttf.ttf");
+}
 @media (min-width: 320px) and (max-width: 420px) {
     .body{
         height: 570px;
@@ -14,6 +18,7 @@
         padding-right: auto;
         margin-top: 22px;
         margin-bottom: 10px;
+        font-family: BMJUA;
     }
     .showmode_btn{
         width: 130px;
@@ -25,6 +30,7 @@
         box-sizing: border-box;
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        font-family: BMJUA;
     }
     .showmode_btn:hover{
         width: 130px;
@@ -37,6 +43,7 @@
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-weight: bold;
+        font-family: BMJUA;
     }
     .dan_btn{
         width: 59px;
@@ -48,6 +55,7 @@
         box-sizing: border-box;
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px; 
+        font-family: BMJUA;
     }
     .dan_btn:hover{
         width: 59px;
@@ -60,6 +68,7 @@
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px; 
         font-weight: bold;
+        font-family: BMJUA;
     }
     .show_Box{
         display: flex;
@@ -73,6 +82,7 @@
         background: #FFFEFE;
         border: 1.5px dashed #E1E1E1;
         border-radius: 5px;
+        font-family: BMJUA;
     }
     
     .Showall_list{
@@ -80,10 +90,12 @@
         width: 50%;
         list-style: none;
         padding-left: 0;
+        font-family: BMJUA;
     }
     .showall_listitem{
         width: 100%;
         margin-top: 9px;
-        margin-bottom: 9px;
+        margin-bottom: 20px;
+        font-family: BMJUA;
     }
   }
