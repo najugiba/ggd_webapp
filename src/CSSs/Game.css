@@ -16,10 +16,23 @@
         line-height: 30px;
         vertical-align: middle;
     }
-    .text{
-        font-size: 50px;
+    .Game_text{
+        font-size: 45px;
         margin-right: auto;
         margin-left: auto;
+        font-family: BMJUA;
+        color: #6A6A6A;
+    }
+    .InputBox{
+        width: 60px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 2px solid rgba(106, 106, 106, 0.25);
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 45px;
+        color: #6A6A6A;
+        text-align: center;
     }
     .Game_startBtn{
         margin-top: 100px;
@@ -124,5 +137,71 @@
         color: #6A6A6A;
         font-family: BMJUA;
         font-size: 15px;
+    }
+
+    .Keypad_Btn{
+        width: 80px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        color: #6A6A6A;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .Keypad_Btn:hover{
+        width: 80px;
+        height: 55px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        color: #6A6A6A;
+        font-size: 25px;
+        margin-bottom: 5px;
+        background-color: #88D7F6;
+    }
+    .Keypad_cancel{
+        background-image: url('../Images/Cancel.png');
+        background-color: #D9534F;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Keypad_check{
+        background-image: url('../Images/Check.png');
+        background-color: #5CB85C;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Result_Btn{
+        width: 200px;
+        height: 40px;
+        outline: 0em;
+    }
+    .Result_Btn:hover{
+        width: 200px;
+        height: 40px;
+        background-color: #88D7F6;
+        outline: 0em;
+    }
+
+    #Modal_box{
+        font-family: BMJUA;
+        font-size: 60px;
+        text-align: center;
+        line-height: 166px;
+        vertical-align: middle;
+        padding-top: 5px;
+        background-image: url('../Images/Clockimg_smal.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: 0;
     }
   }

@@ -5,6 +5,9 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
 import { useHistory } from "react-router-dom";
+import Clockimg from '../Images/Clockimg.png';
+
+
 // ==========================랜덤 수 발생 함수======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -51,7 +54,10 @@ let score = 0;
 const IncreaseScore = () => { score += 1; }
 const ZeroScore = () => { score = 0; }
 
-
+const SubmitAnswer = () => {
+    let ans = document.dab;
+    ans.submit();
+}
 
 
 function Game() {
@@ -76,13 +82,12 @@ function Game() {
             justifyContent: 'center',
         },
         paper: {
-            backgroundColor: theme.palette.background.paper,
-            border: '2px solid #000',
-            boxShadow: theme.shadows[5],
-            padding: theme.spacing(2, 4, 3),
+            width: 216,
+            height: 166,
         },
     }));
     const classes = useStyles();
+
     const handleOpen = () => {
         setOpen(true);
         countdonw();
@@ -105,7 +110,7 @@ function Game() {
     }
 
 
-
+    
 
 
 
@@ -148,7 +153,7 @@ function Game() {
                     }}
                 >
                     <Fade in={open}>
-                        <div className={classes.paper}>
+                        <div id="Modal_box" className={classes.paper}>
                             {textcount}
                         </div>
                     </Fade>
@@ -156,63 +161,151 @@ function Game() {
                 <div className="top_number">
                     문제 {count}
                 </div>
-                <p className="text" style={{ width: '100%' }}>　{randnum1}</p>
-                <p className="text" style={{ width: '100%' }}>
-                    <span className="text" style={{ width: '100%' }}><span className="text" style={{ marginLeft: '0' }}>x</span> <span className="text">{randnum2}</span></span>
-                </p>
-                <input
-                    type="text"
-                    value={answer}
-                    onChange={e => setAnswer(e.target.value)}
-                    onKeyPress={e => {
-                        if (e.key === 'Enter') {
+                
+                {/* 문제 나오는 부분 */}
+                <form>
+                <p className="Game_text">{randnum1} x {randnum2} =　 
+                    <input 
+                        className="InputBox"
+                        type="text"
+                        value={answer}
+                        onChange={e => setAnswer(e.target.value)}
+                        onKeyPress={e => {
+                            if (e.key === 'Enter') {
+                                if (Number(answer) === (randnum1 * randnum2)) {   //정답일때
+                                    setCount(count + 1);
+                                    console.log(`${score}에서 `);
+                                    //setScore(score + 1);
+                                    IncreaseScore();
+                                    console.log(`${score}로 증가`)
+                                    makeRandom();
+                                    setAnswer('');
+                                    RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
+                                    console.log(`정답, 현재 스코어 ${score}`);
+                                }
+                                else {                                          //오답일때
+                                    setCount(count + 1);
+                                    makeRandom();
+                                    setAnswer('');
+                                    WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
+                                    console.log("오답");
+                                }
+                                if (Number(count) === 10) {        // 모든 시험이 끝났을때
+                                    console.log(`맞음${score} 틀림:${count - score}`)
+                                    setGameDP('none');
+                                    setResultDP('');
+                                    gr.push(score);
+                                    localStorage.setItem("Totalscore", JSON.stringify(gr));
+                                    let today = new Date();
+                                    let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
+                                    let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                                    let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
 
-                            if (Number(answer) === (randnum1 * randnum2)) {   //정답일때
-                                setCount(count + 1);
-                                console.log(`${score}에서 `);
-                                //setScore(score + 1);
-                                IncreaseScore();
-                                console.log(`${score}로 증가`)
-                                makeRandom();
-                                setAnswer('');
-                                RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
-                                console.log(`정답, 현재 스코어 ${score}`);
-                            }
-                            else {                                          //오답일때
-                                setCount(count + 1);
-                                makeRandom();
-                                setAnswer('');
-                                WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
-                                console.log("오답");
-                            }
-                            if (Number(count) === 10) {        // 모든 시험이 끝났을때
-                                console.log(`맞음${score} 틀림:${count - score}`)
-                                setGameDP('none');
-                                setResultDP('');
-                                gr.push(score);
-                                localStorage.setItem("Totalscore", JSON.stringify(gr));
-                                let today = new Date();
-                                let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
-                                let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
-                                let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
+                                    console.log(localStorage.getItem("Totalscore"));
+                                    console.log(localStorage.getItem("YearOfScore"));
+                                    console.log(localStorage.getItem("MonthOfScore"));
+                                    console.log(localStorage.getItem("DateOfScore"));
 
-                                console.log(localStorage.getItem("Totalscore"));
-                                console.log(localStorage.getItem("YearOfScore"));
-                                console.log(localStorage.getItem("MonthOfScore"));
-                                console.log(localStorage.getItem("DateOfScore"));
-
-                                mapingRightAnswer();
-                                mapingWrongAnswer();
-                                RightAnswer = [];
-                                WrongAnswer = [];
+                                    mapingRightAnswer();
+                                    mapingWrongAnswer();
+                                    RightAnswer = [];
+                                    WrongAnswer = [];
+                                }
                             }
                         }
-                    }
-                    }
-                >
-                </input>
-               
+                        }
+                    >
+                    </input>
+                </p>
 
+               
+               
+               <div>
+                    <button id="1" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>1</button>
+                    <button id="2" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>2</button>
+                    <button id="3" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>3</button>
+               </div>
+
+              <div>
+                    <button id="4" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>4</button>
+                    <button id="5" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>5</button>
+                    <button id="6" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>6</button>
+              </div>
+               
+               <div>
+                    <button id="7" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>7</button>
+                    <button id="8" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>8</button>
+                    <button id="9" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>9</button>
+               </div>
+               
+               <div>
+                    <button className="Keypad_Btn Keypad_cancel" onClick={e=>{
+                        setAnswer('');
+                    }}>　</button>
+                    <button id="0" className="Keypad_Btn" onClick={e=>{
+                        setAnswer(answer + e.target.id);
+                    }}>0</button>
+                    <button className="Keypad_Btn Keypad_check" onClick={e=>{
+                        if (Number(answer) === (randnum1 * randnum2)) {   //정답일때
+                            setCount(count + 1);
+                            console.log(`${score}에서 `);
+                            //setScore(score + 1);
+                            IncreaseScore();
+                            console.log(`${score}로 증가`)
+                            makeRandom();
+                            setAnswer('');
+                            RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
+                            console.log(`정답, 현재 스코어 ${score}`);
+                        }
+                        else {                                          //오답일때
+                            setCount(count + 1);
+                            makeRandom();
+                            setAnswer('');
+                            WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
+                            console.log("오답");
+                        }
+                        if (Number(count) === 10) {        // 모든 시험이 끝났을때
+                            console.log(`맞음${score} 틀림:${count - score}`)
+                            setGameDP('none');
+                            setResultDP('');
+                            gr.push(score);
+                            localStorage.setItem("Totalscore", JSON.stringify(gr));
+                            let today = new Date();
+                            let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
+                            let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                            let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
+
+                            console.log(localStorage.getItem("Totalscore"));
+                            console.log(localStorage.getItem("YearOfScore"));
+                            console.log(localStorage.getItem("MonthOfScore"));
+                            console.log(localStorage.getItem("DateOfScore"));
+
+                            mapingRightAnswer();
+                            mapingWrongAnswer();
+                            RightAnswer = [];
+                            WrongAnswer = [];
+                        }
+                    }}>　</button>
+               </div>
+               </form>
             </div>
 
             {/* 시험 끝나면 display 될 곳 */}
@@ -241,7 +334,7 @@ function Game() {
                 </div>
                 
 
-                <button onClick={e => {
+                <button className="Result_Btn" onClick={e => {
                     // setScore(0);
                     ZeroScore();
                     setCount(1);
@@ -251,7 +344,7 @@ function Game() {
                     handleOpen();
                     history.push("/checkscore")
                 }}>성적 확인하기</button>
-                <button onClick={e=>{
+                <button className="Result_Btn" onClick={e=>{
                      ZeroScore();
                      setCount(1);
                      setAnswer('');
