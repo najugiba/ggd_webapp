@@ -98,8 +98,8 @@
         height: 570px;
     }
     .Practice_imgbox{
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
         margin-top: 54px;
         margin-left: auto;
         margin-right: auto;
@@ -107,8 +107,8 @@
         margin-bottom: 34px;
     }
     .Practice_img{
-        width: 180px;
-        height: 180px;
+        width: 250px;
+        height: 250px;
     }
     .Practice_text{
         font-family: BMJUA;
@@ -119,8 +119,8 @@
     }
 
     .Practice_Btn{
-        width: 59px;
-        height: 54px;
+        width: 83px;
+        height: 80px;
         margin-top: 21px;
         border-radius: 10px 10px 10px 10px;  
         margin-right: 15px;
@@ -134,8 +134,8 @@
         outline: 0;
     }
     .Practice_Btn:hover{
-        width: 59px;
-        height: 54px;
+        width: 83px;
+        height: 80px;
         margin-top: 21px;
         border-radius: 10px 10px 10px 10px;  
         margin-right: 15px;
@@ -148,8 +148,8 @@
         font-family: BMJUA;
     }
     .Practice_Btn2{  
-        width: 283px;
-        height: 54px;
+        width: 394px;
+        height: 80px;
         margin-top: 7px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
@@ -163,8 +163,8 @@
         font-family: BMJUA;
     }
     .Practice_Btn2:hover{  
-        width: 283px;
-        height: 54px;
+        width: 394px;
+        height: 80px;
         margin-top: 7px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;

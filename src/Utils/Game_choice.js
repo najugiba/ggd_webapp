@@ -126,15 +126,19 @@ const Term = () => {
         t -= 1;
     }, 500);
 }
-
-
 function Game_choice(props, { history }) {
+    let DP = "";
+    console.log(window.innerWidth);
+    if(window.innerWidth > 360){
+        DP = "inline-block";
+    }else {DP = "none";}
     const [answer, setAnswer] = useState('');
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
     const [descDP, setDescDP] = useState('');
-    const [gameDP, setGameDP] = useState('');
+    const [gameDP, setGameDP] = useState('inline-block');
     const [resultDP, setResultDP] = useState('none');
+    const [TabletChoiceBoxDP, setTCBD] = useState(DP);
     randnum1 = props.dan;
     if(props.dan !== "10") randnum2 = count+1;
     // 모달 위한 함수들
@@ -169,6 +173,7 @@ function Game_choice(props, { history }) {
             setResultDP('');
             EndOfGame();
             handleOpen();
+            setTCBD('none');
             randnum2 = 1;
         }
     }
@@ -187,6 +192,22 @@ function Game_choice(props, { history }) {
                 </p>
                 <div className="cutline"></div>
                 {/* 객관식 답 누를 수 있는 버튼 */}
+                <div className="OnMobile_ChoiceBox">
+                    <div className="Choice_Line">
+                        <button className="Answer_Btn" id={answers[0]} onClick={check}>{answers[0]}</button>
+                        <button className="Answer_Btn" id={answers[1]} onClick={check}>{answers[1]}</button>
+                    </div>
+                    <div className="Choice_Line">
+                        <button className="Answer_Btn" id={answers[2]} onClick={check}>{answers[2]}</button>
+                        <button className="Answer_Btn" id={answers[3]} onClick={check}>{answers[3]}</button>
+                    </div>
+                </div>
+                <div className="OnTablet_AnswerBox">
+                </div>
+            </div>
+
+            <div className="OnTablet_ChoiceBox" style={{display:TabletChoiceBoxDP}}>
+                <p className="OnTablet_text">다음 중에 알맞은 답을 고르세요</p>
                 <div className="Choice_Line">
                     <button className="Answer_Btn" id={answers[0]} onClick={check}>{answers[0]}</button>
                     <button className="Answer_Btn" id={answers[1]} onClick={check}>{answers[1]}</button>
@@ -195,9 +216,8 @@ function Game_choice(props, { history }) {
                     <button className="Answer_Btn" id={answers[2]} onClick={check}>{answers[2]}</button>
                     <button className="Answer_Btn" id={answers[3]} onClick={check}>{answers[3]}</button>
                 </div>
-
-
             </div>
+
 
             <div className="result_box" style={{ display: resultDP }}>
                 <Modal
@@ -220,9 +240,12 @@ function Game_choice(props, { history }) {
                                 setScore(0);
                                 setCount(0);
                                 setAnswer('');
-                                setGameDP('');
+                                setGameDP('inline-block');
                                 setResultDP('none');
                                 randnum2 = 1;
+                                if(window.innerWidth > 360){
+                                    setTCBD('inline-block');
+                                }
                                 handleClose();
                                 O = 0;
                                 X = 0;

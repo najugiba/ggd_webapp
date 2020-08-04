@@ -131,6 +131,7 @@ function Showall() {
                 </div>
                 {/* 구구단 표 고르는 버튼들 */}
                 <div className="dan_btn_Container">
+                    <p className="OnTablet_text">연습할 구구단을 선택해주세요!</p>
                     <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
                         <button className="dan_btn" id="2" onClick={btnClick}>2단</button>
                         <button className="dan_btn" id="3" onClick={btnClick}>3단</button>
@@ -143,12 +144,14 @@ function Showall() {
                         <button className="dan_btn" id="8" onClick={btnClick}>8단</button>
                         <button className="dan_btn" id="9" onClick={btnClick}>9단</button>
                     </div>
+
+                    <div className="OnTablet">
+                        <button className="showmode_btn" onClick={modeClick1}>답보기</button>
+                        <button className="showmode_btn" onClick={modeClick2}>답가리기</button>
+                    </div>
                 </div>
                 
-                
-
             </div>
-            
         </div>
     )
 }
