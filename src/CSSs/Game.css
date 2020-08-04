@@ -191,6 +191,9 @@
         background-color: #88D7F6;
         outline: 0em;
     }
+    .Result_Btn1{
+        margin-top: 7px;
+    }
 
     #Modal_box{
         font-family: BMJUA;
