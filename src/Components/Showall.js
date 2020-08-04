@@ -111,7 +111,7 @@ function Showall() {
                 <button className="showmode_btn" onClick={modeClick2}>답가리기</button>
             </div>
             
-            <div>
+            <div className="ShowBox_BtnBox">
                 {/* 구구단 표 보여줄 곳 */}
                 <div className="show_Box" style={{display:dp1}}>
                     <ul className="Showall_list">  
@@ -130,18 +130,21 @@ function Showall() {
                     </ul>
                 </div>
                 {/* 구구단 표 고르는 버튼들 */}
-                <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
-                    <button className="dan_btn" id="2" onClick={btnClick}>2단</button>
-                    <button className="dan_btn" id="3" onClick={btnClick}>3단</button>
-                    <button className="dan_btn" id="4" onClick={btnClick}>4단</button>
-                    <button className="dan_btn" id="5" onClick={btnClick}>5단</button>
+                <div className="dan_btn_Container">
+                    <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
+                        <button className="dan_btn" id="2" onClick={btnClick}>2단</button>
+                        <button className="dan_btn" id="3" onClick={btnClick}>3단</button>
+                        <button className="dan_btn" id="4" onClick={btnClick}>4단</button>
+                        <button className="dan_btn" id="5" onClick={btnClick}>5단</button>
+                    </div>
+                    <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
+                        <button className="dan_btn" id="6" onClick={btnClick}>6단</button>
+                        <button className="dan_btn" id="7" onClick={btnClick}>7단</button>
+                        <button className="dan_btn" id="8" onClick={btnClick}>8단</button>
+                        <button className="dan_btn" id="9" onClick={btnClick}>9단</button>
+                    </div>
                 </div>
-                <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
-                    <button className="dan_btn" id="6" onClick={btnClick}>6단</button>
-                    <button className="dan_btn" id="7" onClick={btnClick}>7단</button>
-                    <button className="dan_btn" id="8" onClick={btnClick}>8단</button>
-                    <button className="dan_btn" id="9" onClick={btnClick}>9단</button>
-                </div>
+                
                 
 
             </div>

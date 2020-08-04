@@ -90,3 +90,93 @@
         font-family: BMJUA;
     }
   }
+
+  @media (min-width: 1025px) and (max-width: 1280px) {
+
+    .Practice_Container {
+        width: 100%;
+        height: 570px;
+    }
+    .Practice_imgbox{
+        width: 180px;
+        height: 180px;
+        margin-top: 54px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: contain;
+        margin-bottom: 34px;
+    }
+    .Practice_img{
+        width: 180px;
+        height: 180px;
+    }
+    .Practice_text{
+        font-family: BMJUA;
+    }
+    .Practice_Btn_Line{        
+        font-family: BMJUA;
+        outline: 0;
+    }
+
+    .Practice_Btn{
+        width: 59px;
+        height: 54px;
+        margin-top: 21px;
+        border-radius: 10px 10px 10px 10px;  
+        margin-right: 15px;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        outline: 0;
+    }
+    .Practice_Btn:hover{
+        width: 59px;
+        height: 54px;
+        margin-top: 21px;
+        border-radius: 10px 10px 10px 10px;  
+        margin-right: 15px;
+        background: #88D7F6;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: BMJUA;
+    }
+    .Practice_Btn2{  
+        width: 283px;
+        height: 54px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 10px 10px 10px 10px;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        outline: 0;
+        font-family: BMJUA;
+    }
+    .Practice_Btn2:hover{  
+        width: 283px;
+        height: 54px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 10px 10px 10px 10px;
+
+        background: #88D7F6;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-weight: bold;
+        outline: 0;
+        font-family: BMJUA;
+    }
+    
+}
