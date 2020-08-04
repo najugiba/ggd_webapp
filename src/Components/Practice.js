@@ -17,7 +17,7 @@ function Practice(props) {
 
     const danChoice = e => {
         setDan(e.target.id);
-        alert(`${e.target.id}을 선택했습니다.`)
+        alert(`${e.target.id}단을 연습합니다.`)
         setGameDP('');
         setBtnDP('none');
     }
@@ -44,7 +44,7 @@ function Practice(props) {
                     <button className="Practice_Btn" id="8" onClick={danChoice}>8단</button>
                     <button className="Practice_Btn" id="9" onClick={danChoice}>9단</button>
                 </div>
-                <button className="Practice_Btn2" id="all">모두</button>
+                <button className="Practice_Btn2" id="10" onClick={danChoice}>모두</button>
 
             </div>
 

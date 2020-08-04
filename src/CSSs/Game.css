@@ -1,5 +1,128 @@
+@font-face {
+    font-family: "BMJUA";
+    src: url("../Fonts/BMJUA_ttf.ttf");
+}
+
 @media (min-width: 320px) and (max-width: 420px) {
+    .top_number{
+        width: 100px;
+        height: 30px;
+        margin-left: 24px;
+        margin-top: 24px;
+        background: #FFFEFE;
+        border: 1px dashed rgba(106, 106, 106, 0.5);
+        border-radius: 20px;
+        font-size: 13px;
+        line-height: 30px;
+        vertical-align: middle;
+    }
     .text{
         font-size: 50px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .Game_startBtn{
+        margin-top: 100px;
+        width: 200px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+    }
+    .result_text{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        height: 31px;
+        color: #3D3A3A;
+    }
+    .result_score{
+        font-family: BMJUA;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        color: rgba(106, 106, 106, 0.9);
+        height: 51px;
+        margin-bottom: 0em;
+    }
+    .cutline{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 3px;
+        width: 280px;
+        height: 0px;
+        border: 2px solid rgba(231, 228, 228, 0.815);
+    }
+
+    .RightWrong_Container{
+        display: flex;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .Right_box{
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 60px;
+        background: #5CB85C;
+        border: 2px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 20px;
+
+    }
+    .Wrong_box{
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 60px;
+        background: #D9534F;
+        border: 2px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 20px;
+    }
+    .result_problem{
+        display: flex;
+        width: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+        border: 2px dashed #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .result_rightPb{
+        width: 89px;
+        text-align: left;
+        margin-right: 5px;
+        margin-left: 20px;
+    }
+    .result_wrongPb{
+        width: 89px;
+        text-align: left;
+        margin-left: 5px;
+    }
+    .result_listitem{
+        margin-top: 3px;
+        margin-bottom: 4px;
+        color: #6A6A6A;
+        font-family: BMJUA;
+        font-size: 15px;
     }
   }

@@ -1,11 +1,12 @@
 import React, { useState } from 'react'
 import "../CSSs/Homepage.css";
 import { useHistory } from "react-router-dom";
-let userName = localStorage.getItem("Nickname");
 
 let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
 function Homepage(props){
 
+    const [currentUserName, setCurrentUserName] = useState('');
+    let userName = localStorage.getItem("Nickname");
     let history = useHistory();
     console.log(props);
     console.log(`여기는 Homepage 이고 Navibar2로 부터 받은 이미지 index = ${props.idx}`);

@@ -1,11 +1,34 @@
+@font-face {
+    font-family: "BMJUA";
+    src: url("../Fonts/BMJUA_ttf.ttf");
+}
+
 @media (min-width: 320px) and (max-width: 420px) {
     .Game_choice_Container{
         width: 100%;
     }
     .gugudan_box{
         width: 100%;
+       font-family: BMJUA;
     }
-    
+    .Problem_numberBox{
+        width: 100px;
+        height: 30px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 15px;
+        line-height: 18px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        border: 1px dashed rgba(106, 106, 106, 0.5);
+        border-radius: 20px;
+        color: #6A6A6A;
+        justify-content: center;
+        margin-top: 31px;
+        margin-left: 24px;
+    }
     .Choice_Line{
         width: 90%;
         margin-left: auto;
@@ -19,5 +42,83 @@
         margin-right: 10px;
         margin-top: 10px;
         border-radius: 10px 10px 10px 10px;  
+        font-family: BMJUA;
+        outline: 0;
+    }
+    .Answer_Btn:hover{
+        width: 40%;
+        height: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 10px 10px 10px 10px; 
+        background-color:  #88D7F6; 
+        font-weight: bold;
+        font-family: BMJUA;
+        outline: 0;
+    }
+    .text{
+        font-size: 75px;
+        margin-bottom: 22px;
+        margin-top: 37px;
+    }
+    .cutline{
+        margin-left: auto;
+        margin-right: auto;
+        width: 280px;
+        height: 0px;
+        border: 2px solid rgba(106, 106, 106, 0.5);
+    }
+
+
+    .Result_text{
+        height: 23px;
+        left: 58px;
+        top: 209px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        color: #6A6A6A;
+    }
+    .Result_text2{
+        font-size: 35px;
+        color: rgba(56, 53, 53, 0.9);
+    }
+
+    .Result_Btn {
+        display: block;
+        width: 225px;
+        height: 40px;
+        background: #FFFEFE;
+        border: 1px dashed rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 1.5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 0;
+    }
+    .Result_Btn:hover{
+        display: block;
+        width: 225px;
+        height: 40px;
+        background: #FFFEFE;
+        border: 1px dashed rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 4px 1.5px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        outline: 0;
+        background-color: #88D7F6;
+    }
+    .Result_Btn1{
+        margin-top: 59px;
+        outline: 0;
     }
   }

@@ -24,11 +24,9 @@
     .Practice_text{
         font-family: BMJUA;
     }
-    .Practice_Btn_Line{
-        width: 85%;
-        margin-left: auto;
-        margin-right: auto;
+    .Practice_Btn_Line{        
         font-family: BMJUA;
+        outline: 0;
     }
 
     .Practice_Btn{
@@ -44,6 +42,7 @@
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-family: BMJUA;
+        outline: 0;
     }
     .Practice_Btn:hover{
         width: 59px;
@@ -71,6 +70,7 @@
         box-sizing: border-box;
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        outline: 0;
         font-family: BMJUA;
     }
     .Practice_Btn2:hover{  
@@ -86,6 +86,7 @@
         box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-weight: bold;
+        outline: 0;
         font-family: BMJUA;
     }
   }

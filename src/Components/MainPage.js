@@ -88,11 +88,12 @@ class MainPage extends React.Component {
                         </div>
                         
                     </div>
-                    <p className="Mainpage_text">이름을 입력해주세요</p>
+                    <p className="Mainpage_text">캐릭터를 선택해주세요.</p>
                     <input
                         className="Main_InputBox"
                         type="text"
                         value={this.state.registerInput}
+                        placeholder="이름을 입력해주세요."
                         onChange={e => { this.setState({ registerInput: e.target.value }) }}>
 
                     </input>

@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Timer() {
+export default function Timer(props) {
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
   const [textcount, setTextcount] = useState(3);
@@ -31,7 +31,7 @@ export default function Timer() {
     setOpen(false);
   };
 
-  let t = 3;
+  let t = props.clock;
   const countdonw = () => {
       const test = setInterval(()=>{
           if(t === 1){

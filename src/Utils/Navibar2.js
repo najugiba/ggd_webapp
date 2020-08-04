@@ -12,7 +12,7 @@ import Showall from '../Components/Showall';
 import Practice from '../Components/Practice';
 import Homepage from '../Components/Homepage';
 import '../CSSs/Navibar2.css';
-import Xbtn from '../Images/Xbtn.png';
+
 const styles = {
     root: {
         flexGrow: 1,
@@ -42,7 +42,7 @@ class Navibar2 extends React.Component {
     }
 
     setcolor = () => {
-        if(this.props.imgidx === 0 || this.props.idx === 2){
+        if(this.props.imgidx === 0 || this.props.imgidx === 2){
             this.setState({naviColor : '#87CEEB'})
         }else{
             this.setState({naviColor : '#F0A7B4'})
@@ -68,7 +68,7 @@ class Navibar2 extends React.Component {
                             <div className="Navi_Xbtn" onClick={this.handleDrawerToggle}>
                             </div >
                             <div className="Navibar_imgbox">
-                                <img className="Navibar2_img" src={require(`../Images/${ImgArr[0]}.png`)}></img>
+                                <img className="Navibar2_img" src={require(`../Images/${ImgArr[this.props.imgidx]}.png`)}></img>
                             </div>
                             <MenuItem onClick={this.handleDrawerToggle}><Link name="홈" className="linkitem linkitem1" to="/" >홈페이지</Link></MenuItem>
                             <MenuItem id="구구단 표" onClick={this.handleDrawerToggle}><Link name="구구단표 보기" className="linkitem" to="/showall">구구단 표</Link></MenuItem>

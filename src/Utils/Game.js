@@ -4,6 +4,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
+import { useHistory } from "react-router-dom";
 // ==========================랜덤 수 발생 함수======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -35,12 +36,12 @@ let RightAnswerList, WrongAnswerList;
 let RightAnswerListIndex = 0, WrongAnswerListIndex = 0;
 const mapingRightAnswer = () => {
     RightAnswerList = RightAnswer.map(data => (
-        <li style={{ listStyle: 'none', color: 'blue' }} key={RightAnswerListIndex++}>{data}</li>
+        <li className="result_listitem" style={{ listStyle: 'none', color: 'blue' }} key={RightAnswerListIndex++}>{data}</li>
     ))
 }
 const mapingWrongAnswer = () => {
     WrongAnswerList = WrongAnswer.map(data => (
-        <li style={{ listStyle: 'none', color: 'red' }} key={WrongAnswerListIndex++}>{data}</li>
+        <li className="result_listitem" style={{ listStyle: 'none', color: 'red' }} key={WrongAnswerListIndex++}>{data}</li>
     ))
 }
 
@@ -65,6 +66,7 @@ function Game() {
     const [textcount, setTextcount] = useState(3);
 
 
+    let history = useHistory();
 
     //==================== 타이머 관련 함수 =============================================
     const useStyles = makeStyles((theme) => ({
@@ -118,7 +120,7 @@ function Game() {
         <div>
             {/* 게임 시작을 누르는 div */}
             <div className="desc_box" style={{ display: descDP }}>
-                <button onClick={e => {
+                <button className="Game_startBtn" onClick={e => {
                     setDescDP('none');
                     setGameDP('');
                     setResultDP('none');
@@ -151,8 +153,10 @@ function Game() {
                         </div>
                     </Fade>
                 </Modal>
-
-                <p className="text" style={{ width: '100%' }}>{randnum1}</p>
+                <div className="top_number">
+                    문제 {count}
+                </div>
+                <p className="text" style={{ width: '100%' }}>　{randnum1}</p>
                 <p className="text" style={{ width: '100%' }}>
                     <span className="text" style={{ width: '100%' }}><span className="text" style={{ marginLeft: '0' }}>x</span> <span className="text">{randnum2}</span></span>
                 </p>
@@ -207,22 +211,35 @@ function Game() {
                     }
                 >
                 </input>
-                <div>
-                    문제 수 : {count}/10
-                </div>
+               
 
             </div>
 
             {/* 시험 끝나면 display 될 곳 */}
             <div className="result_box" style={{ display: resultDP }}>
-                <p>점수 : {score * 10}/100</p>
-
-                <div>
-                    {RightAnswerList}
+                <p className="result_text">점수</p>
+                <p className="result_score">{score * 10}</p>
+                <div className="cutline"></div>
+                <div className="cutline"></div>
+                <div className="RightWrong_Container">
+                    <div className="Right_box">
+                        {score} <br/>
+                        정답
+                    </div>
+                    <div className="Wrong_box">
+                        {10-score} <br/>
+                        오답
+                    </div>
                 </div>
-                <div>
-                    {WrongAnswerList}
+                <div className="result_problem">
+                    <div className="result_rightPb">
+                        {RightAnswerList}
+                    </div>
+                    <div className="result_wrongPb">
+                        {WrongAnswerList}
+                    </div>
                 </div>
+                
 
                 <button onClick={e => {
                     // setScore(0);
@@ -232,7 +249,18 @@ function Game() {
                     setGameDP('');
                     setResultDP('none');
                     handleOpen();
-                }}>다시하기</button>
+                    history.push("/checkscore")
+                }}>성적 확인하기</button>
+                <button onClick={e=>{
+                     ZeroScore();
+                     setCount(1);
+                     setAnswer('');
+                     setGameDP('');
+                     setResultDP('none');
+                    history.push("/")
+                }}>
+                    홈으로 가기
+                </button>
             </div>
         </div>
     )
