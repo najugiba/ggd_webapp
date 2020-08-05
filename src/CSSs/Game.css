@@ -232,7 +232,7 @@
 
 @media (min-width: 1024px) and (max-width: 1280px){
     .gugudan_box{
-        width: 1025px;
+        width: 100%;
     }
     .Form{
         display: inline-block;
