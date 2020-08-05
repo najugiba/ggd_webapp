@@ -60,7 +60,9 @@ const SubmitAnswer = () => {
 }
 
 
-function Game() {
+let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
+
+function Game(props) {
     const [answer, setAnswer] = useState('');
     // const [score, setScore] = useState(0);
     const [count, setCount] = useState(1);
@@ -163,7 +165,7 @@ function Game() {
                 </div>
 
                 {/* 문제 나오는 부분 */}
-                <form>
+                <form className="Form">
                     <p className="Game_text">{randnum1} x {randnum2} =
                     <input
                             className="InputBox"
@@ -322,11 +324,11 @@ function Game() {
             </div>
 
             {/* 시험 끝나면 display 될 곳 */}
-            <div className="result_box" style={{ display: resultDP }}>
+            <div className="G_result_box" style={{ display: resultDP }}>
                 <p className="result_text">점수</p>
                 <p className="result_score">{score * 10}</p>
-                <div className="cutline"></div>
-                <div className="cutline"></div>
+                <div className="G_cutline"></div>
+                <div className="G_cutline"></div>
                 <div className="RightWrong_Container">
                     <div className="Right_box">
                         {score} <br />
@@ -347,26 +349,37 @@ function Game() {
                 </div>
 
 
-                <button className="Result_Btn Result_Btn1" onClick={e => {
-                    // setScore(0);
-                    ZeroScore();
-                    setCount(1);
-                    setAnswer('');
-                    setGameDP('');
-                    setResultDP('none');
-                    handleOpen();
-                    history.push("/checkscore")
-                }}>성적 확인하기</button>
-                <button className="Result_Btn" onClick={e => {
-                    ZeroScore();
-                    setCount(1);
-                    setAnswer('');
-                    setGameDP('');
-                    setResultDP('none');
-                    history.push("/")
-                }}>
-                    홈으로 가기
-                </button>
+               
+                <div className="result_Btn_div">
+                    <div className="OnTablet_ResultScoreDiv">
+                            <img className="OnTablet_ResultImg" src={require(`../Images/${ImgArr[props.idx]}.png`)}></img>
+                            <p className="OnTablet_Resulttext1">점수</p>
+                            <p className="OnTablet_Resulttext2">{score * 10}</p>
+                            <div className="OnTablet_Cutline"></div>
+                            <div className="OnTablet_Cutline"></div>
+                    </div>
+                    <button className="G_Result_Btn G_Result_Btn1" onClick={e => {
+                        // setScore(0);
+                        ZeroScore();
+                        setCount(1);
+                        setAnswer('');
+                        setGameDP('');
+                        setResultDP('none');
+                        handleOpen();
+                        history.push("/checkscore")
+                    }}>성적 확인하기</button>
+                    <button className="G_Result_Btn" onClick={e => {
+                        ZeroScore();
+                        setCount(1);
+                        setAnswer('');
+                        setGameDP('');
+                        setResultDP('none');
+                        history.push("/")
+                    }}>
+                        홈으로 가기
+                    </button>
+                </div>
+                
             </div>
         </div>
     )

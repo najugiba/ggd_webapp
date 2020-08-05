@@ -8,6 +8,8 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is required for IE 11 support
 import { createHashHistory } from 'history'
+
+import { useHistory } from "react-router-dom";
 export const history = createHashHistory()
 /* =========================== 랜덤수 필요시 활성화 할 것======================================
 let generateRandom = function (min, max) {
@@ -126,19 +128,15 @@ const Term = () => {
         t -= 1;
     }, 500);
 }
-function Game_choice(props, { history }) {
-    let DP = "";
-    console.log(window.innerWidth);
-    if(window.innerWidth > 360){
-        DP = "inline-block";
-    }else {DP = "none";}
+
+function Game_choice(props) {
     const [answer, setAnswer] = useState('');
     const [score, setScore] = useState(0);
     const [count, setCount] = useState(0);
     const [descDP, setDescDP] = useState('');
     const [gameDP, setGameDP] = useState('inline-block');
     const [resultDP, setResultDP] = useState('none');
-    const [TabletChoiceBoxDP, setTCBD] = useState(DP);
+    const [TabletChoiceBoxDP, setTCBD] = useState('');
     randnum1 = props.dan;
     if(props.dan !== "10") randnum2 = count+1;
     // 모달 위한 함수들
@@ -179,10 +177,14 @@ function Game_choice(props, { history }) {
     }
    
     makeRandom(props.dan);
-
+    
+    let history = useHistory();
+    const goHome = () =>{
+        history.push("/");
+    }
     return (
         <div className="Game_choice_Container">
-            <div className="gugudan_box" style={{ display: gameDP }}>
+            <div className="GH_gugudan_box" style={{ display: gameDP }}>
                 <div className="Problem_numberBox">문제 {count + 1}</div>
                 <p className="text" style={{ width: '100%' }}>　　　{randnum1}</p>
                 <p className="text" style={{ width: '100%' }}>
@@ -192,7 +194,7 @@ function Game_choice(props, { history }) {
                 </p>
                 <div className="cutline"></div>
                 {/* 객관식 답 누를 수 있는 버튼 */}
-                <div className="OnMobile_ChoiceBox">
+                <div className="OnMobile_ChoiceBox" >
                     <div className="Choice_Line">
                         <button className="Answer_Btn" id={answers[0]} onClick={check}>{answers[0]}</button>
                         <button className="Answer_Btn" id={answers[1]} onClick={check}>{answers[1]}</button>
@@ -257,7 +259,8 @@ function Game_choice(props, { history }) {
                                 randnum2 = 1;
                                 O = 0;
                                 X = 0;
-                                handleClose(); 
+                                handleClose();
+                                goHome(); 
                             }}>홈으로 가기
                             </button>
                         </div>

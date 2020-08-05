@@ -79,12 +79,12 @@ class Navibar2 extends React.Component {
                     </Drawer>
                 </div>
                 <div style={{textAlign:"center", width:'100%'}}>
-                <Route exact path="/" render={()=> <Homepage idx={this.props.imgidx}/>} />
-                <Route path="/showall" component={Showall} />
-                <Route path="/practice" render={() => <Practice idx={this.props.imgidx}/>} />
-                <Route path="/easytest" component={EasyTest} />
-                <Route path="/checkscore" component={Checkscore} />
-            </div>
+                    <Route exact path="/" render={()=> <Homepage idx={this.props.imgidx}/>} />
+                    <Route path="/showall" component={Showall} />
+                    <Route path="/practice" render={() => <Practice idx={this.props.imgidx}/>} />
+                    <Route path="/easytest" render={()=> <EasyTest idx={this.props.imgidx}/>} />
+                    <Route path="/checkscore" component={Checkscore} />
+                </div>
             </Router>
         );
     }
