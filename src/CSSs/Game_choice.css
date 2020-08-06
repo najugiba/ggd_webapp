@@ -170,7 +170,7 @@
         margin-bottom: 99px;
     }
     .Choice_Line{
-        width: 90%;
+        width: 100%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -178,8 +178,8 @@
         display: none;
     }
     .Answer_Btn{
-        width: 165px;
-        height: 80px;
+        width: 140px;
+        height: 60px;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
@@ -194,8 +194,8 @@
         font-size: 30px;
     }
     .Answer_Btn:hover{
-        width: 165px;
-        height: 80px;
+        width: 140px;
+        height: 60px;
         margin-left: 10px;
         margin-right: 10px;
         margin-top: 10px;
@@ -226,7 +226,7 @@
     }
 
     .result_box{
-        width: 650px;
+        width: 400px;
         height: 350px;
     }
 
@@ -249,8 +249,8 @@
 
     .Result_Btn {
         display: block;
-        width: 225px;
-        height: 60px;
+        width: 140px;
+        height: 45px;
         font-size: 20px;
         background: #FFFEFE;
         border: 1px dashed rgba(196, 196, 196, 0.1);
@@ -264,8 +264,8 @@
     }
     .Result_Btn:hover{
         display: block;
-        width: 225px;
-        height: 60px;
+        width: 140px;
+        height: 45px;
         font-size: 20px;
         background: #FFFEFE;
         border: 1px dashed rgba(196, 196, 196, 0.1);
@@ -296,9 +296,10 @@
     
     .OnTablet_ChoiceBox{
         display: inline-block;
-        width: 450px;
+        width: 320px;
         vertical-align: top;
-        margin-top: 265px;
+        margin-top: 330px;
+        margin-left: 50px;
     }
     
 
@@ -306,7 +307,7 @@
         font-family: Roboto;
         font-style: normal;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 18px;
         text-align: center;
         color: #646161;
     }
