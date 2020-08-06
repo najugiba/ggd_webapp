@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/ggd_webapp/static/css/main.e8f40400.chunk.css",
+    "main.css": "/ggd_webapp/static/css/main.46223dec.chunk.css",
     "main.js": "/ggd_webapp/static/js/main.bdf910cd.chunk.js",
     "main.js.map": "/ggd_webapp/static/js/main.bdf910cd.chunk.js.map",
     "runtime-main.js": "/ggd_webapp/static/js/runtime-main.aa512825.js",
@@ -8,9 +8,9 @@
     "static/js/2.2a0fc70f.chunk.js": "/ggd_webapp/static/js/2.2a0fc70f.chunk.js",
     "static/js/2.2a0fc70f.chunk.js.map": "/ggd_webapp/static/js/2.2a0fc70f.chunk.js.map",
     "index.html": "/ggd_webapp/index.html",
-    "precache-manifest.f0d033d4aa54eb179528ff68f6f3bbcc.js": "/ggd_webapp/precache-manifest.f0d033d4aa54eb179528ff68f6f3bbcc.js",
+    "precache-manifest.15244446087855f976a830f2de77d7d4.js": "/ggd_webapp/precache-manifest.15244446087855f976a830f2de77d7d4.js",
     "service-worker.js": "/ggd_webapp/service-worker.js",
-    "static/css/main.e8f40400.chunk.css.map": "/ggd_webapp/static/css/main.e8f40400.chunk.css.map",
+    "static/css/main.46223dec.chunk.css.map": "/ggd_webapp/static/css/main.46223dec.chunk.css.map",
     "static/js/2.2a0fc70f.chunk.js.LICENSE.txt": "/ggd_webapp/static/js/2.2a0fc70f.chunk.js.LICENSE.txt",
     "static/media/Navibar2.css": "/ggd_webapp/static/media/BMJUA_ttf.7dbe95a7.ttf",
     "static/media/Clockimg.png": "/ggd_webapp/static/media/Clockimg.5adaf917.png",
@@ -23,7 +23,7 @@
   "entrypoints": [
     "static/js/runtime-main.aa512825.js",
     "static/js/2.2a0fc70f.chunk.js",
-    "static/css/main.e8f40400.chunk.css",
+    "static/css/main.46223dec.chunk.css",
     "static/js/main.bdf910cd.chunk.js"
   ]
 }
