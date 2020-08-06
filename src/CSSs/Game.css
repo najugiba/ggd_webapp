@@ -106,6 +106,7 @@
         font-weight: bold;
         color: #FFFFFF;
         font-size: 20px;
+        margin-right: 17px;
 
     }
     .Wrong_box{
@@ -168,10 +169,286 @@
         color: #6A6A6A;
         font-size: 25px;
         margin-bottom: 5px;
+        font-size: 18px;
     }
     .Keypad_Btn:hover{
         width: 80px;
         height: 55px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        color: #6A6A6A;
+        font-size: 25px;
+        margin-bottom: 5px;
+        background-color: #88D7F6;
+        font-size: 18px;
+    }
+    .Keypad_cancel{
+        background-image: url('../Images/Cancel.png');
+        background-color: #D9534F;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .Keypad_check{
+        background-image: url('../Images/Check.png');
+        background-color: #5CB85C;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .G_Result_Btn{
+        display: block;
+        width: 200px;
+        height: 40px;
+        outline: 0em;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 8px;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .G_Result_Btn:hover{
+        display: block;
+        width: 200px;
+        height: 40px;
+        background-color: #88D7F6;
+        outline: 0em;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-left: auto;
+        margin-right: auto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .G_Result_Btn1{
+        margin-top: 7px;
+    }
+
+    #Modal_box{
+        font-family: BMJUA;
+        font-size: 60px;
+        text-align: center;
+        line-height: 166px;
+        vertical-align: middle;
+        padding-top: 5px;
+        background-image: url('../Images/Clockimg_smal.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        outline: 0;
+    }
+    .OnTablet_ResultScoreDiv{
+        display: none
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px){
+    .gugudan_box{
+        width: 100%;
+    }
+    .Form{
+        display: inline-block;
+    }
+    .top_number{
+        width: 180px;
+        height: 50px;
+        margin-left: 100px;
+        margin-top: 26px;
+        background: #FFFEFE;
+        border: 1px dashed rgba(106, 106, 106, 0.5);
+        border-radius: 20px;
+        font-size: 25px;
+        line-height: 29px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .Game_text{
+        font-size: 100px;
+        margin-right: auto;
+        margin-left: auto;
+        font-family: BMJUA;
+        color: #6A6A6A;
+        margin-bottom: 30px;
+    }
+    .InputBox{
+        display: inline-block;
+        width: 145px;
+        height: 133px;
+        background: #FFFFFF;
+        border: 2px solid rgba(106, 106, 106, 0.25);
+        box-sizing: border-box;
+        border-radius: 5px;
+        font-size: 100px;
+        line-height: 125px;
+        color: #6A6A6A;
+        text-align: center;
+        margin-left: 20px;
+    }
+    .Game_startBtn{
+        margin-top: 100px;
+        width: 200px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .Game_startBtn:hover{
+        margin-top: 100px;
+        width: 200px;
+        height: 50px;
+        background: #dae766;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+
+    .G_result_box{
+        width: 1024px;
+        height: 100%;
+        display: inline-block;
+    }
+    .result_text{
+        display: none;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        height: 31px;
+        color: #3D3A3A;
+    }
+    .result_score{
+        display: none;
+        font-family: BMJUA;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        color: rgba(106, 106, 106, 0.9);
+        height: 51px;
+        margin-bottom: 0em;
+    }
+    .G_cutline{
+        display: none;
+    }
+
+    .RightWrong_Container{
+        display: none;
+        justify-content: center;
+        margin-top: 12px;
+    }
+    .Right_box{
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 60px;
+        background: #5CB85C;
+        border: 2px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 28px;
+
+    }
+    .Wrong_box{
+        display: flex;
+        justify-content: center;
+        width: 90px;
+        height: 60px;
+        background: #D9534F;
+        border: 2px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 1px 1.5px rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        color: #FFFFFF;
+        font-size: 28px;
+    }
+    .result_problem{
+        display: inline-block;
+        width: 400px;
+        height: 567px;
+        margin-left: auto;
+        margin-right: auto;
+        background: #FFFFFF;
+        border: 2px dashed #C4C4C4;
+        box-sizing: border-box;
+        border-radius: 5px;
+        justify-content: center;
+        margin-top: 10px;
+        text-align: center;
+        vertical-align: top;
+        margin-top: 52px;
+    }
+    .result_rightPb{
+        width: 89px;
+        text-align: left;
+        margin-right: 5px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    .result_wrongPb{
+        width: 89px;
+        text-align: left;
+        margin-left: 5px;
+        text-align: center;
+    }
+    .result_listitem{
+        width: 400px;
+        display: flex;
+        justify-content: center;
+        margin-top: 3px;
+        margin-bottom: 4px;
+        color: #6A6A6A;
+        font-family: BMJUA;
+        font-size: 32px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .Keypad_Btn{
+        width: 140px;
+        height: 65px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        color: #6A6A6A;
+        font-size: 25px;
+        margin-bottom: 5px;
+    }
+    .Keypad_Btn:hover{
+        width: 140px;
+        height: 65px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -196,20 +473,73 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
+    .result_Btn_div{
+        display: inline-block;
+        width: 400px;
+        margin-left: 29px;
+        margin-top: 75px;
+    }
+
     .G_Result_Btn{
-        width: 200px;
-        height: 40px;
+        width: 390px;
+        height: 70px;
         outline: 0em;
+        background: #FFFEFE;
+        border: 1px dashed rgba(196, 196, 196, 0.1);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-family: BMJUA;
+        font-style: normal;
+        font-weight: bold;
     }
     .G_Result_Btn:hover{
-        width: 200px;
-        height: 40px;
+        width: 390px;
+        height: 70px;
         background-color: #88D7F6;
         outline: 0em;
+        border: 1px dashed rgba(196, 196, 196, 0.1);
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+        font-size: 25px;
+        font-family: BMJUA;
+        font-style: normal;
+        font-weight: bold;
     }
-    .G_Result_Btn1{
-        margin-top: 7px;
+
+    .OnTablet_ResultScoreDiv{
+        display: inline-block;
     }
+    .OnTablet_ResultImg{
+        width: 200px;
+        height: 200px;
+    }
+    .OnTablet_Resulttext1{
+        font-size: 25px;
+        font-style: normal;
+        font-weight: bold;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .OnTablet_Resulttext2{
+        color: #6A6A6A;
+        font-size: 80px;
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .OnTablet_Cutline{
+        width: 390px;
+        height: 0px;
+        border: 2.5px solid #DEDEDE;
+        margin-bottom: 5px;
+    }
+
+
 
     #Modal_box{
         font-family: BMJUA;
@@ -224,9 +554,6 @@
         outline: 0;
     }
 }
-
-
-
 
 
 

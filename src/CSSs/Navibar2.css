@@ -76,6 +76,86 @@
    }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .navibar_body{
+        height: 1200px;
+        width: 350px;
+        font-family: BMJUA;
+    }
+   .Navibar_imgbox {
+       width: 160px;
+       height: 160px;
+       margin-top: 103px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 105px;
+   }
+   .Navi_Xbtn{
+    width: 25px;
+    height: 25px;
+    margin-left: 20px;
+    margin-top: 14px;
+    background-image: url('../Images/Xbtn.png');
+}
+   .Navi_Xbtn:hover {
+       width: 25px;
+       height: 25px;
+       margin-left: 20px;
+       margin-top: 14px;
+       background-image: url('../Images/Xbtn.png');
+       cursor: pointer;
+   }
+   .Navibar2_img{
+       width: 160px;
+       height: 160px;
+   }
+   .linkitem1 {
+       width: 100%;
+       text-align: center;
+       font-family: BMJUA;
+       font-size: 30px;
+   }
+   .linkitem {
+       width: 100%;
+       text-align: center;
+       font-family: BMJUA;
+       font-size: 30px;
+   }
+   .linkitem:hover{
+    width: 100%;
+    text-align: center;
+    font-family: BMJUA;
+    }
+   .Top_bar{
+       text-align: center;
+       height: 50px;
+       background-color: rgba(107, 105, 105, 0.5);
+       font-family: BMJUA;
+   }
+   .MuiButtonBase-root{
+        display: inline-block;
+   }
+   #hamburgerMenu {
+        width: 70px;
+        height: 50px;
+        position: fixed;
+        top: 0;
+        left: 0;
+   }
+   .hamburgerIcon{
+       width: 40px;
+       height: 35px;
+   }
+   .Top_bar_text{
+       text-align: center;
+       width: 250px;
+       display: inline-block;
+   }
+    
+}
+
+
 @media (min-width: 1025px) and (max-width: 1280px) {
     .navibar_body{
         height: 1200px;
