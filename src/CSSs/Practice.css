@@ -279,3 +279,95 @@
     }
     
 }
+
+@media (min-width: 1281px){
+    .Practice_Container {
+        width: 100%;
+        height: 980px;
+    }
+    .Practice_imgbox{
+        width: 250px;
+        height: 250px;
+        margin-top: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        background-size: contain;
+        margin-bottom: 34px;
+    }
+    .Practice_img{
+        width: 250px;
+        height: 250px;
+    }
+    .Practice_text{
+        font-family: BMJUA;
+    }
+    .Practice_Btn_Line{        
+        font-family: BMJUA;
+        outline: 0;
+    }
+
+    .Practice_Btn{
+        width: 83px;
+        height: 65px;
+        margin-top: 15px;
+        border-radius: 10px 10px 10px 10px;  
+        margin-right: 15px;
+        font-size: 25px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        outline: 0;
+    }
+    .Practice_Btn:hover{
+        width: 83px;
+        height: 65px;
+        margin-top: 15px;
+        border-radius: 10px 10px 10px 10px;  
+        margin-right: 15px;
+        background: #88D7F6;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-weight: bold;
+        font-family: BMJUA;
+        font-size: 25px;
+    }
+    .Practice_Btn2{  
+        width: 394px;
+        height: 80px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 10px 10px 10px 10px;
+
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        outline: 0;
+        font-family: BMJUA;
+        font-size: 25px;
+    }
+    .Practice_Btn2:hover{  
+        width: 394px;
+        height: 80px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+        border-radius: 10px 10px 10px 10px;
+
+        background: #88D7F6;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-weight: bold;
+        outline: 0;
+        font-family: BMJUA;
+        font-size: 25px;
+    }
+    
+}

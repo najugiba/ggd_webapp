@@ -176,8 +176,95 @@
     
  }
 
-  @media (min-width: 1024px) and (max-width: 1280px) and (orientation: Landscape){
+@media (min-width: 1024px) and (max-width: 1280px) and (orientation: Landscape){
 
+    .register{
+        width: 100%;
+        height: 570px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: BMJUA;
+    }
+    .Main_ImgBox{
+        width: 100%;
+        margin-top: 118px;
+        margin-bottom: 47px;
+        text-align: center;
+    }
+    .forVertical{
+        display: inline-block;
+        line-height: 200px;
+        vertical-align: top;
+    }
+    .Mainpage_img{
+        width: 160px;
+        height: 160px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+
+    .Mainpage_text{
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        color:  #6A6A6A;
+    }
+
+    .Main_InputBox{
+        display: block;
+        width: 200px;
+        height: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        border-style:none;
+        border-bottom-style: solid;
+        border-bottom-width: 3px;
+        border-bottom-color: #777;
+        text-align: center;
+    }
+    input::-webkit-input-placeholder {
+        color: black; /*Change the placeholder color*/
+        opacity: 0.2; /*Change the opacity between 0 and 1*/
+   }
+    .Main_registerBtn{
+        display: block;
+        width: 200px;
+        height: 40px;
+        background: #FFFFFF;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        margin-left: auto;
+        margin-right: auto;
+        color: #3D3A3A;
+        outline: 0;
+    }
+    .Main_registerBtn:hover{
+        display: block;
+        width: 200px;
+        height: 40px;
+        background: #87CEEB;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        font-family: BMJUA;
+        font-weight: bold;
+        color: #3D3A3A;
+        outline: 0;
+    }
+    .choice{
+        width: 100%;
+    }
+    .changeImg:hover {
+        cursor: pointer;
+    }
+    
+}
+
+@media (min-width: 1281px){
     .register{
         width: 100%;
         height: 570px;

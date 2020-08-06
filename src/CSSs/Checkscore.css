@@ -340,3 +340,115 @@
  
 
 }
+
+@media (min-width: 1281px) {
+    .wrapper {
+        display: inline-block;
+        width: 50%;
+        margin-top: 33px;
+        border: 2.5px solid #DEDEDE;
+    }
+    .wrapper2{
+        display: inline-block;
+        width: 40%;
+    }
+    .H0{
+        height: 0px;
+        line-height: 200px;
+        background-color: red;
+    }
+    .H10{
+        height: 50px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H20{
+        height: 100px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H30{
+        height: 150px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H40{
+        height: 200px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H50{
+        height: 250px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H60{
+        height: 300px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H70{
+        height: 350px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H80{
+        height: 400px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H90{
+        height: 450px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+    .H100{
+        height: 500px;
+        line-height: 200px;
+        background-color: #5CB85C;
+    }
+
+    .bar{padding-top:10px}
+    .bar{
+        display: inline-block;
+        width: 50px;
+        margin-right:24px;
+        list-style:none;
+    }
+
+    .Score_Desc{
+        width: 100%;
+        text-align: center;
+        color: #6A6A6A;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    .Desc_date{
+        display: inline-block;
+        width: 30%;
+        text-align: center;
+    }
+    .Desc_score{
+        display: inline-block;
+        width: 30%;
+    }
+    .Desc_level{
+        display: inline-block;
+        width: 30%;
+    }
+
+    
+    .Score_table{
+        display: block;
+    }
+    .Check_listitem{
+        display: block;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: left;
+        font-size: 25px;
+        color: rgba(106, 106, 106, 0.8);
+    }
+}
