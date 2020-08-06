@@ -1,76 +1,125 @@
 
 
 @media (min-width: 320px) and (max-width: 420px) {
-    
-    .wrapper {
-        display: block;
+    .total_container{
+        display: inline-block;
         width: 100%;
-        margin-top: 33px;
+    }
+    .percent-indicator{
+        display: inline-block;
+        width: 100%;
+        height: 100px;
+        position: absolute;
+        margin-top: 100px;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .per-0{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+    }
+    .per-20{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+    }
+    .per-40{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+        
+    }
+    .per-60{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+        
+    }
+    .per-80{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+    }
+    .per-100{
+        position: relative;
+        width: 100%;
+        height: 20px;
+        border-bottom: 1px dashed #666666;
+        opacity: 30%;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100px;
         border: 2.5px solid #DEDEDE;
+        margin-top: 70px;
+        display: flex;
+        justify-content: center;
     }
     
     .H0{
         height: 0px;
-        line-height: 200px;
         background-color: red;
     }
     .H10{
-        height: 20px;
-        line-height: 200px;
+        height: 10px;
         background-color: #5CB85C;
     }
     .H20{
-        height: 40px;
-        line-height: 200px;
+        height: 20px;
         background-color: #5CB85C;
     }
     .H30{
-        height: 60px;
-        line-height: 200px;
+        height: 30px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 80px;
-        line-height: 200px;
+        height: 40px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 100px;
-        line-height: 200px;
+        height: 50px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 120px;
-        line-height: 200px;
+        height: 60px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 140px;
-        line-height: 200px;
+        height: 70px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 160px;
-        line-height: 200px;
+        height: 80px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 180px;
-        line-height: 200px;
+        height: 90px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 200px;
-        line-height: 200px;
+        height: 100px;
         background-color: #5CB85C;
     }
-
-    .bar{padding-top:10px}
     .bar{
         display: inline-block;
         width:30px;
         margin-right:20px;
         list-style:none;
+        margin-top: auto;
     }
 
     .Score_Desc{
@@ -104,7 +153,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        text-align: left;
+        text-align: center;
         font-size: 15px;
         color: rgba(106, 106, 106, 0.8);
     }
@@ -113,11 +162,72 @@
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .wrapper {
+    .total_container{
         display: inline-block;
         width: 50%;
-        margin-top: 33px;
-        border: 2.5px solid #DEDEDE;
+    }
+    .percent-indicator{
+        display: inline-block;
+        width: 50%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        left: 5%;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .per-0{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-20{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-40{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-60{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-80{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-100{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .wrapper {
+        display: flex;
+        height: 500px;
+        justify-content: center;
+        width: 50%;
+        margin-top: 65px;
     }
     .wrapper2{
         display: inline-block;
@@ -129,62 +239,62 @@
         background-color: red;
     }
     .H10{
-        height: 50px;
+        height: 53px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H20{
-        height: 100px;
+        height: 103px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H30{
-        height: 150px;
+        height: 153px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 200px;
+        height: 203px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 250px;
+        height: 253px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 300px;
+        height: 303px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 350px;
+        height: 353px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 400px;
+        height: 403px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 450px;
+        height: 453px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 500px;
+        height: 503px;
         line-height: 200px;
         background-color: #5CB85C;
     }
 
-    .bar{padding-top:10px}
     .bar{
         display: inline-block;
         width: 50px;
         margin-right:24px;
         list-style:none;
+        margin-top: auto;
     }
 
     .Score_Desc{
@@ -218,7 +328,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        text-align: left;
+        text-align: center;
         font-size: 25px;
         color: rgba(106, 106, 106, 0.8);
     }
@@ -226,13 +336,75 @@
     
 }
 
-@media (min-width: 1025px) and (max-width: 1280px){
-
-    .wrapper {
+@media (min-width: 1024px) and (max-width: 1280px){
+    .total_container{
         display: inline-block;
         width: 50%;
-        margin-top: 33px;
-        border: 2.5px solid #DEDEDE;
+        height: 500px;
+    }
+    .percent-indicator{
+        display: inline-block;
+        width: 50%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        left: 5%;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .per-0{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-20{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-40{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-60{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-80{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-100{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .wrapper {
+        display: inline-block;
+        width: 100%;
+        height: 500px;
+        margin-top: 65px;
+        display: flex;
+        justify-content: center;
     }
     .wrapper2{
         display: inline-block;
@@ -240,17 +412,14 @@
     }
     .H0{
         height: 0px;
-        line-height: 200px;
         background-color: red;
     }
     .H10{
         height: 50px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H20{
         height: 100px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H30{
@@ -260,46 +429,39 @@
     }
     .H40{
         height: 200px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H50{
         height: 250px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H60{
         height: 300px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H70{
         height: 350px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H80{
         height: 400px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H90{
         height: 450px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
     .H100{
         height: 500px;
-        line-height: 200px;
         background-color: #5CB85C;
     }
 
-    .bar{padding-top:10px}
     .bar{
         display: inline-block;
-        width: 50px;
+        width: 40px;
         margin-right:24px;
         list-style:none;
+        margin-top: auto;
     }
 
     .Score_Desc{
@@ -333,7 +495,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        text-align: left;
+        text-align: center;
         font-size: 25px;
         color: rgba(106, 106, 106, 0.8);
     }
@@ -342,11 +504,75 @@
 }
 
 @media (min-width: 1281px) {
-    .wrapper {
+
+    .total_container{
         display: inline-block;
         width: 50%;
-        margin-top: 33px;
-        border: 2.5px solid #DEDEDE;
+        height: 500px;
+    }
+    .percent-indicator{
+        display: inline-block;
+        width: 50%;
+        height: 500px;
+        position: absolute;
+        top: 0;
+        right: 5%;
+        left: 5%;
+        bottom: 0;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .per-0{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-20{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-40{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-60{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+        
+    }
+    .per-80{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+    .per-100{
+        position: relative;
+        width: 100%;
+        height: 100px;
+        border-bottom: 3px dashed #666666;
+        opacity: 50%;
+    }
+
+    .wrapper {
+        display: flex;
+        height: 500px;
+        justify-content: center;
+        width: 50%;
+        margin-top: 55px;
     }
     .wrapper2{
         display: inline-block;
@@ -408,12 +634,12 @@
         background-color: #5CB85C;
     }
 
-    .bar{padding-top:10px}
     .bar{
         display: inline-block;
         width: 50px;
         margin-right:24px;
         list-style:none;
+        margin-top: auto;
     }
 
     .Score_Desc{
@@ -447,7 +673,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        text-align: left;
+        text-align: center;
         font-size: 25px;
         color: rgba(106, 106, 106, 0.8);
     }

@@ -28,7 +28,8 @@ var gr = [];
 var ty = [];
 var tm = [];
 var td = [];
-
+var th = [];    //시
+var tb = []; //분
 
 
 // ===================정답과 오답을 종료 후 보여 주기 위한 부분=======================
@@ -306,6 +307,8 @@ function Game(props) {
                                 let today = new Date();
                                 let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
                                 let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                                let hour = today.getHours(); th.push(hour); localStorage.setItem("HourOfScore", JSON.stringify(th));
+                                let miniute = today.getMinutes(); tb.push(miniute); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
                                 let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
 
                                 console.log(localStorage.getItem("Totalscore"));

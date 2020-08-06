@@ -7,8 +7,11 @@ let score_arr = [];
         let s = localStorage.getItem("Totalscore"); let scores = JSON.parse(s);
         let y = localStorage.getItem("YearOfScore"); let years = JSON.parse(y);
         let m = localStorage.getItem("MonthOfScore"); let months = JSON.parse(m);
+        let h = localStorage.getItem("HourOfScore"); let hours = JSON.parse(h);
+        let b = localStorage.getItem("BoonOfScore"); let boons = JSON.parse(b);
+
         let d = localStorage.getItem("DateOfScore"); let dates = JSON.parse(d);
-    
+        
     
         console.log(scores);
         console.log(years);
@@ -26,7 +29,7 @@ let score_arr = [];
             else if(scores[i] >=6) chat = "　　좋아요!";
             else if(scores[i] == 0) chat ="　　　 분발해!";
             else chat = "　　분발해!";
-            let temp = years[i] + "." + months[i] + "." + dates[i]+"　　"+ scores[i]*10;
+            let temp = years[i] + "." + months[i] + "." + dates[i]+"　"+ hours[i] +":" + boons[i]+    "　　　"+ scores[i]*10+"점";
             result = [...result, temp];
             score_arr = [...score_arr, scores[i]];
         }
@@ -50,14 +53,23 @@ function Checkscore(){
 
     return(
         <div>
-            <div className="wrapper">
-               {barlist}
+            <div className="total_container">
+                <div className="percent-indicator">
+                    <div className="per-0"></div>
+                    <div className="per-20"></div>
+                    <div className="per-40"></div>
+                    <div className="per-60"></div>
+                    <div className="per-80"></div>
+                    <div className="per-100"></div>
+                </div>
+                <div className="wrapper">
+                {barlist}
+                </div>
             </div>
+            
             <div className="wrapper2">
                 <p className="Score_Desc">
-                    <span className="Desc_date">날짜</span>
-                    <span className="Desc_score">점수</span>
-                    <span className="Desc_level">수준</span>
+                    <span className="Desc_date">날짜/시간/점수</span>
                 </p>
                 <div className="Score_table">
                     {list}

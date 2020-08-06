@@ -315,7 +315,7 @@
     }
 
 
-  @media (min-width: 1024px) and (max-width: 1280px) and (orientation: Landscape){
+  @media (min-width: 1024px) and (max-width: 1280px){
 
     .Game_choice_Container{
         display: inline-block;

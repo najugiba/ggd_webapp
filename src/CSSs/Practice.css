@@ -92,7 +92,7 @@
   }
 
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape){
+@media (min-width: 768px) and (max-width: 1024px){
 
     .Practice_Container {
         width: 100%;
