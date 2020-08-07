@@ -132,7 +132,7 @@
     }
     .Desc_date{
         display: inline-block;
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
     .Desc_score{

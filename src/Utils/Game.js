@@ -270,7 +270,7 @@ function Game(props) {
                     </div>
 
                     <div>
-                        <button className="Keypad_Btn Keypad_cancel" onClick={e => {
+                        <button className="Keypad_cancel" onClick={e => {
                             e.preventDefault();
                             setAnswer('');
                         }}>　</button>
@@ -278,7 +278,7 @@ function Game(props) {
                             e.preventDefault();
                             setAnswer(answer + e.target.id);
                         }}>0</button>
-                        <button className="Keypad_Btn Keypad_check" onClick={e => {
+                        <button className="Keypad_check" onClick={e => {
                             e.preventDefault();
                             if (Number(answer) === (randnum1 * randnum2)) {   //정답일때
                                 setCount(count + 1);

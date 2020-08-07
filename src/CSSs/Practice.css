@@ -43,6 +43,7 @@
         border-radius: 5px;
         font-family: BMJUA;
         outline: 0;
+        font-size: 17px;
     }
     .Practice_Btn:hover{
         width: 59px;
@@ -64,6 +65,7 @@
         margin-top: 7px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
+        font-size: 17px;
 
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
@@ -101,7 +103,7 @@
     .Practice_imgbox{
         width: 250px;
         height: 250px;
-        margin-top: 15px;
+        margin-top: 40px;
         margin-left: auto;
         margin-right: auto;
         background-size: contain;
@@ -288,7 +290,7 @@
     .Practice_imgbox{
         width: 250px;
         height: 250px;
-        margin-top: 15px;
+        margin-top: 105px;
         margin-left: auto;
         margin-right: auto;
         background-size: contain;

@@ -30,9 +30,10 @@
         border: 2px solid rgba(106, 106, 106, 0.25);
         box-sizing: border-box;
         border-radius: 5px;
-        font-size: 45px;
+        font-size: 30px;
         color: #6A6A6A;
         text-align: center;
+        margin-left: 10px;
     }
     .Game_startBtn{
         margin-top: 100px;
@@ -188,12 +189,32 @@
         font-size: 18px;
     }
     .Keypad_cancel{
+        width: 80px;
+        height: 55px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
         background-image: url('../Images/Cancel.png');
         background-color: #D9534F;
         background-repeat: no-repeat;
         background-position: center;
     }
     .Keypad_check{
+        width: 80px;
+        height: 55px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        font-size: 25px;
+        margin-bottom: 5px;
         background-image: url('../Images/Check.png');
         background-color: #5CB85C;
         background-repeat: no-repeat;
@@ -462,12 +483,30 @@
         background-color: #88D7F6;
     }
     .Keypad_cancel{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Cancel.png');
         background-color: #D9534F;
         background-repeat: no-repeat;
         background-position: center;
     }
     .Keypad_check{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Check.png');
         background-color: #5CB85C;
         background-repeat: no-repeat;
@@ -601,9 +640,9 @@
         margin-left: 20px;
     }
     .Game_startBtn{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 200px;
+        width: 300px;
+        height: 100px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -611,12 +650,12 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
     }
     .Game_startBtn:hover{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 200px;
+        width: 300px;
+        height: 100px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -624,7 +663,7 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 25px;
     }
 
 
@@ -766,12 +805,30 @@
         background-color: #88D7F6;
     }
     .Keypad_cancel{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Cancel.png');
         background-color: #D9534F;
         background-repeat: no-repeat;
         background-position: center;
     }
     .Keypad_check{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Check.png');
         background-color: #5CB85C;
         background-repeat: no-repeat;
@@ -904,9 +961,9 @@
         margin-left: 20px;
     }
     .Game_startBtn{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 300px;
+        width: 400px;
+        height: 150px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -914,12 +971,12 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
     .Game_startBtn:hover{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 300px;
+        width: 400px;
+        height: 150px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -927,7 +984,7 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 20px;
+        font-size: 30px;
     }
 
 
@@ -1063,18 +1120,36 @@
         border-radius: 5px; 
         outline: 0;
         margin-right: 10px;
+        margin-bottom: 5px;
         color: #6A6A6A;
         font-size: 25px;
-        margin-bottom: 5px;
         background-color: #88D7F6;
     }
     .Keypad_cancel{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Cancel.png');
         background-color: #D9534F;
         background-repeat: no-repeat;
         background-position: center;
     }
     .Keypad_check{
+        width: 140px;
+        height: 65px;
+        border: 1px solid rgba(196, 196, 196, 0.1);
+        box-sizing: border-box;
+        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        border-radius: 5px; 
+        outline: 0;
+        margin-right: 10px;
+        margin-bottom: 5px;
         background-image: url('../Images/Check.png');
         background-color: #5CB85C;
         background-repeat: no-repeat;
