@@ -43,6 +43,8 @@
        width: 100%;
        text-align: center;
        font-family: BMJUA;
+       color: gray;
+       text-decoration: none;
    }
    .linkitem:hover{
     width: 100%;
@@ -121,6 +123,8 @@
        text-align: center;
        font-family: BMJUA;
        font-size: 30px;
+       color: gray;
+       text-decoration: none;
    }
    .linkitem:hover{
     width: 100%;
@@ -200,6 +204,8 @@
        text-align: center;
        font-family: BMJUA;
        font-size: 30px;
+       color: gray;
+       text-decoration: none;
    }
    .linkitem:hover{
     width: 100%;
@@ -277,6 +283,8 @@
        text-align: center;
        font-family: BMJUA;
        font-size: 30px;
+       color: gray;
+       text-decoration: none;
    }
    .linkitem:hover{
     width: 100%;
