@@ -4,7 +4,7 @@
 }
 @media (min-width: 320px) and (max-width: 420px) {
     .navibar_body{
-        height: 700px;
+        height: 1200px;
         font-family: BMJUA;
     }
    .Navibar_imgbox {
@@ -81,7 +81,7 @@
 @media (min-width: 768px) and (max-width: 1024px) {
 
     .navibar_body{
-        height: 1200px;
+        height: 1500px;
         width: 350px;
         font-family: BMJUA;
     }
@@ -162,7 +162,7 @@
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .navibar_body{
-        height: 1200px;
+        height: 1500px;
         width: 350px;
         font-family: BMJUA;
     }

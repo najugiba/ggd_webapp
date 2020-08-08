@@ -22,21 +22,21 @@
         width: 100%;
         height: 20px;
         border-bottom: 1.5px dashed #666666;
-        opacity: 30%;
+        opacity: 50%;
     }
     .per-20{
         position: relative;
         width: 100%;
         height: 20px;
         border-bottom: 1.5px dashed #666666;
-        opacity: 30%;
+        opacity: 50%;
     }
     .per-40{
         position: relative;
         width: 100%;
         height: 20px;
         border-bottom: 1.5px dashed #666666;
-        opacity: 30%;
+        opacity: 50%;
         
     }
     .per-60{
@@ -44,7 +44,7 @@
         width: 100%;
         height: 20px;
         border-bottom: 1.5px dashed #666666;
-        opacity: 30%;
+        opacity: 50%;
         
     }
     .per-80{
@@ -52,14 +52,14 @@
         width: 100%;
         height: 20px;
         border-bottom: 1.5px dashed #666666;
-        opacity: 30%;
+        opacity: 50%;
     }
     .per-100{
         position: relative;
         width: 100%;
         height: 20px;
         border-bottom: 1.5px solid #666666;
-        opacity: 30%;
+        opacity: 50%;
     }
     .wrapper {
         width: 100%;
