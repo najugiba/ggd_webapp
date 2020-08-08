@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a827b2bc6e1ccc6930c18931fd29fe5d",
+    "revision": "04d2396389a5557464dca574012935ae",
     "url": "/ggd_webapp/index.html"
   },
   {
-    "revision": "b4906a3fbbf66bcc2a11",
-    "url": "/ggd_webapp/static/css/main.9d95fcf4.chunk.css"
+    "revision": "c7b405e30d23152642a3",
+    "url": "/ggd_webapp/static/css/main.90ada889.chunk.css"
   },
   {
     "revision": "c09bddb269f79fd8fa12",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ggd_webapp/static/js/2.9e864b2a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "b4906a3fbbf66bcc2a11",
-    "url": "/ggd_webapp/static/js/main.43f89525.chunk.js"
+    "revision": "c7b405e30d23152642a3",
+    "url": "/ggd_webapp/static/js/main.b625179d.chunk.js"
   },
   {
     "revision": "79f4a9f02826db778d67",
