@@ -70,7 +70,7 @@ class Navibar2 extends React.Component {
                             <div className="Navibar_imgbox">
                                 <img className="Navibar2_img" src={require(`../Images/${ImgArr[this.props.imgidx]}.png`)}></img>
                             </div>
-                            <MenuItem onClick={this.handleDrawerToggle}><Link name="홈" className="linkitem linkitem1" to="/" >홈페이지</Link></MenuItem>
+                            <MenuItem onClick={this.handleDrawerToggle}><Link name="" className="linkitem linkitem1" to="/" >홈페이지</Link></MenuItem>
                             <MenuItem id="구구단 표" onClick={this.handleDrawerToggle}><Link name="구구단표 보기" className="linkitem" to="/showall">구구단 표</Link></MenuItem>
                             <MenuItem id="연습 하기" onClick={this.handleDrawerToggle}><Link name="연습 하기" className="linkitem" to="/practice">연습 하기</Link></MenuItem>
                             <MenuItem id="시험 보기" onClick={this.handleDrawerToggle}><Link name="시험 보기" className="linkitem" to="/easytest">시험 보기</Link></MenuItem>

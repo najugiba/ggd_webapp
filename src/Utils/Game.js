@@ -204,7 +204,9 @@ function Game(props) {
                                         let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
                                         let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
                                         let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
-
+                                        let hours = today.getHours(); th.push(hours); localStorage.setItem("HourOfScore", JSON.stringify(th));
+                                        let boons = today.getMinutes(); tb.push(boons); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
+                                        
                                         console.log(localStorage.getItem("Totalscore"));
                                         console.log(localStorage.getItem("YearOfScore"));
                                         console.log(localStorage.getItem("MonthOfScore"));

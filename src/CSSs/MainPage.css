@@ -285,8 +285,8 @@
         vertical-align: top;
     }
     .Mainpage_img{
-        width: 160px;
-        height: 160px;
+        width: 200px;
+        height: 200px;
         margin-left: 40px;
         margin-right: 40px;
     }
@@ -308,6 +308,7 @@
         border-bottom-style: solid;
         border-bottom-width: 3px;
         border-bottom-color: #777;
+        margin-bottom: 10px;
         text-align: center;
     }
     input::-webkit-input-placeholder {

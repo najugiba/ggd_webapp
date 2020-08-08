@@ -36,9 +36,9 @@
         margin-left: 10px;
     }
     .Game_startBtn{
-        margin-top: 100px;
+        margin-top: 150px;
         width: 200px;
-        height: 50px;
+        height: 90px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -49,9 +49,9 @@
         font-size: 20px;
     }
     .Game_startBtn:hover{
-        margin-top: 100px;
+        margin-top: 150px;
         width: 200px;
-        height: 50px;
+        height: 90px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -262,7 +262,7 @@
         text-align: center;
         line-height: 166px;
         vertical-align: middle;
-        padding-top: 5px;
+        padding-top: 25px;
         background-image: url('../Images/Clockimg_smal.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -318,9 +318,9 @@
         margin-left: 20px;
     }
     .Game_startBtn{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 200px;
+        width: 300px;
+        height: 150px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -331,9 +331,9 @@
         font-size: 20px;
     }
     .Game_startBtn:hover{
-        margin-top: 100px;
-        width: 200px;
-        height: 50px;
+        margin-top: 200px;
+        width: 300px;
+        height: 150px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -586,7 +586,7 @@
         text-align: center;
         line-height: 166px;
         vertical-align: middle;
-        padding-top: 5px;
+        padding-top: 25px;
         background-image: url('../Images/Clockimg_smal.png');
         background-repeat: no-repeat;
         background-position: center;
@@ -908,13 +908,13 @@
         text-align: center;
         line-height: 166px;
         vertical-align: middle;
-        padding-top: 5px;
+        padding-top: 25px;
         background-image: url('../Images/Clockimg_smal.png');
         background-repeat: no-repeat;
         background-position: center;
         outline: 0;
     }
-  }
+}
 
 
 @media (min-width: 1281px){
@@ -986,8 +986,6 @@
         font-weight: bold;
         font-size: 30px;
     }
-
-
     .G_result_box{
         width: 1024px;
         height: 100%;
@@ -1229,7 +1227,7 @@
         text-align: center;
         line-height: 166px;
         vertical-align: middle;
-        padding-top: 5px;
+        padding-top: 25px;
         background-image: url('../Images/Clockimg_smal.png');
         background-repeat: no-repeat;
         background-position: center;
