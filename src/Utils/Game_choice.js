@@ -150,8 +150,14 @@ function Game_choice(props) {
         setOpen(false);
     };
     //==================
+
+    const test = () => {
+    }
+
     const check = e => {
+        //정답일시
         if (Number(e.target.id) === (randnum1 * randnum2)) {
+            console.log("정답");
             setCount(count + 1);
             setScore(score + 1);
             makeRandom(props.dan);
@@ -159,12 +165,14 @@ function Game_choice(props) {
             randnum2++;
             O++;
         }
-        else {  //오답일시
-            setCount(count + 1);
-            makeRandom(props.dan);
-            setAnswer('');
+        //오답일시
+        else { 
+            console.log("오답");
             randnum2++;
-            X++;
+            X++; 
+            makeRandom(props.dan);
+            setCount(count + 1);
+            setAnswer('');
         }
         if (count === 9) {      // 게임 끝날때 동작해야 할 코드들
             setGameDP('none');

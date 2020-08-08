@@ -191,7 +191,7 @@ function Game(props) {
                                         setCount(count + 1);
                                         makeRandom();
                                         setAnswer('');
-                                        WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
+                                        WrongAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`)
                                         console.log("오답");
                                     }
                                     if (Number(count) === 10) {        // 모든 시험이 끝났을때

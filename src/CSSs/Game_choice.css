@@ -567,6 +567,14 @@
         border-radius: 5px;
         font-size: 30px;
     }
+
+    .RA{
+        background-color: green;
+    }
+    .WA{
+        background-color: red;
+    }
+
     .text{
         font-size: 75px;
         margin-bottom: 22px;

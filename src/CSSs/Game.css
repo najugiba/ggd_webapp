@@ -234,7 +234,8 @@
         margin-bottom: 8px;
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
+        background-color: white;
     }
     .G_Result_Btn:hover{
         display: block;
@@ -250,7 +251,7 @@
         margin-right: auto;
         font-style: normal;
         font-weight: bold;
-        font-size: 18px;
+        font-size: 15px;
     }
     .G_Result_Btn1{
         margin-top: 7px;

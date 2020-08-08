@@ -68,13 +68,17 @@ class Navibar2 extends React.Component {
                             <div className="Navi_Xbtn" onClick={this.handleDrawerToggle}>
                             </div >
                             <div className="Navibar_imgbox">
-                                <img className="Navibar2_img" src={require(`../Images/${ImgArr[this.props.imgidx]}.png`)}></img>
+                                <MenuItem onClick={this.handleDrawerToggle}>
+                                    <Link name="" className="linkitem1" to="/" >
+                                        <img className="Navibar2_img" src={require(`../Images/${ImgArr[this.props.imgidx]}.png`)} />
+                                        </Link>
+                                </MenuItem>
                             </div>
-                            <MenuItem onClick={this.handleDrawerToggle}><Link name="" className="linkitem linkitem1" to="/" >홈페이지</Link></MenuItem>
+                            <p className="Navibar_name">{this.props.name}</p>
                             <MenuItem id="구구단 표" onClick={this.handleDrawerToggle}><Link name="구구단표 보기" className="linkitem" to="/showall">구구단 표</Link></MenuItem>
                             <MenuItem id="연습 하기" onClick={this.handleDrawerToggle}><Link name="연습 하기" className="linkitem" to="/practice">연습 하기</Link></MenuItem>
                             <MenuItem id="시험 보기" onClick={this.handleDrawerToggle}><Link name="시험 보기" className="linkitem" to="/easytest">시험 보기</Link></MenuItem>
-                            <MenuItem id="성적 확인" onClick={this.handleDrawerToggle}><Link name="성적 확인" className="linkitem" to="/checkscore">{this.props.name}의 성적 확인</Link></MenuItem>
+                            <MenuItem id="성적 확인" onClick={this.handleDrawerToggle}><Link name={this.props.name + "의 성적 확인"} className="linkitem" to="/checkscore">{this.props.name}의 성적 확인</Link></MenuItem>
                         </div>
                     </Drawer>
                 </div>

@@ -131,7 +131,7 @@ function Showall() {
                 </div>
                 {/* 구구단 표 고르는 버튼들 */}
                 <div className="dan_btn_Container">
-                    <p className="OnTablet_text">외우고자 하는 구구단을 선택해주세요!</p>
+                    <p className="OnTablet_text" style={{fontSize:'25px'}}>외우고자 하는 구구단을 선택해주세요!</p>
                     <div style={{paddingLeft:'19px', paddingRight:'19px'}}>
                         <button className="dan_btn" id="2" onClick={btnClick}>2단</button>
                         <button className="dan_btn" id="3" onClick={btnClick}>3단</button>

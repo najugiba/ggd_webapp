@@ -68,6 +68,9 @@
         display: flex;
         justify-content: center;
     }
+    .wrapper2{
+        width: 320px;
+    }
     
     .H0{
         height: 0px;
@@ -163,7 +166,11 @@
 @media (min-width: 768px) and (max-width: 1024px) {
     .total_container{
         display: inline-block;
-        width: 50%;
+        width: 100%;
+    }
+    .score_DP {
+        display: inline-block;
+        width: 100%;
     }
     .percent-indicator{
         display: inline-block;
@@ -222,7 +229,7 @@
         opacity: 0.5;
     }
     .wrapper {
-        display: flex;
+        display: inline-flex;
         height: 500px;
         justify-content: center;
         width: 50%;
@@ -306,16 +313,16 @@
     }
     .Desc_date{
         display: inline-block;
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
     .Desc_score{
         display: inline-block;
-        width: 30%;
+        width: 100%;
     }
     .Desc_level{
         display: inline-block;
-        width: 30%;
+        width: 100%;
     }
 
     
@@ -338,7 +345,7 @@
 @media (min-width: 1024px) and (max-width: 1280px){
     .total_container{
         display: inline-block;
-        width: 50%;
+        width: 100%;
         height: 500px;
     }
     .percent-indicator{
@@ -352,6 +359,10 @@
         bottom: 0;
         flex-direction: column;
         justify-content: space-between;
+    }  
+    .score_DP {
+        display: inline-block;
+        width: 100%;
     }
     .per-0{
         position: relative;
@@ -398,16 +409,15 @@
         opacity: 0.5;
     }
     .wrapper {
-        display: inline-block;
-        width: 100%;
+        display: inline-flex;
         height: 500px;
-        margin-top: 65px;
-        display: flex;
         justify-content: center;
+        width: 50%;
+        margin-top: 65px;
     }
     .wrapper2{
         display: inline-block;
-        width: 40%;
+        width: 50%;
     }
     .H0{
         height: 0px;
@@ -473,16 +483,16 @@
     }
     .Desc_date{
         display: inline-block;
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
     .Desc_score{
         display: inline-block;
-        width: 30%;
+        width: 100%;
     }
     .Desc_level{
         display: inline-block;
-        width: 30%;
+        width: 100%;
     }
 
     
@@ -506,8 +516,12 @@
 
     .total_container{
         display: inline-block;
-        width: 50%;
+        width: 100%;
         height: 500px;
+    }  
+    .score_DP {
+        display: inline-block;
+        width: 100%;
     }
     .percent-indicator{
         display: inline-block;
@@ -567,7 +581,7 @@
     }
 
     .wrapper {
-        display: flex;
+        display: inline-flex;
         height: 500px;
         justify-content: center;
         width: 50%;
@@ -575,7 +589,7 @@
     }
     .wrapper2{
         display: inline-block;
-        width: 40%;
+        width: 50%;
     }
     .H0{
         height: 0px;
@@ -651,7 +665,7 @@
     }
     .Desc_date{
         display: inline-block;
-        width: 30%;
+        width: 100%;
         text-align: center;
     }
     .Desc_score{
