@@ -2,6 +2,29 @@
     font-family: "BMJUA";
     src: url("../Fonts/BMJUA_ttf.ttf");
 }
+
+@keyframes movingRight {
+    0% {
+      margin-left: 5px;
+    }
+    50% {
+      margin-left: 10px;
+    }
+    100% {
+      margin-left: 5px;
+    }
+}@keyframes movingLeft {
+    0% {
+      margin-right: 5px;
+    }
+    50% {
+      margin-right: 10px;
+    }
+    100% {
+      margin-right: 5px;
+    }
+}
+
 @media (min-width: 320px) and (max-width: 420px) {
     .register{
         width: 100%;
@@ -21,11 +44,17 @@
         line-height: 200px;
         vertical-align: top;
     }
+    .changeImgRight{
+        animation: movingRight 0.4s infinite;
+    }
+    .changeImgLeft{
+        animation: movingLeft 0.4s infinite;
+    }
     .Mainpage_img{
         width: 160px;
         height: 160px;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .Mainpage_text{
@@ -115,6 +144,12 @@
         margin-right: 40px;
     }
 
+    .changeImgRight{
+        animation: movingRight 0.4s infinite;
+    }
+    .changeImgLeft{
+        animation: movingLeft 0.4s infinite;
+    }
     .Mainpage_text{
         width: 100%;
         text-align: center;
@@ -196,6 +231,12 @@
         display: inline-block;
         line-height: 200px;
         vertical-align: top;
+    }
+    .changeImgRight{
+        animation: movingRight 0.4s infinite;
+    }
+    .changeImgLeft{
+        animation: movingLeft 0.4s infinite;
     }
     .Mainpage_img{
         width: 160px;
@@ -283,6 +324,12 @@
         display: inline-block;
         line-height: 200px;
         vertical-align: top;
+    }
+    .changeImgRight{
+        animation: movingRight 0.4s infinite;
+    }
+    .changeImgLeft{
+        animation: movingLeft 0.4s infinite;
     }
     .Mainpage_img{
         width: 200px;

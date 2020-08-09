@@ -9,10 +9,10 @@ import tiger from '../Images/tiger.png';
 import { Button } from '@material-ui/core';
 import leftArrow from '../Images/leftArrow.png';
 import rightArrow from '../Images/rightArrow.png';
-
 /* 
 메인페이지의 구성
     1. 두개의 div태그를 갖는다. (input창과 등록하기 버튼을 가진 화면 + 종류를 선택할 수 있는 화면)
+    2. 루트의 가장 최고 노드이다 (App제외)
 */
 
 let currentIdx = 0;
@@ -33,7 +33,9 @@ class MainPage extends React.Component {
             CurrentImgIndex : 0
         }
     }
+
     render() {
+
 
         let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
         const CheckID = () => {
@@ -55,7 +57,7 @@ class MainPage extends React.Component {
                 <div className="register" style={{ display: this.state.registerDP }}>
                     <div className="Main_ImgBox" >
                         <div className="forVertical">
-                            <img className="changeImg" onClick={()=>{
+                            <img className="changeImg changeImgLeft" onClick={()=>{
                                 if(currentIdx === 0){
                                     this.setState({CurrentImgIndex: 3});
                                     currentIdx = 3;
@@ -68,12 +70,9 @@ class MainPage extends React.Component {
                                 } 
                             }} src={require('../Images/leftArrow.png')} />
                         </div>
-                        
-
                         <img className="Mainpage_img" src={require(`../Images/${ImgArr[this.state.CurrentImgIndex]}.png`) } />
-                        
                         <div className="forVertical">
-                            <img className="changeImg" onClick={()=>{
+                            <img className="changeImg changeImgRight" onClick={()=>{
                                 if(currentIdx === 3){
                                     this.setState({CurrentImgIndex: 0});
                                     currentIdx = 0;
@@ -86,7 +85,6 @@ class MainPage extends React.Component {
                                 } 
                             }} src={require(`../Images/rightArrow.png`)} />
                         </div>
-                        
                     </div>
                     <p className="Mainpage_text">캐릭터를 선택해주세요.</p>
                     <input

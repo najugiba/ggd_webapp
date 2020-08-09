@@ -2,7 +2,6 @@
     font-family: "BMJUA";
     src: url("../Fonts/BMJUA_ttf.ttf");
 }
-
 @media (min-width: 320px) and (max-width: 420px) {
     .body{
         font-family: BMJUA;
@@ -62,7 +61,7 @@
 }
 
 
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: Landscape){
+@media (min-width: 768px) and (max-width: 1024px){
 
     .body{
         font-family: BMJUA;
@@ -108,6 +107,7 @@
         border-radius: 5px;
         outline: 0;
         font-family: BMJUA;
+        font-size: 18px;
     }
     .Homepage_Btn:hover{
         display: inline-block;
@@ -123,11 +123,12 @@
         background-color: #87CEEB;
         outline: 0;
         font-weight: bold;
+        font-size: 18px;
     }
     
 }
 
-@media (min-width: 1025px) and (max-width: 1280px) and (orientation: Landscape){
+@media (min-width: 1025px) and (max-width: 1280px){
 
     .body{
         font-family: BMJUA;
