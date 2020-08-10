@@ -63,8 +63,8 @@
     }
     .wrapper {
         width: 100%;
-        height: 100px;
-        margin-top: 78px;
+        height: 107.5px;
+        margin-top: 70px;
         display: flex;
         justify-content: center;
     }
@@ -77,43 +77,43 @@
         background-color: red;
     }
     .H10{
-        height: 10px;
+        height: 11.5px;
         background-color: #5CB85C;
     }
     .H20{
-        height: 20px;
+        height: 21.5px;
         background-color: #5CB85C;
     }
     .H30{
-        height: 30px;
+        height: 33px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 40px;
+        height: 43px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 50px;
+        height: 54.5px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 60px;
+        height: 64.5px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 70px;
+        height: 76px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 80px;
+        height: 86px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 90px;
+        height: 97.5px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 100px;
+        height: 107.5px;
         background-color: #5CB85C;
     }
     .bar{
@@ -230,14 +230,14 @@
     }
     .wrapper {
         display: inline-flex;
-        height: 500px;
+        height: 515px;
         justify-content: center;
         width: 50%;
-        margin-top: 65px;
+        margin-top: 50px;
     }
     .wrapper2{
         display: inline-block;
-        width: 40%;
+        width: 50%;
     }
     .H0{
         height: 0px;
@@ -255,42 +255,42 @@
         background-color: #5CB85C;
     }
     .H30{
-        height: 153px;
+        height: 156px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 203px;
+        height: 206px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 253px;
+        height: 259px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 303px;
+        height: 309px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 353px;
+        height: 362px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 403px;
+        height: 412px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 453px;
+        height: 465px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 503px;
+        height: 515px;
         line-height: 200px;
         background-color: #5CB85C;
     }
@@ -410,10 +410,10 @@
     }
     .wrapper {
         display: inline-flex;
-        height: 500px;
+        height: 515px;
         justify-content: center;
         width: 50%;
-        margin-top: 65px;
+        margin-top: 50px;
     }
     .wrapper2{
         display: inline-block;
@@ -421,47 +421,57 @@
     }
     .H0{
         height: 0px;
+        line-height: 200px;
         background-color: red;
     }
     .H10{
-        height: 50px;
+        height: 53px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H20{
-        height: 100px;
+        height: 103px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H30{
-        height: 150px;
+        height: 156px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 200px;
+        height: 206px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 250px;
+        height: 259px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 300px;
+        height: 309px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 350px;
+        height: 362px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 400px;
+        height: 412px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 450px;
+        height: 465px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 500px;
+        height: 515px;
+        line-height: 200px;
         background-color: #5CB85C;
     }
 
@@ -582,10 +592,10 @@
 
     .wrapper {
         display: inline-flex;
-        height: 500px;
+        height: 515px;
         justify-content: center;
         width: 50%;
-        margin-top: 65px;
+        margin-top: 50px;
     }
     .wrapper2{
         display: inline-block;
@@ -597,52 +607,52 @@
         background-color: red;
     }
     .H10{
-        height: 50px;
+        height: 53px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H20{
-        height: 100px;
+        height: 103px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H30{
-        height: 150px;
+        height: 156px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H40{
-        height: 200px;
+        height: 206px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H50{
-        height: 250px;
+        height: 259px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H60{
-        height: 300px;
+        height: 309px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H70{
-        height: 350px;
+        height: 362px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H80{
-        height: 400px;
+        height: 412px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H90{
-        height: 450px;
+        height: 465px;
         line-height: 200px;
         background-color: #5CB85C;
     }
     .H100{
-        height: 500px;
+        height: 515px;
         line-height: 200px;
         background-color: #5CB85C;
     }
