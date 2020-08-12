@@ -24,9 +24,7 @@ function App() {
 
 
   return (
-    <React.StrictMode>
       <MainPage />
-    </React.StrictMode>
   );
 }
 

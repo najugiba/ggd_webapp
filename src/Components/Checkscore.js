@@ -15,14 +15,14 @@ let EXIST;
         let d = localStorage.getItem("DateOfScore"); let dates = JSON.parse(d);
         
     
-        console.log(scores);
-        console.log(years);
-        console.log(months);
-        console.log(dates);
+      //  console.log(scores);
+     //   console.log(years);
+     //   console.log(months);
+     //   console.log(dates);
     
         // 데이터의 유무 판단하기
         if(scores === null){
-            console.log("데이터없음");
+            //console.log("데이터없음");
             EXIST = false;
         }
         else{
@@ -42,7 +42,7 @@ let EXIST;
                 result = [...result, temp];
                 score_arr = [scores[i], ...score_arr];
             }
-            console.log(result);
+           // console.log(result);
             return result;
         }
 

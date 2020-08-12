@@ -14,6 +14,7 @@ import Homepage from '../Components/Homepage';
 import '../CSSs/Navibar2.css';
 
 
+
 const styles = {
     root: {
         flexGrow: 1,
@@ -51,7 +52,7 @@ class Navibar2 extends React.Component {
     }
 
     render() {
-        console.log(`현재 Navibar이고 , Main으로 부터 받은 index 는 ${this.props.imgidx} 이다.` )
+        //console.log(`현재 Navibar이고 , Main으로 부터 받은 index 는 ${this.props.imgidx} 이다.` )
        
         const { classes } = this.props;
         const { toptitle } = this.state;

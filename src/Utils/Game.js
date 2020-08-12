@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../CSSs/Game.css';
 import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
@@ -73,6 +73,7 @@ function Game(props) {
     const [startTimer, setStartTimer] = useState(0);
     const [open, setOpen] = useState(false);
     const [textcount, setTextcount] = useState(3);
+    const [limitTime, setLimitTime] = useState(60);
 
 
     let history = useHistory();
@@ -93,15 +94,18 @@ function Game(props) {
 
     const handleOpen = () => {
         setOpen(true);
-        countdonw();
+        countdown();
     };
 
     const handleClose = () => {
         setOpen(false);
+        LimitCountDown();
     };
 
+
+
     let t = 3;
-    const countdonw = () => {
+    const countdown = () => {
         const test = setInterval(() => {
             if (t === 1) {
                 clearInterval(test);
@@ -114,10 +118,43 @@ function Game(props) {
 
 
 
+    // =============================== 시험 제한 시간 타이머 ==================================================
 
+    let limittimer;
+    let limit = 60;
+    const LimitCountDown = () => {
+        console.log("제한시간타이머 작동");
+         limittimer = setInterval(()=>{
+            if(limit === 1){
+                clearInterval(limittimer);
+                console.log("limit 타이머 종료");
+                setGameDP('none');
+                                setResultDP('');
+                                gr.push(score);
+                                localStorage.setItem("Totalscore", JSON.stringify(gr));
+                                let today = new Date();
+                                let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
+                                let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                                let hour = today.getHours(); th.push(hour); localStorage.setItem("HourOfScore", JSON.stringify(th));
+                                let miniute = today.getMinutes(); tb.push(miniute); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
+                                let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
 
+                                console.log(localStorage.getItem("Totalscore"));
+                                console.log(localStorage.getItem("YearOfScore"));
+                                console.log(localStorage.getItem("MonthOfScore"));
+                                console.log(localStorage.getItem("DateOfScore"));
 
+                                mapingRightAnswer();
+                                mapingWrongAnswer();
+                                RightAnswer = [];
+                                WrongAnswer = [];
+            }
+            limit -= 1;
+            setLimitTime(limit);
+        },1000);
+    }
 
+    // =======================================================================================================
 
 
 
@@ -151,6 +188,7 @@ function Game(props) {
                     onClose={handleClose}
                     closeAfterTransition
                     BackdropComponent={Backdrop}
+                    disableBackdropClick = "true"
                     BackdropProps={{
                         timeout: 500,
                     }}
@@ -162,7 +200,16 @@ function Game(props) {
                     </Fade>
                 </Modal>
                 <div className="top_number">
-                    문제 {count}
+                    문제 {count}  
+                </div>
+                <div style={{display:"inline-block"}}>
+                    <div className="limit_bar_img"></div> 
+                    <div className="limit_bar_back">
+                        <div className={"limit_bar " + "sec" + limitTime}>
+                           
+                        </div>
+                    </div>
+                    
                 </div>
 
                 {/* 문제 나오는 부분 */}
@@ -178,27 +225,32 @@ function Game(props) {
                                     e.preventDefault();
                                     if (Number(answer) === (randnum1 * randnum2)) {   //정답일때
                                         setCount(count + 1);
-                                        console.log(`${score}에서 `);
+                                        //console.log(`${score}에서 `);
                                         //setScore(score + 1);
                                         IncreaseScore();
-                                        console.log(`${score}로 증가`)
+                                        //console.log(`${score}로 증가`)
                                         makeRandom();
                                         setAnswer('');
                                         RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
-                                        console.log(`정답, 현재 스코어 ${score}`);
+                                        //console.log(`정답, 현재 스코어 ${score}`);
                                     }
                                     else {                                          //오답일때
                                         setCount(count + 1);
                                         makeRandom();
                                         setAnswer('');
                                         WrongAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`)
-                                        console.log("오답");
+                                        //console.log("오답");
                                     }
                                     if (Number(count) === 10) {        // 모든 시험이 끝났을때
-                                        console.log(`맞음${score} 틀림:${count - score}`)
+                                        //console.log(`맞음${score} 틀림:${count - score}`)
+                                            clearInterval(limittimer);
+                                            console.log("limit 타이머 종료");   // 타이머 종료
+                                            limit = 60;
+                                        setLimitTime(limit);
                                         setGameDP('none');
                                         setResultDP('');
                                         gr.push(score);
+                                        clearInterval(limittimer);
                                         localStorage.setItem("Totalscore", JSON.stringify(gr));
                                         let today = new Date();
                                         let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
