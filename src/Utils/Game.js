@@ -202,7 +202,7 @@ function Game(props) {
                 <div className="top_number">
                     문제 {count}  
                 </div>
-                <div style={{display:"inline-block"}}>
+                <div className="limit_bar_container">
                     <div className="limit_bar_img"></div> 
                     <div className="limit_bar_back">
                         <div className={"limit_bar " + "sec" + limitTime}>
