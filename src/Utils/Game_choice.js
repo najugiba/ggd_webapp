@@ -67,7 +67,6 @@ const useStyles = makeStyles((theme) => ({
         width: 260,
         height: 270,
         backgroundColor: theme.palette.background.paper,
-        border: '2px solid #000',
         boxShadow: theme.shadows[5],
         padding: theme.spacing(2, 4, 3),
     },
@@ -260,7 +259,7 @@ function Game_choice(props) {
                                 O = 0;
                                 X = 0;
                             }}>다시하기</button>
-                            <button className="Result_Btn" onClick={() => {
+                            <button className="Result_Btn Result_Btn2" onClick={() => {
                                 setScore(0);
                                 setCount(0);
                                 setAnswer('');
