@@ -9,17 +9,22 @@ import tiger from '../Images/tiger.png';
 import { Button } from '@material-ui/core';
 import leftArrow from '../Images/leftArrow.png';
 import rightArrow from '../Images/rightArrow.png';
+import { connect } from 'react-redux';
 /* 
 메인페이지의 구성
     1. 두개의 div태그를 갖는다. (input창과 등록하기 버튼을 가진 화면 + 종류를 선택할 수 있는 화면)
     2. 루트의 가장 최고 노드이다 (App제외)
 */
 
+
+
+
+
 let currentIdx = 0;
 function alreadyPlayer() {
     let username = localStorage.getItem("Nickname");
     if (username != null) {
-        console.log("있다이미");
+        //console.log("있다이미");
     }
 }
 alreadyPlayer();
@@ -92,7 +97,9 @@ class MainPage extends React.Component {
                         type="text"
                         value={this.state.registerInput}
                         placeholder="이름을 입력해주세요."
-                        onChange={e => { this.setState({ registerInput: e.target.value }) }}>
+                        onChange={e => { 
+                            this.setState({ registerInput: e.target.value });
+                             }}>
 
                     </input>
                     <button className="Main_registerBtn" onClick={CheckID}>
