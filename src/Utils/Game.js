@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import Clockimg from '../Images/Clockimg.png';
 
 
+var flag = false;
 // ==========================랜덤 수 발생 함수======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
@@ -39,11 +40,13 @@ let WrongAnswer = [];
 let RightAnswerList, WrongAnswerList;
 let RightAnswerListIndex = 0, WrongAnswerListIndex = 0;
 const mapingRightAnswer = () => {
+    console.log("mapingRightAnswer 실행");
     RightAnswerList = RightAnswer.map(data => (
         <li className="result_listitem" style={{ listStyle: 'none', color: 'blue' }} key={RightAnswerListIndex++}>{data}</li>
     ))
 }
 const mapingWrongAnswer = () => {
+    console.log("mapingWrongAnswer 실행");
     WrongAnswerList = WrongAnswer.map(data => (
         <li className="result_listitem" style={{ listStyle: 'none', color: 'red' }} key={WrongAnswerListIndex++}>{data}</li>
     ))
@@ -73,7 +76,7 @@ function Game(props) {
     const [startTimer, setStartTimer] = useState(0);
     const [open, setOpen] = useState(false);
     const [textcount, setTextcount] = useState(3);
-    const [limitTime, setLimitTime] = useState(60);
+    const [limitTime, setLimitTime] = useState(120);
 
 
     let history = useHistory();
@@ -121,11 +124,12 @@ function Game(props) {
     // =============================== 시험 제한 시간 타이머 ==================================================
 
     let limittimer;
-    let limit = 60;
+    var limit = 120;
     const LimitCountDown = () => {
         console.log("제한시간타이머 작동");
          limittimer = setInterval(()=>{
-            if(limit === 1){
+             console.log(`시간 : ${limit}`);
+            if(limit === 0){
                 clearInterval(limittimer);
                 console.log("limit 타이머 종료");
                 setGameDP('none');
@@ -149,8 +153,14 @@ function Game(props) {
                                 RightAnswer = [];
                                 WrongAnswer = [];
             }
-            limit -= 1;
-            setLimitTime(limit);
+            // 전역 변수로 선언된 flag가 게임이 끝나면 true로 바뀐다. true면 타이머는 초기화된다.
+            if(flag === false){
+                limit -= 1;
+                setLimitTime(limit);
+            }
+            else if(flag === true){
+                clearInterval(limittimer);
+            }
         },1000);
     }
 
@@ -165,6 +175,7 @@ function Game(props) {
         <div>
             {/* 게임 시작을 누르는 div */}
             <div className="desc_box" style={{ display: descDP }}>
+                <img className="Game_start_img" src={require(`../Images/${ImgArr[props.idx]}.png`)} ></img>
                 <button className="Game_startBtn" onClick={e => {
                     setDescDP('none');
                     setGameDP('');
@@ -173,6 +184,9 @@ function Game(props) {
                     ZeroScore();
                     setStartTimer(1);
                     handleOpen();
+                    RightAnswer = [];
+                    WrongAnswer = [];
+                    flag = false;
                 }}>시작하기</button>
 
 
@@ -229,28 +243,26 @@ function Game(props) {
                                         //setScore(score + 1);
                                         IncreaseScore();
                                         //console.log(`${score}로 증가`)
+                                        RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
                                         makeRandom();
                                         setAnswer('');
-                                        RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
                                         //console.log(`정답, 현재 스코어 ${score}`);
                                     }
                                     else {                                          //오답일때
                                         setCount(count + 1);
+                                        WrongAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`)
                                         makeRandom();
                                         setAnswer('');
-                                        WrongAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`)
                                         //console.log("오답");
                                     }
                                     if (Number(count) === 10) {        // 모든 시험이 끝났을때
                                         //console.log(`맞음${score} 틀림:${count - score}`)
-                                            clearInterval(limittimer);
-                                            console.log("limit 타이머 종료");   // 타이머 종료
-                                            limit = 60;
+                                        limit = 1;
+                                        flag = true;
                                         setLimitTime(limit);
                                         setGameDP('none');
                                         setResultDP('');
                                         gr.push(score);
-                                        clearInterval(limittimer);
                                         localStorage.setItem("Totalscore", JSON.stringify(gr));
                                         let today = new Date();
                                         let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
@@ -266,8 +278,6 @@ function Game(props) {
 
                                         mapingRightAnswer();
                                         mapingWrongAnswer();
-                                        RightAnswer = [];
-                                        WrongAnswer = [];
                                     }
                                 }
                             }
@@ -340,20 +350,20 @@ function Game(props) {
                                 //setScore(score + 1);
                                 IncreaseScore();
                                 console.log(`${score}로 증가`)
+                                RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
                                 makeRandom();
                                 setAnswer('');
-                                RightAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`);
                                 console.log(`정답, 현재 스코어 ${score}`);
                             }
                             else {                                          //오답일때
                                 setCount(count + 1);
+                                WrongAnswer.push(`${randnum1} x ${randnum2} = ${randnum1 * randnum2}`)
                                 makeRandom();
                                 setAnswer('');
-                                WrongAnswer.push(`${randnum1} x ${randnum2} = ${e.target.value}`)
                                 console.log("오답");
                             }
                             if (Number(count) === 10) {        // 모든 시험이 끝났을때
-                                console.log(`맞음${score} 틀림:${count - score}`)
+                                flag = true;
                                 setGameDP('none');
                                 setResultDP('');
                                 gr.push(score);
@@ -372,8 +382,6 @@ function Game(props) {
 
                                 mapingRightAnswer();
                                 mapingWrongAnswer();
-                                RightAnswer = [];
-                                WrongAnswer = [];
                             }
                         }}>　</button>
                     </div>
@@ -423,7 +431,11 @@ function Game(props) {
                         setGameDP('');
                         setResultDP('none');
                         handleOpen();
-                        history.push("/checkscore")
+                        RightAnswer = [];
+                        WrongAnswer = [];
+                        RightAnswerList = [];
+                        WrongAnswerList = [];
+                        history.push("/checkscore");
                     }}>성적 확인하기</button>
                     <button className="G_Result_Btn" onClick={e => {
                         ZeroScore();
@@ -431,6 +443,10 @@ function Game(props) {
                         setAnswer('');
                         setGameDP('');
                         setResultDP('none');
+                        RightAnswer = [];
+                        WrongAnswer = [];
+                        RightAnswerList = [];
+                        WrongAnswerList = [];
                         history.push("/")
                     }}>
                         홈으로 가기

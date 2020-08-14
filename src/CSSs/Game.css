@@ -2,7 +2,6 @@
     font-family: "BMJUA";
     src: url("../Fonts/BMJUA_ttf.ttf");
 }
-
 @media (min-width: 320px) and (max-width: 420px) {
     .limit_bar_container{
         display: inline-block;
@@ -38,136 +37,128 @@
         margin-bottom: 20px;
         
     }
-    .sec60 {
-        width: 180px;
-    }
-    .sec59 {
-        width: 177px;
-    }
-    .sec58 {
-        width: 174px;
-    }
-    .sec57 {
-        width: 171px;
-    }
-    .sec56 {
-        width: 168px;
-    }
-    .sec55 {
-        width: 165px;
-    }
-    .sec54 {
-        width: 162px;
-    }
-    .sec53 {
-        width: 159px;
-    } .sec52 {
-        width: 156px;
-    } .sec51 {
-        width: 153px;
-    } .sec50 {
-        width: 150px;
-    } .sec49 {
-        width: 147px;
-    } .sec48 {
-        width: 144px;
-    } .sec47 {
-        width: 141px;
-    } .sec46 {
-        width: 138px;
-    } .sec45 {
-        width: 135px;
-    } .sec44 {
-        width: 132px;
-    } .sec43 {
-        width: 129px;
-    } .sec42 {
-        width: 126px;
-    } .sec41 {
-        width: 123px;
-    } .sec40 {
-        width: 120px;
-    } .sec39 {
-        width: 117px;
-    } .sec38 {
-        width: 114px;
-    } .sec37 {
-        width: 111px;
-    } .sec36 {
-        width: 108px;
-    } .sec35 {
-        width: 105px;
-    } .sec34 {
-        width: 102px;
-    } .sec33 {
-        width: 99px;
-    } .sec32 {
-        width: 96px;
-    } .sec31 {
-        width: 93px;
-    } .sec30 {
-        width: 90px;
-    } .sec29 {
-        width: 87px;
-    } .sec28 {
-        width: 84px;
-    } .sec27 {
-        width: 81px;
-    } .sec26 {
-        width: 78px;
-    } .sec25 {
-        width: 75px;
-    } .sec24 {
-        width: 72px;
-    } .sec23 {
-        width: 69px;
-    } .sec22 {
-        width: 66px;
-    } .sec21 {
-        width: 63px;
-    } .sec20 {
-        width: 60px;
-    } .sec19 {
-        width: 57px;
-    } .sec18 {
-        width: 54px;
-    } .sec17 {
-        width: 51px;
-    } .sec16 {
-        width: 48px;
-    } .sec15 {
-        width: 45px;
-    } .sec14 {
-        width: 42px;
-    } .sec13 {
-        width: 39px;
-    } .sec12 {
-        width: 36px;
-    } .sec11 {
-        width: 33px;
-    } .sec10 {
-        width: 30px;
-    } .sec9 {
-        width: 27px;
-    } .sec8 {
-        width: 24px;
-    } .sec7 {
-        width: 21px;
-    } .sec6 {
-        width: 18px;
-    } .sec5 {
-        width: 15px;
-    } .sec4 {
-        width: 12px;
-    } .sec3 {
-        width: 9px;
-    } .sec2 {
-        width: 6px;
-    } .sec1 {
-        width: 3px;
-    } .sec0 {
-        width: 0px;
-    } 
+    
+    .sec0{width: 0px}
+    .sec1{width: 1.5px}
+    .sec2{width: 3px}
+    .sec3{width: 4.5px}
+    .sec4{width: 6px}
+    .sec5{width: 7.5px}
+    .sec6{width: 9px}
+    .sec7{width: 10.5px}
+    .sec8{width: 12px}
+    .sec9{width: 13.5px}
+    .sec10{width: 15px}
+    .sec11{width: 16.5px}
+    .sec12{width: 18px}
+    .sec13{width: 19.5px}
+    .sec14{width: 21px}
+    .sec15{width: 22.5px}
+    .sec16{width: 24px}
+    .sec17{width: 25.5px}
+    .sec18{width: 27px}
+    .sec19{width: 28.5px}
+    .sec20{width: 30px}
+    .sec21{width: 31.5px}
+    .sec22{width: 33px}
+    .sec23{width: 34.5px}
+    .sec24{width: 36px}
+    .sec25{width: 37.5px}
+    .sec26{width: 39px}
+    .sec27{width: 40.5px}
+    .sec28{width: 42px}
+    .sec29{width: 43.5px}
+    .sec30{width: 45px}
+    .sec31{width: 46.5px}
+    .sec32{width: 48px}
+    .sec33{width: 49.5px}
+    .sec34{width: 51px}
+    .sec35{width: 52.5px}
+    .sec36{width: 54px}
+    .sec37{width: 55.5px}
+    .sec38{width: 57px}
+    .sec39{width: 58.5px}
+    .sec40{width: 60px}
+    .sec41{width: 61.5px}
+    .sec42{width: 63px}
+    .sec43{width: 64.5px}
+    .sec44{width: 66px}
+    .sec45{width: 67.5px}
+    .sec46{width: 69px}
+    .sec47{width: 70.5px}
+    .sec48{width: 72px}
+    .sec49{width: 73.5px}
+    .sec50{width: 75px}
+    .sec51{width: 76.5px}
+    .sec52{width: 78px}
+    .sec53{width: 79.5px}
+    .sec54{width: 81px}
+    .sec55{width: 82.5px}
+    .sec56{width: 84px}
+    .sec57{width: 85.5px}
+    .sec58{width: 87px}
+    .sec59{width: 88.5px}
+    .sec60{width: 90px}
+    .sec61{width: 91.5px}
+    .sec62{width: 93px}
+    .sec63{width: 94.5px}
+    .sec64{width: 96px}
+    .sec65{width: 97.5px}
+    .sec66{width: 99px}
+    .sec67{width: 100.5px}
+    .sec68{width: 102px}
+    .sec69{width: 103.5px}
+    .sec70{width: 105px}
+    .sec71{width: 106.5px}
+    .sec72{width: 108px}
+    .sec73{width: 109.5px}
+    .sec74{width: 111px}
+    .sec75{width: 112.5px}
+    .sec76{width: 114px}
+    .sec77{width: 115.5px}
+    .sec78{width: 117px}
+    .sec79{width: 118.5px}
+    .sec80{width: 120px}
+    .sec81{width: 121.5px}
+    .sec82{width: 123px}
+    .sec83{width: 124.5px}
+    .sec84{width: 126px}
+    .sec85{width: 127.5px}
+    .sec86{width: 129px}
+    .sec87{width: 130.5px}
+    .sec88{width: 132px}
+    .sec89{width: 134.5px}
+    .sec90{width: 136px}
+    .sec91{width: 137.5px}
+    .sec92{width: 139px}
+    .sec93{width: 140.5px}
+    .sec94{width: 142px}
+    .sec95{width: 143.5px}
+    .sec96{width: 145px}
+    .sec97{width: 146.5px}
+    .sec98{width: 148px}
+    .sec99{width: 149.5px}
+    .sec100{width: 151px}
+    .sec101{width: 152.5px}
+    .sec102{width: 154px}
+    .sec103{width: 155.5px}
+    .sec104{width: 157px}
+    .sec105{width: 158.5px}
+    .sec106{width: 160px}
+    .sec107{width: 161.5px}
+    .sec108{width: 163px}
+    .sec109{width: 164.5px}
+    .sec110{width: 166px}
+    .sec111{width: 167.5px}
+    .sec112{width: 169px}
+    .sec113{width: 170.5px}
+    .sec114{width: 172px}
+    .sec115{width: 173.5px}
+    .sec116{width: 175px}
+    .sec117{width: 176.5px}
+    .sec118{width: 178px}
+    .sec119{width: 179.5px}
+    .sec120{width: 180px}
     .top_number{
         width: 100px;
         height: 30px;
@@ -320,7 +311,6 @@
         font-family: BMJUA;
         font-size: 15px;
     }
-
     .Keypad_Btn{
         width: 80px;
         height: 55px;
@@ -335,6 +325,7 @@
         font-size: 25px;
         margin-bottom: 5px;
         font-size: 18px;
+        font-family: BMJUA;
     }
     .Keypad_Btn:hover{
         width: 80px;
@@ -351,6 +342,7 @@
         margin-bottom: 5px;
         background-color: #88D7F6;
         font-size: 18px;
+        font-family: BMJUA;
     }
     .Keypad_cancel{
         width: 80px;
@@ -389,9 +381,9 @@
         width: 200px;
         height: 40px;
         outline: 0em;
-        border: 1px solid rgba(196, 196, 196, 0.1);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
@@ -407,9 +399,9 @@
         height: 40px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px solid rgba(196, 196, 196, 0.1);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
-        box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.25);
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-left: auto;
         margin-right: auto;
@@ -441,13 +433,12 @@
 
 @media (min-width: 768px) and (max-width: 1024px){
     .limit_bar_container{
-        display: inline-block;
+        display: block;
     }
     .limit_bar_img{
-        display: block;
+        display: inline-flex;
         width: 180px;
         height: 141px;
-        float: left;
         background-image: url('../Images/limitClock.png');
     }
     .limit_bar_back{
@@ -463,7 +454,8 @@
         border: 1px 1px 1px 1px;
         border-radius: 10px 10px 10px 10px;
         margin-top: 70px;
-        margin-left: -30px;
+        margin-left: -20px;
+        margin-bottom: 50px;
     }
     .limit_bar{
         display: inline-block;
@@ -473,137 +465,130 @@
         border-style: solid;
         border: 1px;
         border-radius: 10px 10px 10px 10px;
+        margin-bottom: 50px;
     }
-    .sec60 {
-        width: 300px;
-    }
-    .sec59 {
-        width: 295px;
-    }
-    .sec58 {
-        width: 290px;
-    }
-    .sec57 {
-        width: 285px;
-    }
-    .sec56 {
-        width: 280px;
-    }
-    .sec55 {
-        width: 275px;
-    }
-    .sec54 {
-        width: 270px;
-    }
-    .sec53 {
-        width: 265px;
-    } .sec52 {
-        width: 260px;
-    } .sec51 {
-        width: 255px;
-    } .sec50 {
-        width: 250px;
-    } .sec49 {
-        width: 245px;
-    } .sec48 {
-        width: 240px;
-    } .sec47 {
-        width: 235px;
-    } .sec46 {
-        width: 230px;
-    } .sec45 {
-        width: 225px;
-    } .sec44 {
-        width: 220px;
-    } .sec43 {
-        width: 215px;
-    } .sec42 {
-        width: 210px;
-    } .sec41 {
-        width: 205px;
-    } .sec40 {
-        width: 200px;
-    } .sec39 {
-        width: 195px;
-    } .sec38 {
-        width: 190px;
-    } .sec37 {
-        width: 185px;
-    } .sec36 {
-        width: 180px;
-    } .sec35 {
-        width: 175px;
-    } .sec34 {
-        width: 170px;
-    } .sec33 {
-        width: 165px;
-    } .sec32 {
-        width: 160px;
-    } .sec31 {
-        width: 155px;
-    } .sec30 {
-        width: 150px;
-    } .sec29 {
-        width: 145px;
-    } .sec28 {
-        width: 140px;
-    } .sec27 {
-        width: 135px;
-    } .sec26 {
-        width: 130px;
-    } .sec25 {
-        width: 125px;
-    } .sec24 {
-        width: 120px;
-    } .sec23 {
-        width: 115px;
-    } .sec22 {
-        width: 110px;
-    } .sec21 {
-        width: 105px;
-    } .sec20 {
-        width: 100px;
-    } .sec19 {
-        width: 95px;
-    } .sec18 {
-        width: 90px;
-    } .sec17 {
-        width: 85px;
-    } .sec16 {
-        width: 80px;
-    } .sec15 {
-        width: 75px;
-    } .sec14 {
-        width: 70px;
-    } .sec13 {
-        width: 65px;
-    } .sec12 {
-        width: 60px;
-    } .sec11 {
-        width: 55px;
-    } .sec10 {
-        width: 50px;
-    } .sec9 {
-        width: 45px;
-    } .sec8 {
-        width: 40px;
-    } .sec7 {
-        width: 35px;
-    } .sec6 {
-        width: 30px;
-    } .sec5 {
-        width: 25px;
-    } .sec4 {
-        width: 20px;
-    } .sec3 {
-        width: 15px;
-    } .sec2 {
-        width: 10px;
-    } .sec1 {
-        width: 5px;
-    } .sec0 {
-        width: 0;
-    } 
+    
+    .sec0{width: 0px}
+    .sec1{width: 2.5px}
+    .sec2{width: 5px}
+    .sec3{width: 7.5px}
+    .sec4{width: 10px}
+    .sec5{width: 12.5px}
+    .sec6{width: 15px}
+    .sec7{width: 17.5px}
+    .sec8{width: 20px}
+    .sec9{width: 22.5px}
+    .sec10{width: 25px}
+    .sec11{width: 27.5px}
+    .sec12{width: 30px}
+    .sec13{width: 32.5px}
+    .sec14{width: 35px}
+    .sec15{width: 37.5px}
+    .sec16{width: 40px}
+    .sec17{width: 42.5px}
+    .sec18{width: 45px}
+    .sec19{width: 47.5px}
+    .sec20{width: 50px}
+    .sec21{width: 52.5px}
+    .sec22{width: 55px}
+    .sec23{width: 57.5px}
+    .sec24{width: 60px}
+    .sec25{width: 62.5px}
+    .sec26{width: 65px}
+    .sec27{width: 67.5px}
+    .sec28{width: 70px}
+    .sec29{width: 72.5px}
+    .sec30{width: 75px}
+    .sec31{width: 77.5px}
+    .sec32{width: 80px}
+    .sec33{width: 82.5px}
+    .sec34{width: 85px}
+    .sec35{width: 87.5px}
+    .sec36{width: 90px}
+    .sec37{width: 92.5px}
+    .sec38{width: 95px}
+    .sec39{width: 97.5px}
+    .sec40{width: 100px}
+    .sec41{width: 102.5px}
+    .sec42{width: 105px}
+    .sec43{width: 107.5px}
+    .sec44{width: 110px}
+    .sec45{width: 112.5px}
+    .sec46{width: 115px}
+    .sec47{width: 117.5px}
+    .sec48{width: 120px}
+    .sec49{width: 122.5px}
+    .sec50{width: 125px}
+    .sec51{width: 127.5px}
+    .sec52{width: 130px}
+    .sec53{width: 132.5px}
+    .sec54{width: 135px}
+    .sec55{width: 137.5px}
+    .sec56{width: 140px}
+    .sec57{width: 142.5px}
+    .sec58{width: 145px}
+    .sec59{width: 147.5px}
+    .sec60{width: 150px}
+    .sec61{width: 152.5px}
+    .sec62{width: 155px}
+    .sec63{width: 157.5px}
+    .sec64{width: 160px}
+    .sec65{width: 162.5px}
+    .sec66{width: 165px}
+    .sec67{width: 167.5px}
+    .sec68{width: 170px}
+    .sec69{width: 172.5px}
+    .sec70{width: 175px}
+    .sec71{width: 177.5px}
+    .sec72{width: 180px}
+    .sec73{width: 182.5px}
+    .sec74{width: 185px}
+    .sec75{width: 187.5px}
+    .sec76{width: 190px}
+    .sec77{width: 192.5px}
+    .sec78{width: 195px}
+    .sec79{width: 197.5px}
+    .sec80{width: 200px}
+    .sec81{width: 202.5px}
+    .sec82{width: 205px}
+    .sec83{width: 207.5px}
+    .sec84{width: 210px}
+    .sec85{width: 212.5px}
+    .sec86{width: 215px}
+    .sec87{width: 217.5px}
+    .sec88{width: 220px}
+    .sec89{width: 222.5px}
+    .sec90{width: 225px}
+    .sec91{width: 227.5px}
+    .sec92{width: 230px}
+    .sec93{width: 232.5px}
+    .sec94{width: 235px}
+    .sec95{width: 237.5px}
+    .sec96{width: 240px}
+    .sec97{width: 242.5px}
+    .sec98{width: 245px}
+    .sec99{width: 247.5px}
+    .sec100{width: 250px}
+    .sec101{width: 252.5px}
+    .sec102{width: 255px}
+    .sec103{width: 257.5px}
+    .sec104{width: 260px}
+    .sec105{width: 262.5px}
+    .sec106{width: 265px}
+    .sec107{width: 267.5px}
+    .sec108{width: 270px}
+    .sec109{width: 272.5px}
+    .sec110{width: 275px}
+    .sec111{width: 277.5px}
+    .sec112{width: 280px}
+    .sec113{width: 282.5px}
+    .sec114{width: 285px}
+    .sec115{width: 287.5px}
+    .sec116{width: 290px}
+    .sec117{width: 292.5px}
+    .sec118{width: 295px}
+    .sec119{width: 297.5px}
+    .sec120{width: 300px}
 
 
     .gugudan_box{
@@ -762,19 +747,15 @@
     .result_rightPb{
         width: 89px;
         text-align: left;
-        margin-right: 5px;
-        margin-left: 20px;
         text-align: center;
     }
     .result_wrongPb{
         width: 89px;
         text-align: left;
-        margin-left: 5px;
         text-align: center;
     }
     .result_listitem{
         width: 400px;
-        display: flex;
         justify-content: center;
         margin-top: 3px;
         margin-bottom: 4px;
@@ -784,7 +765,6 @@
         margin-top: 20px;
         margin-bottom: 20px;
     }
-
     .Keypad_Btn{
         width: 140px;
         height: 65px;
@@ -798,6 +778,7 @@
         color: #6A6A6A;
         font-size: 25px;
         margin-bottom: 5px;
+        font-family: BMJUA;
     }
     .Keypad_Btn:hover{
         width: 140px;
@@ -813,6 +794,7 @@
         font-size: 25px;
         margin-bottom: 5px;
         background-color: #88D7F6;
+        font-family: BMJUA;
     }
     .Keypad_cancel{
         width: 140px;
@@ -857,8 +839,9 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -872,8 +855,9 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -964,136 +948,128 @@
         border-radius: 10px 10px 10px 10px;
         margin-bottom: 50px;
     }
-    .sec60 {
-        width: 300px;
-    }
-    .sec59 {
-        width: 295px;
-    }
-    .sec58 {
-        width: 290px;
-    }
-    .sec57 {
-        width: 285px;
-    }
-    .sec56 {
-        width: 280px;
-    }
-    .sec55 {
-        width: 275px;
-    }
-    .sec54 {
-        width: 270px;
-    }
-    .sec53 {
-        width: 265px;
-    } .sec52 {
-        width: 260px;
-    } .sec51 {
-        width: 255px;
-    } .sec50 {
-        width: 250px;
-    } .sec49 {
-        width: 245px;
-    } .sec48 {
-        width: 240px;
-    } .sec47 {
-        width: 235px;
-    } .sec46 {
-        width: 230px;
-    } .sec45 {
-        width: 225px;
-    } .sec44 {
-        width: 220px;
-    } .sec43 {
-        width: 215px;
-    } .sec42 {
-        width: 210px;
-    } .sec41 {
-        width: 205px;
-    } .sec40 {
-        width: 200px;
-    } .sec39 {
-        width: 195px;
-    } .sec38 {
-        width: 190px;
-    } .sec37 {
-        width: 185px;
-    } .sec36 {
-        width: 180px;
-    } .sec35 {
-        width: 175px;
-    } .sec34 {
-        width: 170px;
-    } .sec33 {
-        width: 165px;
-    } .sec32 {
-        width: 160px;
-    } .sec31 {
-        width: 155px;
-    } .sec30 {
-        width: 150px;
-    } .sec29 {
-        width: 145px;
-    } .sec28 {
-        width: 140px;
-    } .sec27 {
-        width: 135px;
-    } .sec26 {
-        width: 130px;
-    } .sec25 {
-        width: 125px;
-    } .sec24 {
-        width: 120px;
-    } .sec23 {
-        width: 115px;
-    } .sec22 {
-        width: 110px;
-    } .sec21 {
-        width: 105px;
-    } .sec20 {
-        width: 100px;
-    } .sec19 {
-        width: 95px;
-    } .sec18 {
-        width: 90px;
-    } .sec17 {
-        width: 85px;
-    } .sec16 {
-        width: 80px;
-    } .sec15 {
-        width: 75px;
-    } .sec14 {
-        width: 70px;
-    } .sec13 {
-        width: 65px;
-    } .sec12 {
-        width: 60px;
-    } .sec11 {
-        width: 55px;
-    } .sec10 {
-        width: 50px;
-    } .sec9 {
-        width: 45px;
-    } .sec8 {
-        width: 40px;
-    } .sec7 {
-        width: 35px;
-    } .sec6 {
-        width: 30px;
-    } .sec5 {
-        width: 25px;
-    } .sec4 {
-        width: 20px;
-    } .sec3 {
-        width: 15px;
-    } .sec2 {
-        width: 10px;
-    } .sec1 {
-        width: 5px;
-    } .sec0 {
-        width: 0;
-    } 
+    
+    .sec0{width: 0px}
+    .sec1{width: 2.5px}
+    .sec2{width: 5px}
+    .sec3{width: 7.5px}
+    .sec4{width: 10px}
+    .sec5{width: 12.5px}
+    .sec6{width: 15px}
+    .sec7{width: 17.5px}
+    .sec8{width: 20px}
+    .sec9{width: 22.5px}
+    .sec10{width: 25px}
+    .sec11{width: 27.5px}
+    .sec12{width: 30px}
+    .sec13{width: 32.5px}
+    .sec14{width: 35px}
+    .sec15{width: 37.5px}
+    .sec16{width: 40px}
+    .sec17{width: 42.5px}
+    .sec18{width: 45px}
+    .sec19{width: 47.5px}
+    .sec20{width: 50px}
+    .sec21{width: 52.5px}
+    .sec22{width: 55px}
+    .sec23{width: 57.5px}
+    .sec24{width: 60px}
+    .sec25{width: 62.5px}
+    .sec26{width: 65px}
+    .sec27{width: 67.5px}
+    .sec28{width: 70px}
+    .sec29{width: 72.5px}
+    .sec30{width: 75px}
+    .sec31{width: 77.5px}
+    .sec32{width: 80px}
+    .sec33{width: 82.5px}
+    .sec34{width: 85px}
+    .sec35{width: 87.5px}
+    .sec36{width: 90px}
+    .sec37{width: 92.5px}
+    .sec38{width: 95px}
+    .sec39{width: 97.5px}
+    .sec40{width: 100px}
+    .sec41{width: 102.5px}
+    .sec42{width: 105px}
+    .sec43{width: 107.5px}
+    .sec44{width: 110px}
+    .sec45{width: 112.5px}
+    .sec46{width: 115px}
+    .sec47{width: 117.5px}
+    .sec48{width: 120px}
+    .sec49{width: 122.5px}
+    .sec50{width: 125px}
+    .sec51{width: 127.5px}
+    .sec52{width: 130px}
+    .sec53{width: 132.5px}
+    .sec54{width: 135px}
+    .sec55{width: 137.5px}
+    .sec56{width: 140px}
+    .sec57{width: 142.5px}
+    .sec58{width: 145px}
+    .sec59{width: 147.5px}
+    .sec60{width: 150px}
+    .sec61{width: 152.5px}
+    .sec62{width: 155px}
+    .sec63{width: 157.5px}
+    .sec64{width: 160px}
+    .sec65{width: 162.5px}
+    .sec66{width: 165px}
+    .sec67{width: 167.5px}
+    .sec68{width: 170px}
+    .sec69{width: 172.5px}
+    .sec70{width: 175px}
+    .sec71{width: 177.5px}
+    .sec72{width: 180px}
+    .sec73{width: 182.5px}
+    .sec74{width: 185px}
+    .sec75{width: 187.5px}
+    .sec76{width: 190px}
+    .sec77{width: 192.5px}
+    .sec78{width: 195px}
+    .sec79{width: 197.5px}
+    .sec80{width: 200px}
+    .sec81{width: 202.5px}
+    .sec82{width: 205px}
+    .sec83{width: 207.5px}
+    .sec84{width: 210px}
+    .sec85{width: 212.5px}
+    .sec86{width: 215px}
+    .sec87{width: 217.5px}
+    .sec88{width: 220px}
+    .sec89{width: 222.5px}
+    .sec90{width: 225px}
+    .sec91{width: 227.5px}
+    .sec92{width: 230px}
+    .sec93{width: 232.5px}
+    .sec94{width: 235px}
+    .sec95{width: 237.5px}
+    .sec96{width: 240px}
+    .sec97{width: 242.5px}
+    .sec98{width: 245px}
+    .sec99{width: 247.5px}
+    .sec100{width: 250px}
+    .sec101{width: 252.5px}
+    .sec102{width: 255px}
+    .sec103{width: 257.5px}
+    .sec104{width: 260px}
+    .sec105{width: 262.5px}
+    .sec106{width: 265px}
+    .sec107{width: 267.5px}
+    .sec108{width: 270px}
+    .sec109{width: 272.5px}
+    .sec110{width: 275px}
+    .sec111{width: 277.5px}
+    .sec112{width: 280px}
+    .sec113{width: 282.5px}
+    .sec114{width: 285px}
+    .sec115{width: 287.5px}
+    .sec116{width: 290px}
+    .sec117{width: 292.5px}
+    .sec118{width: 295px}
+    .sec119{width: 297.5px}
+    .sec120{width: 300px}
     .gugudan_box{
         width: 100%;
     }
@@ -1251,13 +1227,11 @@
         width: 89px;
         text-align: left;
         margin-right: 5px;
-        margin-left: 20px;
         text-align: center;
     }
     .result_wrongPb{
         width: 89px;
         text-align: left;
-        margin-left: 5px;
         text-align: center;
     }
     .result_listitem{
@@ -1286,6 +1260,7 @@
         color: #6A6A6A;
         font-size: 25px;
         margin-bottom: 5px;
+        font-family: BMJUA;
     }
     .Keypad_Btn:hover{
         width: 140px;
@@ -1301,6 +1276,7 @@
         font-size: 25px;
         margin-bottom: 5px;
         background-color: #88D7F6;
+        font-family: BMJUA;
     }
     .Keypad_cancel{
         width: 140px;
@@ -1345,8 +1321,9 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -1360,8 +1337,9 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -1451,136 +1429,128 @@
         border-radius: 10px 10px 10px 10px;
         margin-bottom: 50px;
     }
-    .sec60 {
-        width: 300px;
-    }
-    .sec59 {
-        width: 295px;
-    }
-    .sec58 {
-        width: 290px;
-    }
-    .sec57 {
-        width: 285px;
-    }
-    .sec56 {
-        width: 280px;
-    }
-    .sec55 {
-        width: 275px;
-    }
-    .sec54 {
-        width: 270px;
-    }
-    .sec53 {
-        width: 265px;
-    } .sec52 {
-        width: 260px;
-    } .sec51 {
-        width: 255px;
-    } .sec50 {
-        width: 250px;
-    } .sec49 {
-        width: 245px;
-    } .sec48 {
-        width: 240px;
-    } .sec47 {
-        width: 235px;
-    } .sec46 {
-        width: 230px;
-    } .sec45 {
-        width: 225px;
-    } .sec44 {
-        width: 220px;
-    } .sec43 {
-        width: 215px;
-    } .sec42 {
-        width: 210px;
-    } .sec41 {
-        width: 205px;
-    } .sec40 {
-        width: 200px;
-    } .sec39 {
-        width: 195px;
-    } .sec38 {
-        width: 190px;
-    } .sec37 {
-        width: 185px;
-    } .sec36 {
-        width: 180px;
-    } .sec35 {
-        width: 175px;
-    } .sec34 {
-        width: 170px;
-    } .sec33 {
-        width: 165px;
-    } .sec32 {
-        width: 160px;
-    } .sec31 {
-        width: 155px;
-    } .sec30 {
-        width: 150px;
-    } .sec29 {
-        width: 145px;
-    } .sec28 {
-        width: 140px;
-    } .sec27 {
-        width: 135px;
-    } .sec26 {
-        width: 130px;
-    } .sec25 {
-        width: 125px;
-    } .sec24 {
-        width: 120px;
-    } .sec23 {
-        width: 115px;
-    } .sec22 {
-        width: 110px;
-    } .sec21 {
-        width: 105px;
-    } .sec20 {
-        width: 100px;
-    } .sec19 {
-        width: 95px;
-    } .sec18 {
-        width: 90px;
-    } .sec17 {
-        width: 85px;
-    } .sec16 {
-        width: 80px;
-    } .sec15 {
-        width: 75px;
-    } .sec14 {
-        width: 70px;
-    } .sec13 {
-        width: 65px;
-    } .sec12 {
-        width: 60px;
-    } .sec11 {
-        width: 55px;
-    } .sec10 {
-        width: 50px;
-    } .sec9 {
-        width: 45px;
-    } .sec8 {
-        width: 40px;
-    } .sec7 {
-        width: 35px;
-    } .sec6 {
-        width: 30px;
-    } .sec5 {
-        width: 25px;
-    } .sec4 {
-        width: 20px;
-    } .sec3 {
-        width: 15px;
-    } .sec2 {
-        width: 10px;
-    } .sec1 {
-        width: 5px;
-    } .sec0 {
-        width: 0;
-    } 
+    .sec0{width: 0px}
+    .sec1{width: 2.5px}
+    .sec2{width: 5px}
+    .sec3{width: 7.5px}
+    .sec4{width: 10px}
+    .sec5{width: 12.5px}
+    .sec6{width: 15px}
+    .sec7{width: 17.5px}
+    .sec8{width: 20px}
+    .sec9{width: 22.5px}
+    .sec10{width: 25px}
+    .sec11{width: 27.5px}
+    .sec12{width: 30px}
+    .sec13{width: 32.5px}
+    .sec14{width: 35px}
+    .sec15{width: 37.5px}
+    .sec16{width: 40px}
+    .sec17{width: 42.5px}
+    .sec18{width: 45px}
+    .sec19{width: 47.5px}
+    .sec20{width: 50px}
+    .sec21{width: 52.5px}
+    .sec22{width: 55px}
+    .sec23{width: 57.5px}
+    .sec24{width: 60px}
+    .sec25{width: 62.5px}
+    .sec26{width: 65px}
+    .sec27{width: 67.5px}
+    .sec28{width: 70px}
+    .sec29{width: 72.5px}
+    .sec30{width: 75px}
+    .sec31{width: 77.5px}
+    .sec32{width: 80px}
+    .sec33{width: 82.5px}
+    .sec34{width: 85px}
+    .sec35{width: 87.5px}
+    .sec36{width: 90px}
+    .sec37{width: 92.5px}
+    .sec38{width: 95px}
+    .sec39{width: 97.5px}
+    .sec40{width: 100px}
+    .sec41{width: 102.5px}
+    .sec42{width: 105px}
+    .sec43{width: 107.5px}
+    .sec44{width: 110px}
+    .sec45{width: 112.5px}
+    .sec46{width: 115px}
+    .sec47{width: 117.5px}
+    .sec48{width: 120px}
+    .sec49{width: 122.5px}
+    .sec50{width: 125px}
+    .sec51{width: 127.5px}
+    .sec52{width: 130px}
+    .sec53{width: 132.5px}
+    .sec54{width: 135px}
+    .sec55{width: 137.5px}
+    .sec56{width: 140px}
+    .sec57{width: 142.5px}
+    .sec58{width: 145px}
+    .sec59{width: 147.5px}
+    .sec60{width: 150px}
+    .sec61{width: 152.5px}
+    .sec62{width: 155px}
+    .sec63{width: 157.5px}
+    .sec64{width: 160px}
+    .sec65{width: 162.5px}
+    .sec66{width: 165px}
+    .sec67{width: 167.5px}
+    .sec68{width: 170px}
+    .sec69{width: 172.5px}
+    .sec70{width: 175px}
+    .sec71{width: 177.5px}
+    .sec72{width: 180px}
+    .sec73{width: 182.5px}
+    .sec74{width: 185px}
+    .sec75{width: 187.5px}
+    .sec76{width: 190px}
+    .sec77{width: 192.5px}
+    .sec78{width: 195px}
+    .sec79{width: 197.5px}
+    .sec80{width: 200px}
+    .sec81{width: 202.5px}
+    .sec82{width: 205px}
+    .sec83{width: 207.5px}
+    .sec84{width: 210px}
+    .sec85{width: 212.5px}
+    .sec86{width: 215px}
+    .sec87{width: 217.5px}
+    .sec88{width: 220px}
+    .sec89{width: 222.5px}
+    .sec90{width: 225px}
+    .sec91{width: 227.5px}
+    .sec92{width: 230px}
+    .sec93{width: 232.5px}
+    .sec94{width: 235px}
+    .sec95{width: 237.5px}
+    .sec96{width: 240px}
+    .sec97{width: 242.5px}
+    .sec98{width: 245px}
+    .sec99{width: 247.5px}
+    .sec100{width: 250px}
+    .sec101{width: 252.5px}
+    .sec102{width: 255px}
+    .sec103{width: 257.5px}
+    .sec104{width: 260px}
+    .sec105{width: 262.5px}
+    .sec106{width: 265px}
+    .sec107{width: 267.5px}
+    .sec108{width: 270px}
+    .sec109{width: 272.5px}
+    .sec110{width: 275px}
+    .sec111{width: 277.5px}
+    .sec112{width: 280px}
+    .sec113{width: 282.5px}
+    .sec114{width: 285px}
+    .sec115{width: 287.5px}
+    .sec116{width: 290px}
+    .sec117{width: 292.5px}
+    .sec118{width: 295px}
+    .sec119{width: 297.5px}
+    .sec120{width: 300px}
+    
     .gugudan_box{
         width: 100%;
     }
@@ -1735,14 +1705,11 @@
     .result_rightPb{
         width: 89px;
         text-align: left;
-        margin-right: 5px;
-        margin-left: 20px;
         text-align: center;
     }
     .result_wrongPb{
         width: 89px;
         text-align: left;
-        margin-left: 5px;
         text-align: center;
     }
     .result_listitem{
@@ -1771,6 +1738,7 @@
         color: #6A6A6A;
         font-size: 25px;
         margin-bottom: 5px;
+        font-family: BMJUA;
     }
     .Keypad_Btn:hover{
         width: 140px;
@@ -1786,6 +1754,7 @@
         color: #6A6A6A;
         font-size: 25px;
         background-color: #88D7F6;
+        font-family: BMJUA;
     }
     .Keypad_cancel{
         width: 140px;
@@ -1830,8 +1799,9 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;
@@ -1845,8 +1815,9 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.1);
-        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+        border: 1px dashed rgba(196, 196, 196, 0.75);
+        box-sizing: border-box;
+        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         margin-bottom: 10px;
         margin-top: 10px;

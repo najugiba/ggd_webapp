@@ -2,6 +2,8 @@
     font-family: "BMJUA";
     src: url("../Fonts/BMJUA_ttf.ttf");
 }
+
+
 @media (min-width: 320px) and (max-width: 420px) {
     .navibar_body{
         height: 1200px;

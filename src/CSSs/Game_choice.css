@@ -14,7 +14,7 @@
     .Problem_numberBox{
         width: 100px;
         height: 30px;
-        font-family: Roboto;
+        font-family: BMJUA;
         font-style: normal;
         font-weight: normal;
         font-size: 15px;
@@ -114,12 +114,12 @@
         margin-left: auto;
         margin-right: auto;
         outline: 0;
+        font-family: BMJUA;
     }
     .Result_Btn:hover{
         display: block;
         width: 225px;
         height: 40px;
-        background: #FFFEFE;
         border: 1px dashed rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
         box-shadow: 0px 4px 1.5px rgba(0, 0, 0, 0.25);
@@ -129,6 +129,7 @@
         margin-right: auto;
         outline: 0;
         background-color: #88D7F6;
+        font-family: BMJUA;
     }
     .Result_Btn1{
         margin-top: 59px;
@@ -159,7 +160,7 @@
     .Problem_numberBox{
         width: 180px;
         height: 50px;
-        font-family: Roboto;
+        font-family: BMJUA;
         font-style: normal;
         font-weight: normal;
         font-size: 25px;
@@ -266,6 +267,7 @@
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+        font-family: BMJUA;
         outline: 0;
     }
     .Result_Btn:hover{
@@ -281,6 +283,7 @@
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+        font-family: BMJUA;
         outline: 0;
         background-color: #88D7F6;
     }
@@ -336,7 +339,7 @@
     .Problem_numberBox{
         width: 180px;
         height: 50px;
-        font-family: Roboto;
+        font-family: BMJUA;
         font-style: normal;
         font-weight: normal;
         font-size: 25px;
@@ -443,6 +446,7 @@
         margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
+        font-family: BMJUA;
         outline: 0;
     }
     .Result_Btn:hover{
@@ -459,10 +463,11 @@
         margin-left: auto;
         margin-right: auto;
         outline: 0;
+        font-family: BMJUA;
         background-color: #88D7F6;
     }
     .Result_Btn1{
-        margin-top: 59px;
+        margin-top: 39px;
         outline: 0;
     }
     
@@ -524,6 +529,7 @@
         margin-top: 32px;
         margin-left: 24px;
         margin-bottom: 99px;
+        font-family: BMJUA;
     }
     .Choice_Line{
         width: 90%;
@@ -621,10 +627,10 @@
         box-sizing: border-box;
         box-shadow: 0px 4px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         outline: 0;
+        font-family: BMJUA;
     }
     .Result_Btn:hover{
         display: block;
@@ -636,18 +642,17 @@
         box-sizing: border-box;
         box-shadow: 0px 4px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
-        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
         outline: 0;
         background-color: #88D7F6;
+        font-family: BMJUA;
     }
     .Result_Btn1{
-        margin-top: 59px;
+        margin-top: 39px;
+        margin-bottom: 20px;
         outline: 0;
     }
-    
-
     .OnTablet_AnswerBox{
         display: inline-block;
         width: 320px;
