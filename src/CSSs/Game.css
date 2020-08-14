@@ -171,6 +171,7 @@
         line-height: 30px;
         vertical-align: middle;
     }
+    
     .Game_text{
         font-size: 45px;
         margin-right: auto;
@@ -190,8 +191,16 @@
         text-align: center;
         margin-left: 10px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 180px;
+        height: 180px;
+    }
     .Game_startBtn{
-        margin-top: 150px;
+        margin-top: 50px;
         width: 200px;
         height: 90px;
         background: #FFFFFF;
@@ -204,7 +213,7 @@
         font-size: 20px;
     }
     .Game_startBtn:hover{
-        margin-top: 150px;
+        margin-top: 50px;
         width: 200px;
         height: 90px;
         background: #dae766;
@@ -634,10 +643,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 200px;
-        width: 300px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -646,11 +663,12 @@
         font-family: BMJUA;
         font-weight: bold;
         font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 200px;
-        width: 300px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -659,6 +677,7 @@
         font-family: BMJUA;
         font-weight: bold;
         font-size: 20px;
+        outline: 0em;
     }
 
 
@@ -1113,10 +1132,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 200px;
-        width: 300px;
-        height: 100px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1124,12 +1151,13 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 200px;
-        width: 300px;
-        height: 100px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1137,7 +1165,8 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        outline: 0em;
     }
 
 
@@ -1594,10 +1623,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 300px;
-        width: 400px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1605,12 +1642,13 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 300px;
-        width: 400px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #dae766;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1618,7 +1656,8 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
+        outline: 0em;
     }
     .G_result_box{
         width: 1024px;
