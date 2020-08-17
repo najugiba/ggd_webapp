@@ -3,8 +3,11 @@ import "../CSSs/Checkscore.css";
 import bad from '../Images/bad.png';
 import good from '../Images/good.png';
 import great from '../Images/great.png';
+import { connect } from 'react-redux';
+import { actionCreators } from '../store';
+import store from '../store';
     
-let score_arr = [];
+let score_arr = localStorage.getItem("Totalscore");
 let EXIST;
 
 let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
@@ -16,10 +19,9 @@ let imgindexbox = [];
         let s = localStorage.getItem("Totalscore"); let scores = JSON.parse(s);
         let y = localStorage.getItem("YearOfScore"); let years = JSON.parse(y);
         let m = localStorage.getItem("MonthOfScore"); let months = JSON.parse(m);
+        let d = localStorage.getItem("DateOfScore"); let dates = JSON.parse(d);
         let h = localStorage.getItem("HourOfScore"); let hours = JSON.parse(h);
         let b = localStorage.getItem("BoonOfScore"); let boons = JSON.parse(b);
-
-        let d = localStorage.getItem("DateOfScore"); let dates = JSON.parse(d);
         
     
       //  console.log(scores);
@@ -52,7 +54,10 @@ let imgindexbox = [];
                 score_arr = [scores[i], ...score_arr];
                 imgindexbox = [...imgindexbox, selectimg];
             }
-           // console.log(result);
+            console.log("RESULT");
+            console.log(result);
+            console.log("SCORE_ARR");
+            console.log(score_arr);
             return result;
         }
 
@@ -63,6 +68,8 @@ let imgindexbox = [];
 
 
 function Checkscore(props){
+    // props.UserPlusImageName.ImageName  -> store를 통해 받은 이미지 이름(ex, tiger)
+    // props.UserPlusImageName.UserName -> 닉네임
     const [arr, setArr] = useState(GetScore());
     let list;
     let barlist;
@@ -94,7 +101,7 @@ function Checkscore(props){
             <div style={{display:d1}}>
                 <img className="checkscore_img" src={require(`../Images/${ImgArr[props.idx]}.png`)} />
                 <p className="no_score_text">시험을 보고</p>
-                <p className="no_score_text">다시 성적을 확인해주세요.</p>
+                <p className="no_score_text">성적을 확인해주세요.</p>
                 </div>
             <div className="score_DP" style={{display:d2}}>
                 <div className="percent-indicator" >
@@ -111,7 +118,7 @@ function Checkscore(props){
                 
                 <div className="wrapper2">
                     <p className="Score_Desc">
-                        <span className="Desc_date">날짜/시간/점수</span>
+                        <span className="Desc_date"><span className="nal">날짜</span><span className="si">시간</span><span className="jeom">점수</span></span>
                     </p>
                     <div className="Score_table">
                         {list}
@@ -121,5 +128,16 @@ function Checkscore(props){
         </div>
     )
 }
+// Redux state로부터 home에 prop으로써 전달한다는 뜻.
+function mapStateToProps(state, ownProps){
+    return { UserPlusImageName : state };   //toDos에 state를 가져온다.
+}
 
-export default Checkscore;
+// reducer에 action을 알리는 함수 
+function mapDispatchToProps(dispatch){
+    return {
+        updateState : (IN, UN) => dispatch(actionCreators.updateState(IN,UN))
+     };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(Checkscore);

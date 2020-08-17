@@ -23,6 +23,7 @@
         width: 100%;
         text-align: center;
         font-family: BMJUA;
+        color: #6A6A6A ;
     }
     .percent-indicator{
         display: inline-block;
@@ -179,6 +180,15 @@
         color: rgba(106, 106, 106, 0.8);
     }
  
+    .nal{
+        margin-right: 30px;
+    }
+    .si{
+        margin-left: 10px;
+    }
+    .jeom{
+        margin-left: 40px;
+    }
 
 }
 
@@ -205,6 +215,7 @@
         width: 100%;
         text-align: center;
         font-family: BMJUA;
+        color: #6A6A6A ;
     }
     .score_DP {
         display: inline-block;
@@ -405,6 +416,7 @@
         width: 100%;
         text-align: center;
         font-family: BMJUA;
+        color: #6A6A6A ;
     }
     .percent-indicator{
         display: inline-block;
@@ -552,7 +564,6 @@
     .Desc_date{
         display: inline-block;
         width: 100%;
-        text-align: center;
     }
     .Desc_score{
         display: inline-block;
@@ -577,7 +588,18 @@
         font-size: 25px;
         color: rgba(106, 106, 106, 0.8);
     }
- 
+    .nal{
+        margin-left: -30px;
+        font-size: 40px;
+    }
+    .si{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .jeom{
+        margin-left: 45px;
+        font-size: 40px;
+    }
 
 }
 
@@ -607,6 +629,7 @@
         width: 100%;
         text-align: center;
         font-family: BMJUA;
+        color: #6A6A6A ;
     }
     .score_DP {
         display: inline-block;
@@ -779,5 +802,17 @@
         text-align: center;
         font-size: 25px;
         color: rgba(106, 106, 106, 0.8);
+    }
+    .nal{
+        margin-left: -30px;
+        font-size: 40px;
+    }
+    .si{
+        margin-left: 50px;
+        font-size: 40px;
+    }
+    .jeom{
+        margin-left: 45px;
+        font-size: 40px;
     }
 }
