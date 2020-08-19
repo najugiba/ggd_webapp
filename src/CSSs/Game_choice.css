@@ -34,6 +34,7 @@
     }
     .Choice_Line{
         width: 90%;
+        margin-bottom: 20px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -50,7 +51,7 @@
         font-size: 24px;background: #FFFEFE;
         border: 1px dashed rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
-        box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
+        box-shadow: 3px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         
     }
@@ -217,6 +218,7 @@
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-size: 30px;
+        cursor: pointer;
     }
     .text{
         font-size: 75px;
@@ -286,6 +288,7 @@
         font-family: BMJUA;
         outline: 0;
         background-color: #88D7F6;
+        cursor: pointer;
     }
     .Result_Btn1{
         margin-top: 59px;
@@ -396,6 +399,7 @@
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-size: 30px;
+        cursor: pointer;
     }
     .text{
         font-size: 75px;
@@ -465,6 +469,7 @@
         outline: 0;
         font-family: BMJUA;
         background-color: #88D7F6;
+        cursor: pointer;
     }
     .Result_Btn1{
         margin-top: 39px;
@@ -572,6 +577,7 @@
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-size: 30px;
+        cursor: pointer;
     }
 
     .RA{
@@ -647,6 +653,7 @@
         outline: 0;
         background-color: #88D7F6;
         font-family: BMJUA;
+        cursor: pointer;
     }
     .Result_Btn1{
         margin-top: 39px;

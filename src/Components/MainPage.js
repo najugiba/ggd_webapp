@@ -10,6 +10,8 @@ import { Button } from '@material-ui/core';
 import leftArrow from '../Images/leftArrow.png';
 import rightArrow from '../Images/rightArrow.png';
 import { connect } from 'react-redux';
+import { actionCreators } from '../store';
+import store from '../store';
 /* 
 메인페이지의 구성
     1. 두개의 div태그를 갖는다. (input창과 등록하기 버튼을 가진 화면 + 종류를 선택할 수 있는 화면)
@@ -40,10 +42,14 @@ class MainPage extends React.Component {
     }
 
     render() {
+        const {updateState} = this.props;
+        console.log("Mainpage 에서 받은 Redux data")
+        console.log(this.props.UserPlusImageName);
 
 
         let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
         const CheckID = () => {
+            // 아이디 중복 검사 -> Local이라 상관없어짐
             if (this.state.registerInput === '') {
                 alert("닉네임을 설정해주세요!");
             } else {
@@ -53,6 +59,10 @@ class MainPage extends React.Component {
                 })
                 localStorage.setItem("Nickname", this.state.registerInput);
             }
+
+            // 이미지 이름과 UserName을 모든 컴포넌트에서 사용하기 편하게 Store에 저장변경
+            updateState(ImgArr[this.state.CurrentImgIndex], this.state.registerInput);
+            console.log(this.props.UserPlusImageName);
         }
 
 
@@ -116,6 +126,24 @@ class MainPage extends React.Component {
         );
     }
 }
+/* Redux를 사용하는 컴포넌트에서의 역할
+
+    1. mapStateToProps(state, ownProps) 를 만든다 (이는 Props로 state를 가져오겠다는 것)
+    2. mapDispatchToProps(dispatch) 를 만든다 (이는 이 컴포넌트에서 state를 변경할 수 있게 해준다, 여기선 등록하는 일만 할 것이므로 addToDo만 return 된 것이다.);
+    3. 컴포넌트와 앞서 만든 함수들을 connect해준다. connect는 컴포넌트에서 store에 접근할 수 있게 연결을 해주는 것이다.
+*/
 
 
-export default MainPage;
+// Redux state로부터 home에 prop으로써 전달한다는 뜻.
+function mapStateToProps(state, ownProps){
+    return { UserPlusImageName : state };   //toDos에 state를 가져온다.
+}
+
+// reducer에 action을 알리는 함수 
+function mapDispatchToProps(dispatch){
+    return {
+        updateState : (IN, UN) => dispatch(actionCreators.updateState(IN,UN))
+     };
+}
+
+export default connect(mapStateToProps, mapDispatchToProps)(MainPage);

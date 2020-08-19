@@ -8,6 +8,7 @@ import { useHistory } from "react-router-dom";
 import Clockimg from '../Images/Clockimg.png';
 
 
+let LimitCountDown;
 var flag = false;
 // ==========================랜덤 수 발생 함수======================================
 let generateRandom = function (min, max) {
@@ -25,13 +26,21 @@ const makeRandom = () => {
 
 
 // ==============점수와 날짜를 localstorage에 담아두기 위한 배열들===================
+/*
+ LocalStorage가 계속 초기화 시킬때 사용
 var gr = [];
 var ty = [];
 var tm = [];
 var td = [];
-var th = [];    //시
+var th = [];  //시
 var tb = []; //분
-
+*/
+var gr = JSON.parse(localStorage.getItem("Totalscore"));
+var ty = JSON.parse(localStorage.getItem("YearOfScore"));
+var tm = JSON.parse(localStorage.getItem("MonthOfScore"));
+var td = JSON.parse(localStorage.getItem("DateOfScore"));
+var th = JSON.parse(localStorage.getItem("HourOfScore"));  //시
+var tb = JSON.parse(localStorage.getItem("BoonOfScore")); //분
 
 // ===================정답과 오답을 종료 후 보여 주기 위한 부분=======================
 let RightAnswer = [];
@@ -42,13 +51,13 @@ let RightAnswerListIndex = 0, WrongAnswerListIndex = 0;
 const mapingRightAnswer = () => {
     console.log("mapingRightAnswer 실행");
     RightAnswerList = RightAnswer.map(data => (
-        <li className="result_listitem" style={{ listStyle: 'none', color: 'blue' }} key={RightAnswerListIndex++}>{data}</li>
+        <li className="result_listitem" style={{ listStyle: 'none', color: '#6A6A6A' }} key={RightAnswerListIndex++}>{data}</li>
     ))
 }
 const mapingWrongAnswer = () => {
     console.log("mapingWrongAnswer 실행");
     WrongAnswerList = WrongAnswer.map(data => (
-        <li className="result_listitem" style={{ listStyle: 'none', color: 'red' }} key={WrongAnswerListIndex++}>{data}</li>
+        <li className="result_listitem" style={{ listStyle: 'none', color: '#D9534F' }} key={WrongAnswerListIndex++}>{data}</li>
     ))
 }
 
@@ -106,7 +115,7 @@ function Game(props) {
     };
 
 
-
+    
     let t = 3;
     const countdown = () => {
         const test = setInterval(() => {
@@ -125,44 +134,54 @@ function Game(props) {
 
     let limittimer;
     var limit = 120;
-    const LimitCountDown = () => {
-        console.log("제한시간타이머 작동");
-         limittimer = setInterval(()=>{
-             console.log(`시간 : ${limit}`);
-            if(limit === 0){
-                clearInterval(limittimer);
-                console.log("limit 타이머 종료");
-                setGameDP('none');
-                                setResultDP('');
-                                gr.push(score);
-                                localStorage.setItem("Totalscore", JSON.stringify(gr));
-                                let today = new Date();
-                                let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
-                                let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
-                                let hour = today.getHours(); th.push(hour); localStorage.setItem("HourOfScore", JSON.stringify(th));
-                                let miniute = today.getMinutes(); tb.push(miniute); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
-                                let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
+    useEffect(()=>{
+        // 타이머
+         LimitCountDown = () => {
+            console.log("제한시간타이머 작동");
+             limittimer = window.setInterval(()=>{
+                 console.log(`시간 : ${limit}`);
+                if(limit === 0){
+                    clearInterval(limittimer);
+                    console.log("limit 타이머 종료");
+                    setGameDP('none');
+                                    setResultDP('');
+                                    gr.push(score);
+                                    localStorage.setItem("Totalscore", JSON.stringify(gr));
+                                    let today = new Date();
+                                    let year = today.getFullYear(); ty.push(year); localStorage.setItem("YearOfScore", JSON.stringify(ty));
+                                    let month = today.getMonth(); tm.push(month + 1); localStorage.setItem("MonthOfScore", JSON.stringify(tm)); //월은 +1 해줘야함
+                                    let hour = today.getHours(); th.push(hour); localStorage.setItem("HourOfScore", JSON.stringify(th));
+                                    let miniute = today.getMinutes(); tb.push(miniute); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
+                                    let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
+    
+                            //        console.log(localStorage.getItem("Totalscore"));
+                            //        console.log(localStorage.getItem("YearOfScore"));
+                            //        console.log(localStorage.getItem("MonthOfScore"));
+                            //        console.log(localStorage.getItem("DateOfScore"));
+    
+                                    mapingRightAnswer();
+                                    mapingWrongAnswer();
+                                    RightAnswer = [];
+                                    WrongAnswer = [];
+                }
+                // 전역 변수로 선언된 flag가 게임이 끝나면 true로 바뀐다. true면 타이머는 초기화된다.
+                if(flag === false){
+                    limit -= 1;
+                    setLimitTime(limit);
+                }
+                else if(flag === true){
+                    clearInterval(limittimer);
+                }
+            },1000);
+        }
+        //-- 끝
+        return ()=>{
+            window.clearInterval(limittimer); 
+            console.log("타이머 화면  UnMount 됩니다.")
+        }
 
-                                console.log(localStorage.getItem("Totalscore"));
-                                console.log(localStorage.getItem("YearOfScore"));
-                                console.log(localStorage.getItem("MonthOfScore"));
-                                console.log(localStorage.getItem("DateOfScore"));
-
-                                mapingRightAnswer();
-                                mapingWrongAnswer();
-                                RightAnswer = [];
-                                WrongAnswer = [];
-            }
-            // 전역 변수로 선언된 flag가 게임이 끝나면 true로 바뀐다. true면 타이머는 초기화된다.
-            if(flag === false){
-                limit -= 1;
-                setLimitTime(limit);
-            }
-            else if(flag === true){
-                clearInterval(limittimer);
-            }
-        },1000);
-    }
+    },[]);
+    
 
     // =======================================================================================================
 
@@ -202,7 +221,7 @@ function Game(props) {
                     onClose={handleClose}
                     closeAfterTransition
                     BackdropComponent={Backdrop}
-                    disableBackdropClick = "true"
+                    disableBackdropClick = {true}
                     BackdropProps={{
                         timeout: 500,
                     }}
@@ -271,10 +290,10 @@ function Game(props) {
                                         let hours = today.getHours(); th.push(hours); localStorage.setItem("HourOfScore", JSON.stringify(th));
                                         let boons = today.getMinutes(); tb.push(boons); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
                                         
-                                        console.log(localStorage.getItem("Totalscore"));
-                                        console.log(localStorage.getItem("YearOfScore"));
-                                        console.log(localStorage.getItem("MonthOfScore"));
-                                        console.log(localStorage.getItem("DateOfScore"));
+                                //        console.log(localStorage.getItem("Totalscore"));
+                                //        console.log(localStorage.getItem("YearOfScore"));
+                                //        console.log(localStorage.getItem("MonthOfScore"));
+                                //        console.log(localStorage.getItem("DateOfScore"));
 
                                         mapingRightAnswer();
                                         mapingWrongAnswer();
@@ -375,10 +394,10 @@ function Game(props) {
                                 let miniute = today.getMinutes(); tb.push(miniute); localStorage.setItem("BoonOfScore", JSON.stringify(tb));
                                 let date = today.getDate(); td.push(date); localStorage.setItem("DateOfScore", JSON.stringify(td));
 
-                                console.log(localStorage.getItem("Totalscore"));
-                                console.log(localStorage.getItem("YearOfScore"));
-                                console.log(localStorage.getItem("MonthOfScore"));
-                                console.log(localStorage.getItem("DateOfScore"));
+                            //    console.log(localStorage.getItem("Totalscore"));
+                            //    console.log(localStorage.getItem("YearOfScore"));
+                            //    console.log(localStorage.getItem("MonthOfScore"));
+                            //    console.log(localStorage.getItem("DateOfScore"));
 
                                 mapingRightAnswer();
                                 mapingWrongAnswer();

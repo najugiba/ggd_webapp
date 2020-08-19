@@ -171,6 +171,7 @@
         line-height: 30px;
         vertical-align: middle;
     }
+    
     .Game_text{
         font-size: 45px;
         margin-right: auto;
@@ -190,8 +191,16 @@
         text-align: center;
         margin-left: 10px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+        width: 180px;
+        height: 180px;
+    }
     .Game_startBtn{
-        margin-top: 150px;
+        margin-top: 50px;
         width: 200px;
         height: 90px;
         background: #FFFFFF;
@@ -204,10 +213,10 @@
         font-size: 20px;
     }
     .Game_startBtn:hover{
-        margin-top: 150px;
+        margin-top: 50px;
         width: 200px;
         height: 90px;
-        background: #dae766;
+        background:  #87CEEB;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
         box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
@@ -215,6 +224,7 @@
         font-family: BMJUA;
         font-weight: bold;
         font-size: 20px;
+        cursor: pointer;
     }
     .result_text{
         font-family: Roboto;
@@ -343,6 +353,7 @@
         background-color: #88D7F6;
         font-size: 18px;
         font-family: BMJUA;
+        cursor: pointer;
     }
     .Keypad_cancel{
         width: 80px;
@@ -381,7 +392,7 @@
         width: 200px;
         height: 40px;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -399,7 +410,7 @@
         height: 40px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -408,6 +419,7 @@
         font-style: normal;
         font-weight: bold;
         font-size: 15px;
+        cursor: pointer;
     }
     .G_Result_Btn1{
         margin-top: 7px;
@@ -634,10 +646,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 200px;
-        width: 300px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -646,12 +666,13 @@
         font-family: BMJUA;
         font-weight: bold;
         font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 200px;
-        width: 300px;
-        height: 150px;
-        background: #dae766;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
+        background:  #87CEEB;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
         box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
@@ -659,6 +680,8 @@
         font-family: BMJUA;
         font-weight: bold;
         font-size: 20px;
+        outline: 0em;
+        cursor: pointer;
     }
 
 
@@ -795,6 +818,7 @@
         margin-bottom: 5px;
         background-color: #88D7F6;
         font-family: BMJUA;
+        cursor: pointer;
     }
     .Keypad_cancel{
         width: 140px;
@@ -839,7 +863,7 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -855,7 +879,7 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -865,6 +889,7 @@
         font-family: BMJUA;
         font-style: normal;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .OnTablet_ResultScoreDiv{
@@ -1113,10 +1138,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 200px;
-        width: 300px;
-        height: 100px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1124,20 +1157,23 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 200px;
-        width: 300px;
-        height: 100px;
-        background: #dae766;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
+        background:  #87CEEB;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
         box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 25px;
+        font-size: 20px;
+        outline: 0em;
+        cursor: pointer;
     }
 
 
@@ -1277,6 +1313,7 @@
         margin-bottom: 5px;
         background-color: #88D7F6;
         font-family: BMJUA;
+        cursor: pointer;
     }
     .Keypad_cancel{
         width: 140px;
@@ -1321,7 +1358,7 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -1337,7 +1374,7 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -1347,6 +1384,7 @@
         font-family: BMJUA;
         font-style: normal;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .OnTablet_ResultScoreDiv{
@@ -1594,10 +1632,18 @@
         text-align: center;
         margin-left: 20px;
     }
+    .Game_start_img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 126px;
+        width: 250px;
+        height: 250px;
+    }
     .Game_startBtn{
-        margin-top: 300px;
-        width: 400px;
-        height: 150px;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
         background: #FFFFFF;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
@@ -1605,20 +1651,23 @@
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
+        outline: 0em;
     }
     .Game_startBtn:hover{
-        margin-top: 300px;
-        width: 400px;
-        height: 150px;
-        background: #dae766;
+        margin-top: 35px;
+        width: 394px;
+        height: 80px;
+        background:  #87CEEB;
         border: 1px solid rgba(196, 196, 196, 0.1);
         box-sizing: border-box;
         box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
         font-family: BMJUA;
         font-weight: bold;
-        font-size: 30px;
+        font-size: 20px;
+        cursor: pointer;
+        outline: 0em;
     }
     .G_result_box{
         width: 1024px;
@@ -1755,6 +1804,7 @@
         font-size: 25px;
         background-color: #88D7F6;
         font-family: BMJUA;
+        cursor: pointer;
     }
     .Keypad_cancel{
         width: 140px;
@@ -1799,7 +1849,7 @@
         height: 70px;
         outline: 0em;
         background: #FFFEFE;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -1815,7 +1865,7 @@
         height: 70px;
         background-color: #88D7F6;
         outline: 0em;
-        border: 1px dashed rgba(196, 196, 196, 0.75);
+        border: 1px solid rgba(196, 196, 196, 0.75);
         box-sizing: border-box;
         box-shadow: 0px 5px 1.5px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
@@ -1825,6 +1875,7 @@
         font-family: BMJUA;
         font-style: normal;
         font-weight: bold;
+        cursor: pointer;
     }
 
     .OnTablet_ResultScoreDiv{
