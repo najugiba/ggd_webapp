@@ -35,12 +35,27 @@ var td = [];
 var th = [];  //시
 var tb = []; //분
 */
-var gr = JSON.parse(localStorage.getItem("Totalscore"));
-var ty = JSON.parse(localStorage.getItem("YearOfScore"));
-var tm = JSON.parse(localStorage.getItem("MonthOfScore"));
-var td = JSON.parse(localStorage.getItem("DateOfScore"));
-var th = JSON.parse(localStorage.getItem("HourOfScore"));  //시
-var tb = JSON.parse(localStorage.getItem("BoonOfScore")); //분
+    var gr;
+    var ty;
+    var tm;
+    var td;   
+    var th; //시
+    var tb;//분
+const getLocalStorageData = () => {
+     gr = JSON.parse(localStorage.getItem("Totalscore"));
+        if(gr === null) gr = []; 
+     ty = JSON.parse(localStorage.getItem("YearOfScore"));
+        if(ty === null) ty = [];
+     tm = JSON.parse(localStorage.getItem("MonthOfScore"));
+        if(tm === null) tm = [];
+     td = JSON.parse(localStorage.getItem("DateOfScore"));
+        if(td === null) td = [];
+     th = JSON.parse(localStorage.getItem("HourOfScore"));
+        if(th === null) th = [];  //시
+     tb = JSON.parse(localStorage.getItem("BoonOfScore"));
+        if(tb === null) tb = []; //분
+}
+
 
 // ===================정답과 오답을 종료 후 보여 주기 위한 부분=======================
 let RightAnswer = [];
@@ -72,6 +87,7 @@ const SubmitAnswer = () => {
     ans.submit();
 }
 
+getLocalStorageData();
 
 let ImgArr = ["monkey", "mice", "tiger", "rabbit"];
 
@@ -174,7 +190,7 @@ function Game(props) {
                 }
             },1000);
         }
-        //-- 끝
+        //--- 끝 ---
         return ()=>{
             window.clearInterval(limittimer); 
             console.log("타이머 화면  UnMount 됩니다.")
