@@ -1,6 +1,6 @@
 // 객관식 게임
 // 객관식은 N단 x 1~9까지 차례대로 나온다.
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import "../CSSs/Game_choice.css";
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/core/styles';
@@ -8,17 +8,25 @@ import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import { useSpring, animated } from 'react-spring/web.cjs'; // web.cjs is required for IE 11 support
 import { createHashHistory } from 'history'
-
 import { useHistory } from "react-router-dom";
 export const history = createHashHistory()
+
+
 /* =========================== 랜덤수 필요시 활성화 할 것======================================
 let generateRandom = function (min, max) {
     let ranNum = Math.floor(Math.random() * (max - min + 1)) + min;
     return ranNum;
 }
+
+
 */
 let randnum1, randnum2=1;
 //randnum1 은 props로 받아온다.
+
+
+
+
+
 
 //======================객관식 답 배열에서 랜덤으로 섞어서 만들기===============================
 let answers = [];
@@ -36,10 +44,10 @@ const makeRandom = val => {
         });
     }
     else {
-        let answerA = (randnum1 - 1) * randnum2;
-        let answerB = randnum1 * (randnum2 - 1);
-        let answerC = randnum1 * randnum2;
-        let answerD = randnum1 * (randnum2 + 1);
+        let answerA = (randnum1 - 1) * randnum2;    
+        let answerB = randnum1 * (randnum2 - 1);    
+        let answerC = randnum1 * randnum2;          
+        let answerD = randnum1 * (randnum2 + 1);    
         answers = [answerA, answerB, answerC, answerD];
         answers.sort(function () {
             return Math.random() - Math.random();
@@ -107,26 +115,7 @@ Fade.propTypes = {
 let O = 0;
 let X = 0;
 
-// ========================= 답 클릭 했을시 정답과 오답을 보여줄 타이밍 함수 ============================
 
-let tempDP;
-const Term = () => {
-    let t = 1;
-    let rightidx = 0;
-    const test = setInterval(() => {
-        for(let i=0; i<4; i++){
-            if(answers[i] === Number(randnum2 * randnum1)){
-                rightidx = i;
-            }
-        }
-        //여기서 정답은 주황색처리해주고
-        if (t === 0) {
-            clearInterval(test);
-            //여기서 다시 원래대로 돌아오고
-        }
-        t -= 1;
-    }, 500);
-}
 
 function Game_choice(props) {
     const [answer, setAnswer] = useState('');
@@ -136,6 +125,12 @@ function Game_choice(props) {
     const [gameDP, setGameDP] = useState('inline-block');
     const [resultDP, setResultDP] = useState('none');
     const [TabletChoiceBoxDP, setTCBD] = useState('');
+    
+    const [answer0, setAnswer0] = useState(0);
+    const [answer1, setAnswer1] = useState(0);
+    const [answer2, setAnswer2] = useState(0);
+    const [answer3, setAnswer3] = useState(0);
+
     randnum1 = props.dan;
     if(props.dan !== "10") randnum2 = count+1;
     // 모달 위한 함수들
@@ -148,25 +143,24 @@ function Game_choice(props) {
     const handleClose = () => {
         setOpen(false);
     };
-    //==================
-
-    const test = () => {
-    }
+    //============================================================
 
     const check = e => {
+        e.preventDefault();
         //정답일시
-        if (Number(e.target.id) === (randnum1 * randnum2)) {
+        if (Number(e.target.id) === (randnum1 * randnum2)){
             console.log("정답");
+            randnum2++;
             setCount(count + 1);
             setScore(score + 1);
             makeRandom(props.dan);
             setAnswer('');
-            randnum2++;
             O++;
         }
         //오답일시
         else { 
             console.log("오답");
+            alert(`오답!! 정답=${randnum1*randnum2}`);
             randnum2++;
             X++; 
             makeRandom(props.dan);
@@ -182,13 +176,15 @@ function Game_choice(props) {
             randnum2 = 1;
         }
     }
-   
-    makeRandom(props.dan);
     
     let history = useHistory();
     const goHome = () =>{
         history.push("/");
     }
+
+
+    makeRandom(props.dan);
+
     return (
         <div className="Game_choice_Container">
             <div className="GH_gugudan_box" style={{ display: gameDP }}>

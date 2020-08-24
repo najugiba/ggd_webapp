@@ -61,7 +61,7 @@ class MainPage extends React.Component {
             }
 
             // 이미지 이름과 UserName을 모든 컴포넌트에서 사용하기 편하게 Store에 저장변경
-            updateState(ImgArr[this.state.CurrentImgIndex], this.state.registerInput);
+            updateState(this.state.CurrentImgIndex, this.state.registerInput);
             console.log(this.props.UserPlusImageName);
         }
 
@@ -142,7 +142,7 @@ function mapStateToProps(state, ownProps){
 // reducer에 action을 알리는 함수 
 function mapDispatchToProps(dispatch){
     return {
-        updateState : (IN, UN) => dispatch(actionCreators.updateState(IN,UN))
+        updateState : (II, UN) => dispatch(actionCreators.updateState(II,UN))
      };
 }
 

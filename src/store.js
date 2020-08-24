@@ -17,21 +17,23 @@ import { createStore } from "redux";
 const UPDATE = "UPDATE";
 
 //2. action 객체를 생성해 놓는다.
-const updateState = (IN, UN) => {
+const updateState = (II, UN, dan) => {
     return{
         type: UPDATE,
-        IN,
-        UN
+        II,
+        UN,
+        dan
     }
 }
 
 //3. reducer를 생성한다. state와 action을 입력 받고 바뀐 결과 state를 return 한다.
-const reducer = (state = {ImageName:"이미지 이름", UserName:"사용자명"}, action) =>{
+const reducer = (state = {ImageIndex: 0, UserName:"사용자명", dan:0}, action) =>{
     switch(action.type){
         case UPDATE:
             return {
-                ImageName : action.IN,
-                UserName : action.UN
+                ImageIndex : action.II,
+                UserName : action.UN,
+                dan : action.dan
             };
         default:
             return state;

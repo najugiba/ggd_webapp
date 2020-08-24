@@ -22,8 +22,6 @@ let imgindexbox = [];
         let d = localStorage.getItem("DateOfScore"); let dates = JSON.parse(d);
         let h = localStorage.getItem("HourOfScore"); let hours = JSON.parse(h);
         let b = localStorage.getItem("BoonOfScore"); let boons = JSON.parse(b);
-        
-    
       //  console.log(scores);
      //   console.log(years);
      //   console.log(months);
@@ -49,7 +47,7 @@ let imgindexbox = [];
                 else if(scores[i] == 0) selectimg = 0;
                 else selectimg = 0;
 
-                let temp = + years[i] + "." + months[i] + "." + dates[i]+"　"+ hours[i] +":" + boons[i]+    "　　　"+ scores[i]*10+"점" ;
+                let temp = + years[i] + "." + months[i] + "." + dates[i]+"."+ hours[i] +":" + boons[i]+    "　　　"+ scores[i]*10+"점" ;
                 result = [...result, temp];
                 score_arr = [scores[i], ...score_arr];
                 imgindexbox = [...imgindexbox, selectimg];
@@ -68,7 +66,7 @@ let imgindexbox = [];
 
 
 function Checkscore(props){
-    // props.UserPlusImageName.ImageName  -> store를 통해 받은 이미지 이름(ex, tiger)
+    // props.UserPlusImageName.ImageName  -> store를 통해 받은 이미지 인덱스(ex, 1)
     // props.UserPlusImageName.UserName -> 닉네임
     const [arr, setArr] = useState(GetScore());
     let list;
@@ -81,7 +79,7 @@ function Checkscore(props){
         // 점수 결과 알려줄 list
         list = arr.map(data => (
             <li className="Check_listitem" style={{listStyle:'none'}} key={ForKeyUnique++}>
-                {data} 
+                {data}　　 
                 <img className="score_level_img" src={require(`../Images/${scoreImgArr[imgindexbox[index++]]}.png`)} 
                 />
             </li>
@@ -118,7 +116,7 @@ function Checkscore(props){
                 
                 <div className="wrapper2">
                     <p className="Score_Desc">
-                        <span className="Desc_date"><span className="nal">날짜</span><span className="si">시간</span><span className="jeom">점수</span></span>
+                        <span className="Desc_date"><span className="nal">일시</span><span className="si">점수</span><span className="jeom">수준</span></span>
                     </p>
                     <div className="Score_table">
                         {list}
@@ -136,7 +134,7 @@ function mapStateToProps(state, ownProps){
 // reducer에 action을 알리는 함수 
 function mapDispatchToProps(dispatch){
     return {
-        updateState : (IN, UN) => dispatch(actionCreators.updateState(IN,UN))
+        updateState : (II, UN) => dispatch(actionCreators.updateState(II,UN))
      };
 }
 
