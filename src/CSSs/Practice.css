@@ -189,7 +189,7 @@
 }
 
 
-  @media (min-width: 1025px) and (max-width: 1280px) {
+@media (min-width: 1025px) and (max-width: 1280px) {
 
     .Practice_Container {
         width: 100%;
@@ -209,6 +209,7 @@
         height: 250px;
     }
     .Practice_text{
+        font-size: 25px;
         font-family: BMJUA;
     }
     .Practice_Btn_Line{        
@@ -247,9 +248,9 @@
         font-size: 25px;
     }
     .Practice_Btn2{  
-        width: 394px;
+        width: 380px;
         height: 80px;
-        margin-top: 7px;
+        margin-top: 13px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
 
@@ -263,9 +264,9 @@
         font-size: 25px;
     }
     .Practice_Btn2:hover{  
-        width: 394px;
+        width: 380px;
         height: 80px;
-        margin-top: 7px;
+        margin-top: 13px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
 
@@ -300,6 +301,7 @@
         height: 250px;
     }
     .Practice_text{
+        font-size: 30px;
         font-family: BMJUA;
     }
     .Practice_Btn_Line{        
@@ -338,9 +340,9 @@
         font-size: 25px;
     }
     .Practice_Btn2{  
-        width: 394px;
+        width: 380px;
         height: 80px;
-        margin-top: 7px;
+        margin-top: 13px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
         background: #FFFFFF;
@@ -353,9 +355,9 @@
         font-size: 25px;
     }
     .Practice_Btn2:hover{  
-        width: 394px;
+        width: 380px;
         height: 80px;
-        margin-top: 7px;
+        margin-top: 13px;
         margin-bottom: 7px;
         border-radius: 10px 10px 10px 10px;
 
